@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#2a6038","on-secondary-fixed-variant":"#4a4538","on-primary":"#ffffff","tertiary-fixed":"#f8e0a8","secondary-container":"#f0e8db","on-tertiary-fixed-variant":"#554020","tertiary-container":"#c4a66a","outline-variant":"#c4c8bc","on-primary-container":"#d8f0de","surface-container-lowest":"#ffffff","surface-container-high":"#eae6de","surface-dim":"#dbd7cf","secondary-fixed":"#f0e8db","surface-container":"#f0ece4","primary-container":"#78a886","on-tertiary-container":"#554020","tertiary":"#705c30","surface-container-highest":"#e4e0d8","background":"#faf6f0","error-container":"#ffdad8","on-secondary-fixed":"#1e1a13","on-background":"#2e3230","secondary-fixed-dim":"#d4ccbf","on-tertiary-fixed":"#221a05","on-error":"#ffffff","on-primary-fixed":"#002110","outline":"#74796e","surface-container-low":"#f5f1ea","on-tertiary":"#ffffff","primary":"#4a7c59","tertiary-fixed-dim":"#dcc48e","on-surface-variant":"#4a4e4a","surface":"#faf6f0","surface-variant":"#e4e0d8","error":"#b83230","surface-bright":"#faf6f0","secondary":"#6b6358","on-secondary":"#ffffff","inverse-primary":"#8ecf9e","on-error-container":"#690005","on-secondary-container":"#5e5548","inverse-on-surface":"#f5f0e8","on-surface":"#2e3230","inverse-surface":"#2e3230","primary-fixed":"#c8e8d0","primary-fixed-dim":"#8ecf9e","surface-tint":"#4a7c59"},borderRadius:{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},spacing:{},fontFamily:{headline:["Literata"],display:["Literata"],body:["Nunito Sans"],label:["Nunito Sans"]},fontSize:{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_16px_rgba(46,50,48,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6 shrink-0"><div class="flex items-center gap-3"><img alt="CorneType Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDH-r5kOxkEubAlogpvq1U2UC0mC_zK2wBvRkrf0ZpF3IIxhSO2rymdmAge-JeFIUjPWIwIYkctIbqD0gXbBde0-QXzKqF9M-RMgDK1dzSV0T_nOee6n2C8BGc7wDxMePJNVkMDG3HOMgWqQP56Yn8qnSYQPC0ZBZc_broJwYQrVZFyG2IWEDaZ4_USR1bRBWywWbsBFacmM_LbXvgKUExjFNTazreT52XxX2IHhIeQvw"><div class="flex flex-col"><span class="text-lg font-headline font-bold text-on-surface leading-tight tracking-tight">CorneType</span><span class="text-[11px] font-medium text-secondary">bCorne 56-Key Split v3.2</span></div></div><div class="hidden xl:flex items-center gap-2 pl-4 py-1.5 px-3 rounded-full bg-surface-container-low text-xs text-on-surface-variant"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span><span class="font-medium">Conectado</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_left</span>Enc L: Vol</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_right</span>Enc R: Scroll</span></div></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="practica-de-escritura" href="#">Práctica de Escritura</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="minijuegos" href="#">Minijuegos</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="explorador-de-capas" href="#">Explorador de Capas</a><a aria-current="page" class="px-3.5 py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="cargar-keymap" href="#">Cargar Keymap</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="metricas-ergo-stats" href="#">Métricas &amp; Ergo Stats</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Capa</span><select class="bg-transparent text-xs font-semibold text-primary focus:outline-none cursor-pointer pr-1"><option>Base (QWERTY)</option><option>Base (Colemak-DH)</option><option>Raise (Núm / Símb)</option><option>Lower (Nav / F-Keys)</option><option>Adjust / Ergo Media</option></select></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">upload_file</span><span class="hidden lg:inline">.JSON / Keymap</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Decorative Ambient Glow -->
+<div class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16">
+<div class="absolute -top-10 left-1/3 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-20 right-10 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<!-- Header Section (Tailored editorial layout without duplicating shell branding) -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10">
+<div class="space-y-3 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs font-semibold text-tertiary">
+<span class="material-symbols-outlined text-sm">memory</span>
+<span>bCorne 56-Key Split v3.2 • Firmware Parser 2.4</span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-headline font-bold text-on-surface tracking-tight leading-tight">
+          Importador y Renderizador de Keymaps
+        </h1>
+<p class="text-secondary text-sm lg:text-base leading-relaxed">
+          Carga tu archivo de configuración de VIA, QMK Configurator (.json) o ZMK (.keymap) para visualizar y practicar con tu distribución exacta.
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-2 shrink-0 self-start md:self-end">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold text-xs transition-colors flex items-center gap-1.5 shadow-sm" id="btn-validate">
+<span class="material-symbols-outlined text-[17px] text-primary">verified</span>
+<span>Validar Keymap</span>
+</button>
+<button class="px-4 py-2.5 rounded-lg bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container font-semibold text-xs transition-colors flex items-center gap-1.5 shadow-sm" id="btn-export">
+<span class="material-symbols-outlined text-[17px]">picture_as_pdf</span>
+<span>Exportar PDF/SVG</span>
+</button>
+</div>
+</div>
+<!-- Drag & Drop Zone + Preset Badges -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+<!-- Drag & Drop Target -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-8 shadow-sm flex flex-col items-center justify-center text-center relative overflow-hidden transition-all hover:bg-surface-container">
+<!-- Linen texture feel using soft SVG dot pattern -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="14" id="linenDots" patternUnits="userSpaceOnUse" width="14">
+<circle cx="2" cy="2" fill="#74796e" r="1.2"></circle>
+</pattern>
+</defs>
+<rect fill="url(#linenDots)" height="100%" width="100%"></rect>
+</svg>
+<div class="relative z-10 flex flex-col items-center max-w-lg">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center mb-4 text-primary shadow-sm">
+<span class="material-symbols-outlined text-3xl">upload_file</span>
+</div>
+<h2 class="text-lg font-headline font-semibold text-on-surface mb-1">
+            Arrastra tu archivo de configuración aquí
+          </h2>
+<p class="text-xs text-on-surface-variant mb-5">
+            Arrastra un archivo JSON o código fuente ZMK devicetree para renderizado instantáneo en ambas mitades.
+          </p>
+<label class="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface hover:bg-surface-container-highest text-primary font-semibold text-xs shadow-sm transition-all">
+<span class="material-symbols-outlined text-base">folder_open</span>
+<span>Examinar archivos (.json, .keymap, .hex, .uf2)</span>
+<input accept=".json,.keymap,.dtsi,.hex,.uf2" class="hidden" id="file-uploader" type="file">
+</label>
+<!-- Detected Support Pills -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-[11px] font-medium text-secondary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>QMK Info.json v1
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-[11px] font-medium text-secondary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>VIA Layout v3
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-[11px] font-medium text-secondary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>ZMK DeviceTree Config
+            </span>
+</div>
+</div>
+</div>
+<!-- Presets and Hardware Specs Card -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Presets Listos para Cargar</span>
+<span class="text-[11px] font-mono text-tertiary">1-Click</span>
+</div>
+<div class="space-y-2.5">
+<!-- Preset 1 -->
+<button class="w-full text-left p-3 rounded-lg bg-surface hover:bg-surface-container transition-colors group flex items-start gap-3 shadow-sm" onclick="loadPreset('qwerty')">
+<div class="w-7 h-7 rounded-md bg-primary-fixed flex items-center justify-center shrink-0 mt-0.5 text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-sm">keyboard</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface group-hover:text-primary transition-colors">
+                  bCorne 56 Standard QWERTY
+                </p>
+<p class="text-[11px] text-secondary mt-0.5 leading-snug">
+                  Preset oficial VIA • Dual EC11 Encoders • Layer 0 standard.
+                </p>
+</div>
+</button>
+<!-- Preset 2 -->
+<button class="w-full text-left p-3 rounded-lg bg-surface hover:bg-surface-container transition-colors group flex items-start gap-3 shadow-sm" onclick="loadPreset('colemak')">
+<div class="w-7 h-7 rounded-md bg-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-sm">nature_people</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface group-hover:text-primary transition-colors">
+                  Colemak-DH Ergonomic Dev
+                </p>
+<p class="text-[11px] text-secondary mt-0.5 leading-snug">
+                  Optimizado para programadores con símbolos en pulgares.
+                </p>
+</div>
+</button>
+<!-- Preset 3 -->
+<button class="w-full text-left p-3 rounded-lg bg-surface hover:bg-surface-container transition-colors group flex items-start gap-3 shadow-sm" onclick="loadPreset('miryoku')">
+<div class="w-7 h-7 rounded-md bg-secondary-fixed flex items-center justify-center shrink-0 mt-0.5 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-sm">layers</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface group-hover:text-primary transition-colors">
+                  Miryoku Style Adapted
+                </p>
+<p class="text-[11px] text-secondary mt-0.5 leading-snug">
+                  56-Key mapping con Home Row Mods completos &amp; Nav layer.
+                </p>
+</div>
+</button>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container rounded-lg p-3 flex items-center justify-between text-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">tune</span>
+<span class="font-medium">Encoder L/R: Vol / Scroll</span>
+</div>
+<span class="font-mono text-[10px] bg-surface px-2 py-0.5 rounded text-secondary font-semibold">EC11 GPIO 29/30</span>
+</div>
+</div>
+</div>
+<!-- Split View: Interactive Code Editor (Left) & Real-Time bCorne 56-Key Preview (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start mb-12">
+<!-- Code Editor Panel (5 cols on XL) -->
+<div class="xl:col-span-5 bg-surface-container-low rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Editor Header Bar -->
+<div class="bg-surface-container px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="ml-2 text-xs font-mono font-medium text-on-surface-variant">bcorne_v3_keymap.json</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-secondary">
+<span class="font-mono text-[11px] bg-surface-container-highest px-2 py-0.5 rounded" id="editor-format">JSON / VIA v3</span>
+<button class="p-1 hover:text-primary transition-colors" onclick="copyCode()" title="Copiar código">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Editor Textarea Area with Syntax Warm Look -->
+<div class="p-4 bg-surface-container-lowest font-mono text-[12px] leading-relaxed relative">
+<textarea class="w-full h-80 lg:h-[440px] resize-none bg-transparent text-on-surface focus:outline-none font-mono text-xs selection:bg-primary-fixed selection:text-on-primary-fixed" id="keymap-code" rows="18" spellcheck="false">{
+  "keyboard": "crkbd/rev1",
+  "keymap": "bcorne_ergo_56",
+  "layout": "LAYOUT_split_3x6_3",
+  "layers": [
+    [
+      "KC_TAB", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T",
+      "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSPC",
+      "KC_LCTL", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G",
+      "KC_H", "KC_J", "KC_K", "KC_L", "KC_SCLN", "KC_QUOT",
+      "KC_LSFT", "KC_Z", "KC_X", "KC_C", "KC_V", "KC_B",
+      "KC_N", "KC_M", "KC_COMM", "KC_DOT", "KC_SLSH", "KC_ESC",
+      "KC_LGUI", "MO(1)", "KC_SPC",
+      "KC_ENT", "MO(2)", "KC_RALT"
+    ]
+  ],
+  "encoders": {
+    "left": ["KC_VOLD", "KC_VOLU"],
+    "right": ["KC_MS_WH_DOWN", "KC_MS_WH_UP"]
+  }
+}</textarea>
+</div>
+<!-- Status / Feedback Bar -->
+<div class="bg-surface-container px-4 py-2.5 flex items-center justify-between text-[11px] text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-primary font-medium" id="status-indicator">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span id="status-text">Sintaxis válida (42 switches + 2 encoders)</span>
+</div>
+<span class="font-mono text-secondary">Capa Activa: 0 (BASE)</span>
+</div>
+</div>
+<!-- Real-Time bCorne 56-Key Preview (7 cols on XL) -->
+<div class="xl:col-span-7 bg-surface-container-low rounded-xl shadow-md p-6 lg:p-8 flex flex-col justify-between">
+<!-- Preview Control Header -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface flex items-center gap-2">
+<span>Visualización en Vivo: bCorne Split</span>
+<span class="px-2 py-0.5 text-[10px] rounded-full bg-primary-fixed text-on-primary-fixed-variant font-mono uppercase tracking-wider">Live Sync</span>
+</h3>
+<p class="text-xs text-secondary mt-0.5">Matriz física dividida con inclinación columnar y encoders rotativos integrados.</p>
+</div>
+<!-- Layer Switcher Pills -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container shadow-inner text-xs font-semibold text-on-surface-variant">
+<button class="px-2.5 py-1 rounded-md bg-surface text-primary shadow-sm" onclick="switchLayer(0)">L0: Base</button>
+<button class="px-2.5 py-1 rounded-md hover:text-on-surface transition-colors" onclick="switchLayer(1)">L1: Lower</button>
+<button class="px-2.5 py-1 rounded-md hover:text-on-surface transition-colors" onclick="switchLayer(2)">L2: Raise</button>
+<button class="px-2.5 py-1 rounded-md hover:text-on-surface transition-colors" onclick="switchLayer(3)">L3: Adjust</button>
+</div>
+</div>
+<!-- SPLIT KEYBOARD RENDER CANVAS (Terra PBT Ceramic Aesthetic) -->
+<div class="bg-surface p-6 rounded-2xl shadow-inner relative flex flex-col gap-6 overflow-x-auto">
+<div class="min-w-[580px] flex justify-between items-start gap-4">
+<!-- LEFT HALF (3x6 Matrix + Thumb Cluster + Rotary Encoder) -->
+<div class="flex-1 bg-surface-container-high/60 p-4 rounded-xl relative shadow-sm">
+<div class="flex items-center justify-between mb-3 text-[10px] font-mono text-secondary">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Mitad Izquierda (Master)
+                </span>
+<!-- Left Rotary Knob Graphic -->
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-0.5 rounded-full shadow-xs">
+<span class="material-symbols-outlined text-[12px] text-tertiary">tune</span>
+<span class="text-[10px] font-mono" id="enc-l-label">Enc L: Vol +/-</span>
+</div>
+</div>
+<!-- 3x6 Grid with ergonomic columnar staggering -->
+<div class="flex gap-1.5 justify-center items-start">
+<!-- Col 1 (Outer Pinky) -->
+<div class="flex flex-col gap-1.5 pt-4">
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-0">TAB</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-12">CTL</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-24">SFT</div>
+</div>
+<!-- Col 2 (Pinky) -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-1">Q</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-13">A</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-25">Z</div>
+</div>
+<!-- Col 3 (Ring) -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-2">W</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-14">S</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-26">X</div>
+</div>
+<!-- Col 4 (Middle - Higher Stagger) -->
+<div class="flex flex-col gap-1.5 pt-0">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-3">E</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-15">D</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-27">C</div>
+</div>
+<!-- Col 5 (Index) -->
+<div class="flex flex-col gap-1.5 pt-1.5">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-4">R</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-16">F</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-28">V</div>
+</div>
+<!-- Col 6 (Inner Index) -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-5">T</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-17">G</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-29">B</div>
+</div>
+</div>
+<!-- Left Thumb Cluster (3 keys angled) -->
+<div class="flex justify-end gap-1.5 mt-3 pr-2">
+<div class="w-9 h-9 rounded-md bg-surface-container-lowest text-secondary flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-36">GUI</div>
+<div class="w-9 h-9 rounded-md bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-37">LOWER</div>
+<div class="w-11 h-9 rounded-md bg-primary text-on-primary flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-38">SPACE</div>
+</div>
+</div>
+<!-- Inter-half TRRS Cord & Bio-Aesthetic Visual Divider -->
+<div class="flex flex-col items-center justify-center py-6 px-1 opacity-70">
+<span class="text-[9px] font-mono uppercase tracking-widest text-secondary rotate-90">TRRS</span>
+<div class="w-0.5 h-24 bg-outline-variant my-2 rounded-full"></div>
+<span class="material-symbols-outlined text-xs text-primary">cable</span>
+</div>
+<!-- RIGHT HALF (3x6 Matrix + Thumb Cluster + Rotary Encoder) -->
+<div class="flex-1 bg-surface-container-high/60 p-4 rounded-xl relative shadow-sm">
+<div class="flex items-center justify-between mb-3 text-[10px] font-mono text-secondary">
+<!-- Right Rotary Knob Graphic -->
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-0.5 rounded-full shadow-xs">
+<span class="material-symbols-outlined text-[12px] text-tertiary">rotate_right</span>
+<span class="text-[10px] font-mono" id="enc-r-label">Enc R: Scroll</span>
+</div>
+<span class="flex items-center gap-1 font-semibold text-primary">
+                  Mitad Derecha (Slave) <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</span>
+</div>
+<!-- 3x6 Grid with ergonomic columnar staggering -->
+<div class="flex gap-1.5 justify-center items-start">
+<!-- Col 7 (Inner Index) -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-6">Y</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-18">H</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-30">N</div>
+</div>
+<!-- Col 8 (Index) -->
+<div class="flex flex-col gap-1.5 pt-1.5">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-7">U</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-19">J</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-31">M</div>
+</div>
+<!-- Col 9 (Middle - Higher Stagger) -->
+<div class="flex flex-col gap-1.5 pt-0">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-8">I</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-20">K</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-32">, &lt;</div>
+</div>
+<!-- Col 10 (Ring) -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-9">O</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-21">L</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-33">. &gt;</div>
+</div>
+<!-- Col 11 (Pinky) -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-10">P</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-22">; :</div>
+<div class="w-8 h-9 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center text-[11px] font-mono font-bold shadow-xs hover:bg-primary-fixed transition-colors" id="k-34">/ ?</div>
+</div>
+<!-- Col 12 (Outer Pinky) -->
+<div class="flex flex-col gap-1.5 pt-4">
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-11">BSPC</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-23">' "</div>
+<div class="w-8 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] font-mono font-bold shadow-xs hover:bg-primary-container transition-colors" id="k-35">ESC</div>
+</div>
+</div>
+<!-- Right Thumb Cluster (3 keys angled) -->
+<div class="flex justify-start gap-1.5 mt-3 pl-2">
+<div class="w-11 h-9 rounded-md bg-primary text-on-primary flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-39">ENTER</div>
+<div class="w-9 h-9 rounded-md bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-40">RAISE</div>
+<div class="w-9 h-9 rounded-md bg-surface-container-lowest text-secondary flex items-center justify-center text-[10px] font-mono font-bold shadow-xs" id="k-41">ALT</div>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Legend -->
+<div class="flex flex-wrap items-center justify-between text-xs text-on-surface-variant pt-2">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-surface-container-lowest shadow-xs"></span> Alfa / Numpad</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-surface-container shadow-xs"></span> Modificadores</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container shadow-xs"></span> Capas (MO)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-primary shadow-xs"></span> Pulgar Primario</span>
+</div>
+<span class="text-[11px] font-mono text-tertiary">42 Teclas Principales + 6 Pulgares + 2 Encoders (Push)</span>
+</div>
+</div>
+<!-- Master Bottom CTA Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 pt-6 bg-surface-container rounded-xl p-4">
+<div class="flex items-center gap-3">
+<button class="px-4 py-2.5 rounded-lg bg-surface hover:bg-surface-container-highest text-on-surface font-semibold text-xs transition-colors flex items-center gap-2 shadow-sm" id="btn-save-local">
+<span class="material-symbols-outlined text-[17px] text-tertiary">bookmark</span>
+<span>Guardar en Perfil Local</span>
+</button>
+<span class="text-xs text-secondary hidden md:inline">Sincronizado con memoria del navegador</span>
+</div>
+<!-- Solid Forest Green Main CTA -->
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-bold text-xs uppercase tracking-wider transition-all transform active:scale-95 flex items-center justify-center gap-2 shadow-md" id="btn-start-practice">
+<span>Iniciar Práctica con este Keymap</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Ergonomic Diagnostic Banner & Visual Metrics -->
+<div class="bg-surface-container rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+<div class="space-y-1">
+<span class="text-[11px] font-mono text-secondary uppercase tracking-wider">Ergonomía Calculada</span>
+<h4 class="font-headline font-bold text-base text-on-surface">Equilibrio de Carga L/R</h4>
+<p class="text-xs text-secondary leading-relaxed">Distribución porcentual de pulsaciones proyectadas por hemisferio.</p>
+</div>
+<!-- Metric 1: Left / Right balance bar -->
+<div class="space-y-2 md:col-span-2">
+<div class="flex justify-between text-xs font-mono font-semibold">
+<span class="text-primary">Mano Izquierda: 49.2%</span>
+<span class="text-tertiary">Mano Derecha: 50.8%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-l-full" style="width: 49.2%"></div>
+<div class="h-full bg-tertiary rounded-r-full" style="width: 50.8%"></div>
+</div>
+<div class="flex justify-between text-[11px] text-secondary">
+<span>Home row travel: 12.4mm</span>
+<span>Thumb load: 28.5% (Óptimo)</span>
+</div>
+</div>
+<!-- Metric 2: Minimalist SVG Radial Gauge -->
+<div class="flex items-center justify-start md:justify-end gap-3">
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline font-bold text-xs text-on-surface">94%</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">SFB Score</p>
+<p class="text-[11px] text-secondary">Same-Finger Bigram bajo</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interaction Logic (Vanilla JS) -->
+<script>
+    const PRESETS = {
+      qwerty: {
+        name: "bCorne Standard QWERTY",
+        format: "JSON / VIA v3",
+        keys: [
+          "TAB", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "BSPC",
+          "CTL", "A", "S", "D", "F", "G", "H", "J", "K", "L", "; :", "' \"",
+          "SFT", "Z", "X", "C", "V", "B", "N", "M", ", <", ". >", "/ ?", "ESC",
+          "GUI", "LOWER", "SPC", "ENT", "RAISE", "ALT"
+        ],
+        encL: "Enc L: Vol +/-",
+        encR: "Enc R: Scroll"
+      },
+      colemak: {
+        name: "Colemak-DH Ergonomic Dev",
+        format: "ZMK DeviceTree",
+        keys: [
+          "TAB", "Q", "W", "F", "P", "B", "J", "L", "U", "Y", "; :", "BSPC",
+          "CTL", "A", "R", "S", "T", "G", "M", "N", "E", "I", "O", "' \"",
+          "SFT", "Z", "X", "C", "D", "V", "K", "H", ", <", ". >", "/ ?", "ESC",
+          "GUI", "SYM", "NAV", "RET", "NUM", "ALT"
+        ],
+        encL: "Enc L: Tab Cycle",
+        encR: "Enc R: Zoom +/-"
+      },
+      miryoku: {
+        name: "Miryoku Style Adapted",
+        format: "QMK Info.json",
+        keys: [
+          "ESC", "Q", "W", "F", "P", "B", "J", "L", "U", "Y", "' \"", "DEL",
+          "GUI", "A", "R", "S", "T", "G", "M", "N", "E", "I", "O", "CTL",
+          "ALT", "Z", "X", "C", "D", "V", "K", "H", ", <", ". >", "/ ?", "SFT",
+          "MED", "NAV", "MOU", "RET", "SYM", "NUM"
+        ],
+        encL: "Enc L: Undo/Redo",
+        encR: "Enc R: Line Jump"
+      }
+    };
+
+    function updatePreview(keys, encL, encR) {
+      for (let i = 0; i < 42; i++) {
+        const el = document.getElementById('k-' + i);
+        if (el && keys[i]) {
+          el.innerText = keys[i];
+        }
+      }
+      if (encL) document.getElementById('enc-l-label').innerText = encL;
+      if (encR) document.getElementById('enc-r-label').innerText = encR;
+    }
+
+    function loadPreset(presetKey) {
+      const preset = PRESETS[presetKey];
+      if (!preset) return;
+
+      document.getElementById('editor-format').innerText = preset.format;
+      updatePreview(preset.keys, preset.encL, preset.encR);
+
+      // Flash status pill
+      const statusText = document.getElementById('status-text');
+      statusText.innerText = "Cargado: " + preset.name + " (" + preset.keys.length + " teclas mapeadas)";
+      
+      const editor = document.getElementById('keymap-code');
+      editor.value = JSON.stringify({
+        preset_name: preset.name,
+        target_board: "bCorne 56-Key Split v3.2",
+        matrix: "3x6+3",
+        layers: [preset.keys],
+        encoders: { left: preset.encL, right: preset.encR }
+      }, null, 2);
+    }
+
+    function switchLayer(layerNum) {
+      const labels = ["Base", "Lower", "Raise", "Adjust"];
+      const status = document.getElementById('status-text');
+      status.innerText = "Visualizando Capa " + layerNum + " (" + labels[layerNum] + ")";
+      
+      // Visual feedback on keys for layer variation
+      if (layerNum === 1) { // Lower (Nums)
+        const lowerKeys = [
+          "ESC", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "DEL",
+          "CTL", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "PIPE",
+          "SFT", "~", "`", "_", "+", "{", "}", "=", "-", "[", "]", "SFT",
+          "TRNS", "TRNS", "TRNS", "TRNS", "TRNS", "TRNS"
+        ];
+        updatePreview(lowerKeys);
+      } else if (layerNum === 2) { // Raise (Nav)
+        const raiseKeys = [
+          "TAB", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "BSPC",
+          "CTL", "LEFT", "DOWN", "UP", "RGHT", "HOME", "PGUP", "LEFT", "DOWN", "UP", "RGHT", "END",
+          "SFT", "MUTE", "VOLD", "VOLU", "PLAY", "END", "PGDN", "INS", "HOME", "END", "PRSC", "ESC",
+          "TRNS", "TRNS", "TRNS", "TRNS", "TRNS", "TRNS"
+        ];
+        updatePreview(raiseKeys);
+      } else {
+        loadPreset('qwerty');
+      }
+    }
+
+    function copyCode() {
+      const code = document.getElementById('keymap-code').value;
+      navigator.clipboard.writeText(code).then(() => {
+        const status = document.getElementById('status-text');
+        status.innerText = "¡Código copiado al portapapeles!";
+        setTimeout(() => {
+          status.innerText = "Sintaxis válida (42 switches + 2 encoders)";
+        }, 2500);
+      });
+    }
+
+    // Live update when typing in the textarea
+    document.getElementById('keymap-code').addEventListener('input', function(e) {
+      try {
+        const parsed = JSON.parse(e.target.value);
+        if (parsed.layers && parsed.layers[0]) {
+          const keys = parsed.layers[0].map(k => k.replace('KC_', ''));
+          updatePreview(keys);
+          document.getElementById('status-text').innerText = "JSON parseado con éxito (" + keys.length + " keys)";
+        }
+      } catch (err) {
+        document.getElementById('status-text').innerText = "Editando... (esperando JSON válido)";
+      }
+    });
+
+    // File Drag & Drop Feedback
+    const uploader = document.getElementById('file-uploader');
+    uploader.addEventListener('change', function(e) {
+      if (e.target.files && e.target.files[0]) {
+        const file = e.target.files[0];
+        document.getElementById('status-text').innerText = "Archivo cargado: " + file.name;
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          document.getElementById('keymap-code').value = evt.target.result;
+          try {
+            const parsed = JSON.parse(evt.target.result);
+            if (parsed.layers && parsed.layers[0]) {
+              const keys = parsed.layers[0].map(k => typeof k === 'string' ? k.replace('KC_', '') : k);
+              updatePreview(keys);
+            }
+          } catch(e) {}
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    // Buttons feedback
+    document.getElementById('btn-validate').addEventListener('click', () => {
+      alert("Keymap verificado: Matriz física compatible con bCorne 3x6+3. Compatible con QMK 0.22+ y ZMK v0.1");
+    });
+    document.getElementById('btn-save-local').addEventListener('click', () => {
+      alert("Keymap guardado en el perfil 'bCorne Custom Terra #1' de LocalStorage.");
+    });
+    document.getElementById('btn-start-practice').addEventListener('click', () => {
+      alert("Iniciando sesión de práctica con tu distribución bCorne personalizada...");
+    });
+    document.getElementById('btn-export').addEventListener('click', () => {
+      alert("Generando vector SVG bCorne 56-Key y reporte ergonómico...");
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-10 mt-16"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"><div class="flex items-center gap-3"><span class="font-headline font-semibold text-on-surface">CorneType Studio</span><span>—</span><span>Ergonomía columnar split &amp; diseño biofílico PBT</span></div><div class="flex items-center gap-6"><span class="font-mono text-[11px]">Diseñado para bCorne 3x6+3 con Encoders EC11</span><span class="text-secondary">Firmware QMK / ZMK Nativo</span></div></div></footer>
+
+</body></html>

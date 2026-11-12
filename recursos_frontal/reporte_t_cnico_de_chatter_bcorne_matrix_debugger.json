@@ -1,0 +1,156 @@
+{
+  "report_metadata": {
+    "report_id": "BCORNE-DIAG-2025-0419-CHTR",
+    "generator": "CorneType Matrix Debugger v3.2 Core",
+    "timestamp_iso": "2025-04-19T14:38:22.418Z",
+    "protocol": "WebHID Raw 64B Protocol / ZMK BLE Telemetry",
+    "keyboard_profile": {
+      "model": "bCorne Split Ergonomic Keyboard",
+      "architecture": "Columnar Stagger 3x6+4 (56 keys + 2 EC11 Rotary Encoders)",
+      "firmware": "ZMK Firmware v0.2.1-ble-patch",
+      "controller_master": "nice!nano v2 (nRF52840 SoC) - Left Half",
+      "controller_slave": "nice!nano v2 (nRF52840 SoC) - Right Half",
+      "interconnect": "TRRS Half-Duplex (115200 bps, 3.3V Logic Level)",
+      "polling_rate_hz": 1000,
+      "base_debounce_algorithm": "Eager PR (Per-Row)",
+      "configured_debounce_ms": 5.0
+    }
+  },
+  "diagnostic_summary": {
+    "keys_tested": "54 / 56",
+    "testing_completion_pct": 96.4,
+    "nkro_status": "NKRO Active (0% Drop, 12 simultaneous hits verified)",
+    "overall_health_score_pct": 81.4,
+    "total_anomalies_detected": 3,
+    "critical_chatter_count": 2,
+    "quadrature_glitch_count": 1,
+    "verdict": "ATTENTION_REQUIRED: Mechanical contact hysteresis loss & rotary phase glitch detected"
+  },
+  "detected_anomalies": [
+    {
+      "component_id": "EC11_ROTARY_RIGHT",
+      "component_type": "rotary_encoder",
+      "physical_location": {
+        "half": "right_slave",
+        "pinout": ["P0.09", "P0.10", "P1.00_SWITCH"],
+        "label": "Dial Rotatorio EC11 Derecho"
+      },
+      "anomaly_type": "QUADRATURE_PHASE_GLITCH_AND_SKIP",
+      "severity": "CRITICAL",
+      "metrics": {
+        "contact_bounce_duration_ms": 3.8,
+        "missed_detents_count": 14,
+        "quadrature_integrity_pct": 82.5,
+        "symptoms": [
+          "Phase A/B bounce during CW/CCW transition",
+          "Rotary skip detents under high-speed flicking",
+          "Intermittent jitter on central push-button"
+        ]
+      },
+      "root_cause_analysis": "Mechanical oxidation or worn detent springs in the internal wiper of the EC11 mechanical encoder, triggering spurious pulses below the 5ms filter threshold.",
+      "remediation": {
+        "hardware": "Clean internal contacts with non-conductive residue-free contact cleaner (DeoxIT D5) or replace with Alps Alpine EC11E18244A5.",
+        "firmware_zmk": {
+          "directive": "CONFIG_EC11_SMOOTH_SCROLL_DEBOUNCE_MS=8",
+          "snippet": "&right_encoder {\n  status = \"okay\";\n  debounce-ms = <8>;\n  resolution = <4>;\n};"
+        }
+      }
+    },
+    {
+      "component_id": "THUMB_CLUSTER_L3",
+      "component_type": "mechanical_switch",
+      "physical_location": {
+        "half": "left_master",
+        "matrix_coord": {
+          "row": 3,
+          "column": 2
+        },
+        "key_label": "Thumb 3 (Lower / MO(1))",
+        "assigned_keycode": "MO(1)",
+        "switch_model": "Kailh Choc v1 Red Low Profile (35g)"
+      },
+      "anomaly_type": "RELEASE_BOUNCE_CHATTER",
+      "severity": "CRITICAL",
+      "metrics": {
+        "measured_bounce_ms": 3.2,
+        "threshold_ms": 5.0,
+        "total_actuations": 74,
+        "chatter_events_count": 4,
+        "chatter_rate_pct": 5.41,
+        "mean_latency_ms": 1.7
+      },
+      "root_cause_analysis": "Hysteresis degradation in the contact leaf upon return/release, generating a false secondary 'Tap' report within 3.2ms of keyup.",
+      "remediation": {
+        "hardware": "Inspect leaf tension and replace hot-swap Choc switch socket if pin retention is loose.",
+        "firmware_zmk": {
+          "directive": "CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=5\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8",
+          "recommendation": "Increase release debounce to 8ms eager to suppress premature release rebounds."
+        }
+      }
+    },
+    {
+      "component_id": "THUMB_CLUSTER_R3",
+      "component_type": "mechanical_switch",
+      "physical_location": {
+        "half": "right_slave",
+        "matrix_coord": {
+          "row": 3,
+          "column": 2
+        },
+        "key_label": "Thumb 3 (AltGr / Mod)",
+        "assigned_keycode": "KC_RALT",
+        "switch_model": "Kailh Choc v1 Red Low Profile (35g)"
+      },
+      "anomaly_type": "HOLD_RELEASE_CHATTER",
+      "severity": "WARNING",
+      "metrics": {
+        "measured_bounce_ms": 4.1,
+        "threshold_ms": 5.0,
+        "total_actuations": 109,
+        "chatter_events_count": 3,
+        "chatter_rate_pct": 2.75,
+        "mean_latency_ms": 1.8
+      },
+      "root_cause_analysis": "Micro-vibration during sustained thumb-hold on navigation layers leading to erratic release packets across the TRRS bus.",
+      "remediation": {
+        "hardware": "Apply mechanical stabilizer or dampener under the thumb keycap to absorb radial thumb impact.",
+        "firmware_zmk": {
+          "directive": "CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8"
+        }
+      }
+    }
+  ],
+  "raw_event_logger_tail": [
+    {
+      "offset_ms": 1420,
+      "source": "Slave R [3, 2]",
+      "matrix": "R:3 C:8",
+      "keycode": "KC_RALT",
+      "event": "KEY_RELEASE",
+      "debounce_time_ms": 4.1,
+      "flag": "CHATTER_WARNING"
+    },
+    {
+      "offset_ms": 1608,
+      "source": "Master L [3, 2]",
+      "matrix": "R:3 C:2",
+      "keycode": "MO(1)",
+      "event": "KEY_RELEASE",
+      "debounce_time_ms": 3.2,
+      "flag": "CHATTER_CRITICAL"
+    },
+    {
+      "offset_ms": 1845,
+      "source": "Dial_R",
+      "matrix": "ENC_R",
+      "keycode": "ENC_ROT_CCW",
+      "event": "PHASE_GLITCH",
+      "debounce_time_ms": 3.8,
+      "flag": "DETENT_SKIP_14"
+    }
+  ],
+  "recommended_firmware_patch": {
+    "file_target": "config/bcorne.conf",
+    "contents": "# Debounce adjustments for bCorne 56-Key Split\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=5\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8\nCONFIG_EC11_SMOOTH_SCROLL_DEBOUNCE_MS=8\nCONFIG_ZMK_HID_REPORT_TYPE_NKRO=y"
+  }
+}

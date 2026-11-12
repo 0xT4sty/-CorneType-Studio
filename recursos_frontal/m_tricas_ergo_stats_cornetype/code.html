@@ -1,0 +1,635 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#2a6038","on-secondary-fixed-variant":"#4a4538","on-primary":"#ffffff","tertiary-fixed":"#f8e0a8","secondary-container":"#f0e8db","on-tertiary-fixed-variant":"#554020","tertiary-container":"#c4a66a","outline-variant":"#c4c8bc","on-primary-container":"#d8f0de","surface-container-lowest":"#ffffff","surface-container-high":"#eae6de","surface-dim":"#dbd7cf","secondary-fixed":"#f0e8db","surface-container":"#f0ece4","primary-container":"#78a886","on-tertiary-container":"#554020","tertiary":"#705c30","surface-container-highest":"#e4e0d8","background":"#faf6f0","error-container":"#ffdad8","on-secondary-fixed":"#1e1a13","on-background":"#2e3230","secondary-fixed-dim":"#d4ccbf","on-tertiary-fixed":"#221a05","on-error":"#ffffff","on-primary-fixed":"#002110","outline":"#74796e","surface-container-low":"#f5f1ea","on-tertiary":"#ffffff","primary":"#4a7c59","tertiary-fixed-dim":"#dcc48e","on-surface-variant":"#4a4e4a","surface":"#faf6f0","surface-variant":"#e4e0d8","error":"#b83230","surface-bright":"#faf6f0","secondary":"#6b6358","on-secondary":"#ffffff","inverse-primary":"#8ecf9e","on-error-container":"#690005","on-secondary-container":"#5e5548","inverse-on-surface":"#f5f0e8","on-surface":"#2e3230","inverse-surface":"#2e3230","primary-fixed":"#c8e8d0","primary-fixed-dim":"#8ecf9e","surface-tint":"#4a7c59"},borderRadius:{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},spacing:{},fontFamily:{headline:["Literata"],display:["Literata"],body:["Nunito Sans"],label:["Nunito Sans"]},fontSize:{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_16px_rgba(46,50,48,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6 shrink-0"><div class="flex items-center gap-3"><img alt="CorneType Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDH-r5kOxkEubAlogpvq1U2UC0mC_zK2wBvRkrf0ZpF3IIxhSO2rymdmAge-JeFIUjPWIwIYkctIbqD0gXbBde0-QXzKqF9M-RMgDK1dzSV0T_nOee6n2C8BGc7wDxMePJNVkMDG3HOMgWqQP56Yn8qnSYQPC0ZBZc_broJwYQrVZFyG2IWEDaZ4_USR1bRBWywWbsBFacmM_LbXvgKUExjFNTazreT52XxX2IHhIeQvw"><div class="flex flex-col"><span class="text-lg font-headline font-bold text-on-surface leading-tight tracking-tight">CorneType</span><span class="text-[11px] font-medium text-secondary">bCorne 56-Key Split v3.2</span></div></div><div class="hidden xl:flex items-center gap-2 pl-4 py-1.5 px-3 rounded-full bg-surface-container-low text-xs text-on-surface-variant"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span><span class="font-medium">Conectado</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_left</span>Enc L: Vol</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_right</span>Enc R: Scroll</span></div></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="practica-de-escritura" href="#">Práctica de Escritura</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="minijuegos" href="#">Minijuegos</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="explorador-de-capas" href="#">Explorador de Capas</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="cargar-keymap" href="#">Cargar Keymap</a><a class="px-3.5 py-2 text-xs bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm transition-colors" data-path="metricas-ergo-stats" href="#">Métricas &amp; Ergo Stats</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Capa</span><select class="bg-transparent text-xs font-semibold text-primary focus:outline-none cursor-pointer pr-1"><option>Base (QWERTY)</option><option>Base (Colemak-DH)</option><option>Raise (Núm / Símb)</option><option>Lower (Nav / F-Keys)</option><option>Adjust / Ergo Media</option></select></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">upload_file</span><span class="hidden lg:inline">.JSON / Keymap</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb / Session Meta -->
+<div class="max-w-7xl mx-auto w-full px-6 lg:px-12 pt-8 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-tertiary uppercase">
+<span>Telemetría QMK/ZMK</span>
+<span class="text-outline-variant">•</span>
+<span>bCorne 56-Key Split v3.2</span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-headline font-bold text-on-surface mt-1 tracking-tight">
+        Métricas &amp; Ergo Stats
+      </h1>
+<p class="text-sm text-on-surface-variant mt-1 max-w-xl">
+        Monitorización postural y dinámica de pulsación en split columnar. Menor tensión en meñiques mediante el clúster de pulgares extendido.
+      </p>
+</div>
+<!-- Period Selector Pill -->
+<div class="flex items-center gap-1.5 p-1 rounded-full bg-surface-container self-start sm:self-auto shadow-sm">
+<button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-surface-container-lowest text-primary shadow-sm transition-all" type="button">Últimos 7 días</button>
+<button class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant hover:text-on-surface transition-all" type="button">30 días</button>
+<button class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant hover:text-on-surface transition-all" type="button">Todo el tiempo</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-6 space-y-8">
+<!-- 1. Top Summary KPI Cards (Bento) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1: WPM -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 shadow-sm flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-secondary">Promedio de Velocidad</span>
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+</div>
+<div class="my-4 flex items-baseline gap-2">
+<span class="text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight">74</span>
+<span class="text-sm font-semibold text-primary font-mono">WPM</span>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<span class="text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +6.2%
+          </span>
+<span class="text-on-surface-variant">vs semana previa</span>
+</div>
+</div>
+<!-- Card 2: Precision -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-secondary">Precisión Global</span>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="my-4 flex items-baseline gap-2">
+<span class="text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight">98.7<span class="text-2xl font-normal text-secondary">%</span></span>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<span class="text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Consistente
+          </span>
+<span class="text-on-surface-variant">32 err / 2.4k chars</span>
+</div>
+</div>
+<!-- Card 3: Total Time -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-secondary">Tiempo en Sesión</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">timelapse</span>
+</div>
+<div class="my-4 flex items-baseline gap-2">
+<span class="text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight">14<span class="text-2xl font-normal text-secondary">h</span> 30<span class="text-2xl font-normal text-secondary">m</span></span>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<span class="text-secondary font-medium font-mono">18 sesiones</span>
+<span class="text-on-surface-variant">Prom. 48m/día</span>
+</div>
+</div>
+<!-- Card 4: Fatigue Score (Hero Accent) -->
+<div class="relative overflow-hidden rounded-xl bg-primary p-6 text-on-primary shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-primary/80">Índice Ergonómico</span>
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</div>
+<div class="my-4 flex items-baseline gap-2">
+<span class="text-4xl lg:text-5xl font-headline font-bold tracking-tight">94<span class="text-2xl font-normal opacity-75">/100</span></span>
+</div>
+<div class="flex items-center justify-between text-xs pt-2 text-on-primary/90">
+<span class="font-semibold px-2 py-0.5 rounded-full bg-on-primary/15">Fatiga Óptima</span>
+<span>Presión &lt; 45gf</span>
+</div>
+</div>
+</div>
+<!-- 2. Finger Load Heatmap & Ergonomic Split Breakdown -->
+<div class="rounded-xl bg-surface-container-low p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wider text-tertiary">Distribución Biomecánica</span>
+<h2 class="text-xl lg:text-2xl font-headline font-bold text-on-surface mt-0.5">
+            Finger Load Heatmap — bCorne 56 Teclas
+          </h2>
+<p class="text-xs text-on-surface-variant mt-1">
+            Análisis de distribución de pulsaciones por dedo en split ortholinear/columnar stagger.
+          </p>
+</div>
+<!-- Ergonomic achievement badge -->
+<div class="flex items-center gap-3 bg-secondary-container px-4 py-2.5 rounded-xl text-on-secondary-container self-start">
+<span class="material-symbols-outlined text-primary text-[24px]">front_hand</span>
+<div class="text-xs leading-snug">
+<span class="font-bold block text-on-surface">-42% de carga en meñiques</span>
+<span class="text-secondary">vs. distribución en ANSI 87 tradicional</span>
+</div>
+</div>
+</div>
+<!-- Interactive Split Board Graphic -->
+<div class="bg-surface-container rounded-xl p-6 lg:p-8">
+<!-- The Split Keyboard Visualization -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 relative">
+<!-- LEFT HALF (28 keys + Encoder) -->
+<div class="flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-3 px-2 text-[11px] font-mono text-secondary">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span> Mitad Izquierda (LH)
+              </span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded">EC11 Knob: Vol / Mute</span>
+</div>
+<!-- Left Matrix (6 cols x 3 rows + thumbs) -->
+<div class="space-y-1.5 w-full max-w-sm">
+<!-- Number / Top Row -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors cursor-pointer" title="Pinky: 1.2%"><span>Tab</span><span class="text-[8px] opacity-70">1.2%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/40 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>Q</span><span class="text-[8px] opacity-70">1.8%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>W</span><span class="text-[8px] opacity-70">2.6%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>E</span><span class="text-[8px] opacity-90">6.4%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>R</span><span class="text-[8px] opacity-90">5.9%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>T</span><span class="text-[8px] opacity-70">3.8%</span></div>
+</div>
+<!-- Home Row (Staggered feel) -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>Esc</span><span class="text-[8px] opacity-70">0.8%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>A</span><span class="text-[8px] opacity-70">4.1%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>S</span><span class="text-[8px] opacity-90">5.2%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold ring-2 ring-primary/40 cursor-pointer"><span>D</span><span class="text-[8px] opacity-90">5.8%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold ring-2 ring-primary/40 cursor-pointer"><span>F</span><span class="text-[8px] opacity-90">6.1%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>G</span><span class="text-[8px] opacity-70">2.9%</span></div>
+</div>
+<!-- Bottom Row -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>Shift</span><span class="text-[8px] opacity-70">1.1%</span></div>
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>Z</span><span class="text-[8px] opacity-70">0.4%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/40 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>X</span><span class="text-[8px] opacity-70">0.9%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>C</span><span class="text-[8px] opacity-70">3.1%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>V</span><span class="text-[8px] opacity-70">1.9%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/50 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>B</span><span class="text-[8px] opacity-70">1.4%</span></div>
+</div>
+<!-- Thumb Cluster (4 keys) -->
+<div class="flex justify-end gap-1.5 pt-2 pr-1">
+<div class="h-11 w-14 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>Alt</span><span class="text-[8px] text-secondary">0.6%</span></div>
+<div class="h-11 w-14 rounded-lg bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center text-[10px] font-mono font-bold cursor-pointer shadow-sm"><span>Lower</span><span class="text-[8px]">4.8%</span></div>
+<div class="h-11 w-16 rounded-lg bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold cursor-pointer shadow-sm"><span>Space</span><span class="text-[8px] opacity-90">14.2%</span></div>
+</div>
+</div>
+</div>
+<!-- RIGHT HALF (28 keys + Encoder) -->
+<div class="flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-3 px-2 text-[11px] font-mono text-secondary">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">EC11 Knob: Scroll / Zoom</span>
+<span class="flex items-center gap-1 font-semibold text-primary">
+                Mitad Derecha (RH) <span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+</span>
+</div>
+<!-- Right Matrix (6 cols x 3 rows + thumbs) -->
+<div class="space-y-1.5 w-full max-w-sm">
+<!-- Top Row -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>Y</span><span class="text-[8px] opacity-70">2.1%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>U</span><span class="text-[8px] opacity-90">4.5%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>I</span><span class="text-[8px] opacity-90">5.7%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>O</span><span class="text-[8px] opacity-90">5.4%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>P</span><span class="text-[8px] opacity-70">2.3%</span></div>
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>Bksp</span><span class="text-[8px] opacity-70">1.9%</span></div>
+</div>
+<!-- Home Row -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>H</span><span class="text-[8px] opacity-70">3.4%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold ring-2 ring-primary/40 cursor-pointer"><span>J</span><span class="text-[8px] opacity-90">6.3%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold ring-2 ring-primary/40 cursor-pointer"><span>K</span><span class="text-[8px] opacity-90">4.9%</span></div>
+<div class="h-10 rounded bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-semibold cursor-pointer"><span>L</span><span class="text-[8px] opacity-90">4.2%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/60 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>Ñ/;</span><span class="text-[8px] opacity-70">1.4%</span></div>
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>Enter</span><span class="text-[8px] opacity-70">2.2%</span></div>
+</div>
+<!-- Bottom Row -->
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-10 rounded bg-primary-fixed-dim/40 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>N</span><span class="text-[8px] opacity-70">3.8%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim flex flex-col items-center justify-center text-[10px] font-mono text-on-surface font-semibold cursor-pointer"><span>M</span><span class="text-[8px] opacity-70">3.0%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/40 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>,</span><span class="text-[8px] opacity-70">1.3%</span></div>
+<div class="h-10 rounded bg-primary-fixed-dim/30 flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>.</span><span class="text-[8px] opacity-70">1.1%</span></div>
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>- / _</span><span class="text-[8px] opacity-70">0.5%</span></div>
+<div class="h-10 rounded bg-surface-container-highest flex flex-col items-center justify-center text-[10px] font-mono text-on-surface-variant cursor-pointer"><span>R-Shift</span><span class="text-[8px] opacity-70">0.3%</span></div>
+</div>
+<!-- Thumb Cluster (4 keys) -->
+<div class="flex justify-start gap-1.5 pt-2 pl-1">
+<div class="h-11 w-16 rounded-lg bg-primary text-on-primary flex flex-col items-center justify-center text-[10px] font-mono font-bold cursor-pointer shadow-sm"><span>Enter/Spc</span><span class="text-[8px] opacity-90">9.0%</span></div>
+<div class="h-11 w-14 rounded-lg bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center text-[10px] font-mono font-bold cursor-pointer shadow-sm"><span>Raise</span><span class="text-[8px]">4.1%</span></div>
+<div class="h-11 w-14 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-[10px] font-mono text-on-surface cursor-pointer"><span>GUI/Win</span><span class="text-[8px] text-secondary">0.7%</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Finger Load Bar Chart / Breakdown Summary -->
+<div class="mt-8 pt-6 border-t border-outline-variant/30">
+<div class="flex items-center justify-between mb-3 text-xs font-semibold text-secondary uppercase tracking-wider">
+<span>Esfuerzo relativo por dedo</span>
+<span class="text-primary font-mono lowercase">total 100% calibrado</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+<!-- Pulgares -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="text-xs font-semibold text-on-surface">Pulgares</span>
+<span class="text-2xl font-headline font-bold text-primary mt-1">28%</span>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 28%"></div>
+</div>
+<span class="text-[10px] text-secondary mt-1">Espacio, Enter, Capas</span>
+</div>
+<!-- Índices -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="text-xs font-semibold text-on-surface">Índices</span>
+<span class="text-2xl font-headline font-bold text-primary mt-1">34%</span>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 34%"></div>
+</div>
+<span class="text-[10px] text-secondary mt-1">Colum. C, V, F, G, R, T</span>
+</div>
+<!-- Medios -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="text-xs font-semibold text-on-surface">Medios</span>
+<span class="text-2xl font-headline font-bold text-on-surface mt-1">20%</span>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary-container h-full rounded-full" style="width: 20%"></div>
+</div>
+<span class="text-[10px] text-secondary mt-1">D, E, K, I</span>
+</div>
+<!-- Anulares -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="text-xs font-semibold text-on-surface">Anulares</span>
+<span class="text-2xl font-headline font-bold text-on-surface mt-1">12%</span>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 12%"></div>
+</div>
+<span class="text-[10px] text-secondary mt-1">S, W, L, O</span>
+</div>
+<!-- Meñiques -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col justify-between col-span-2 sm:col-span-1">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold text-on-surface">Meñiques</span>
+<span class="text-[9px] px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">-42%</span>
+</div>
+<span class="text-2xl font-headline font-bold text-tertiary mt-1">6%</span>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-tertiary h-full rounded-full" style="width: 6%"></div>
+</div>
+<span class="text-[10px] text-secondary mt-1">A, Q, P, Esc (Mínimo impacto)</span>
+</div>
+</div>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest/80 text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">info</span>
+<span><strong>Excelente distribución:</strong> Has aliviado la carga de los meñiques en un <strong>42% frente a teclados tradicionales</strong> gracias a los 4 thumb keys de cada mitad.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Layers & Rotary Encoders Breakdown + Error Analysis -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Layers & Encoders Usage (7 cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low p-6 lg:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wider text-tertiary">Control de Firmware</span>
+<h2 class="text-xl font-headline font-bold text-on-surface mt-0.5">
+            Métricas de Capas y Diales Rotatorios
+          </h2>
+<p class="text-xs text-on-surface-variant mt-1">
+            Frecuencia de conmutación de layers (MO / TO) y uso de hardware analógico EC11.
+          </p>
+<!-- Layer bars -->
+<div class="mt-6 space-y-4">
+<!-- Layer 0 -->
+<div>
+<div class="flex justify-between text-xs font-semibold mb-1">
+<span class="text-on-surface">Layer 0 (Base / Alfa QWERTY)</span>
+<span class="font-mono text-primary">72% del tiempo</span>
+</div>
+<div class="h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 72%"></div>
+</div>
+<span class="text-[11px] text-secondary">Tráfico alfanumérico principal y signos de puntuación directos.</span>
+</div>
+<!-- Layer 1 -->
+<div>
+<div class="flex justify-between text-xs font-semibold mb-1">
+<span class="text-on-surface">Layer 1 (Lower / Números &amp; Navegación)</span>
+<span class="font-mono text-primary">15% del tiempo</span>
+</div>
+<div class="h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-primary-container" style="width: 15%"></div>
+</div>
+<span class="text-[11px] text-secondary">Teclas de flecha en home row (HJKL invertido) y teclado numérico tenkeyless derecho.</span>
+</div>
+<!-- Layer 2 -->
+<div>
+<div class="flex justify-between text-xs font-semibold mb-1">
+<span class="text-on-surface">Layer 2 (Raise / Símbolos &amp; Programación)</span>
+<span class="font-mono text-tertiary">11% del tiempo</span>
+</div>
+<div class="h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-tertiary-container" style="width: 11%"></div>
+</div>
+<span class="text-[11px] text-secondary">Llaves, corchetes, operadores matemáticos y símbolos regex.</span>
+</div>
+<!-- Layer 3 / Adjust -->
+<div>
+<div class="flex justify-between text-xs font-semibold mb-1">
+<span class="text-on-surface">Layer 3 (Adjust / Media &amp; Reset ZMK)</span>
+<span class="font-mono text-secondary">2% del tiempo</span>
+</div>
+<div class="h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary-fixed-dim" style="width: 2%"></div>
+</div>
+<span class="text-[11px] text-secondary">Control de brillo OLED, perfiles Bluetooth 1-5 y modo deep sleep.</span>
+</div>
+</div>
+</div>
+<!-- Rotary Knobs Telemetry Box -->
+<div class="mt-6 pt-5 border-t border-outline-variant/30 grid grid-cols-2 gap-4">
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">rotate_left</span>
+</span>
+<div>
+<span class="text-xs text-secondary font-medium block">Diales Rotatorios</span>
+<span class="text-base font-headline font-bold text-on-surface">240 giros</span>
+<span class="text-[10px] text-primary block font-mono">volumen &amp; scrubbing</span>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">radio_button_checked</span>
+</span>
+<div>
+<span class="text-xs text-secondary font-medium block">Clicks de Knob</span>
+<span class="text-base font-headline font-bold text-on-surface">18 clicks</span>
+<span class="text-[10px] text-tertiary block font-mono">play/pause &amp; middle click</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Conflict & Error Heatmap on Layers (5 cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low p-6 lg:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wider text-error">Patrones de Vacilación</span>
+<h2 class="text-xl font-headline font-bold text-on-surface mt-0.5">
+            Errores Frecuentes por Capa
+          </h2>
+<p class="text-xs text-on-surface-variant mt-1">
+            Transiciones lentas o presiones cruzadas registradas en el firmware.
+          </p>
+<div class="mt-6 space-y-3">
+<!-- Error Item 1 -->
+<div class="p-3 rounded-lg bg-surface-container flex items-start gap-3">
+<span class="p-1.5 rounded-md bg-error-container text-on-error-container text-xs font-mono font-bold shrink-0 mt-0.5">
+                { vs [
+              </span>
+<div class="text-xs">
+<span class="font-semibold text-on-surface block">Confusión entre Llave y Corchete</span>
+<span class="text-secondary leading-relaxed block mt-0.5">
+                  14 pulsaciones erróneas. <code class="font-mono text-tertiary font-bold">{</code> en Layer 2 (Raise) vs <code class="font-mono text-primary font-bold">[</code> en Layer 1 (Lower).
+                </span>
+<span class="inline-block mt-1 text-[10px] font-semibold text-primary">Sugerencia: Homogeneizar a combo en pulgar</span>
+</div>
+</div>
+<!-- Error Item 2 -->
+<div class="p-3 rounded-lg bg-surface-container flex items-start gap-3">
+<span class="p-1.5 rounded-md bg-secondary-container text-on-secondary-container text-xs font-mono font-bold shrink-0 mt-0.5">
+                Bksp
+              </span>
+<div class="text-xs">
+<span class="font-semibold text-on-surface block">Borrado doble en pulgar derecho</span>
+<span class="text-secondary leading-relaxed block mt-0.5">
+                  Tapping-term de 175ms genera falso disparo de Raise al presionar repetidamente Backspace.
+                </span>
+<span class="inline-block mt-1 text-[10px] font-semibold text-tertiary">Ajuste recomendado: Elevar tapping-term a 210ms</span>
+</div>
+</div>
+<!-- Error Item 3 -->
+<div class="p-3 rounded-lg bg-surface-container flex items-start gap-3">
+<span class="p-1.5 rounded-md bg-surface-container-highest text-on-surface-variant text-xs font-mono font-bold shrink-0 mt-0.5">
+                B / N
+              </span>
+<div class="text-xs">
+<span class="font-semibold text-on-surface block">Separación columnar central</span>
+<span class="text-secondary leading-relaxed block mt-0.5">
+                  6 vacilaciones de índice izquierdo cruzando hacia la tecla N de la mitad derecha.
+                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs">
+<span class="text-on-surface-variant">Tasa de corrección inmediata:</span>
+<span class="font-mono font-bold text-primary">94.8% &lt; 200ms</span>
+</div>
+</div>
+</div>
+<!-- 4. Weekly Learning Curve & Session History (Chart Section) -->
+<div class="rounded-xl bg-surface-container-low p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wider text-tertiary">Curva de Aprendizaje Split</span>
+<h2 class="text-xl lg:text-2xl font-headline font-bold text-on-surface mt-0.5">
+            Evolución Semanal de WPM &amp; Precisión
+          </h2>
+<p class="text-xs text-on-surface-variant mt-1">
+            Seguimiento de adaptación neuromuscular al formato 3x6 con clúster columnar.
+          </p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-4 text-xs font-semibold">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span> WPM Promedio
+          </span>
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span> Precisión (%)
+          </span>
+</div>
+</div>
+<!-- Native SVG Inline Chart -->
+<div class="w-full bg-surface-container rounded-xl p-6 overflow-hidden">
+<div class="relative w-full h-64">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 800 240">
+<!-- Grid Lines -->
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="800" y1="40" y2="40"></line>
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="800" y1="100" y2="100"></line>
+<line class="text-outline-variant/20" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="800" y1="160" y2="160"></line>
+<line class="text-outline-variant/40" stroke="currentColor" stroke-width="1" x1="0" x2="800" y1="220" y2="220"></line>
+<!-- WPM Area Gradient -->
+<defs>
+<linearGradient id="wpmGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4a7c59" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#4a7c59" stop-opacity="0.0"></stop>
+</linearGradient>
+</defs>
+<!-- WPM Filled Path -->
+<polygon fill="url(#wpmGradient)" points="
+              50,180 
+              160,150 
+              270,135 
+              380,110 
+              490,95 
+              600,75 
+              720,50 
+              720,220 
+              50,220
+            "></polygon>
+<!-- WPM Line (Primary Green) -->
+<polyline fill="none" points="
+              50,180 
+              160,150 
+              270,135 
+              380,110 
+              490,95 
+              600,75 
+              720,50
+            " stroke="#4a7c59" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></polyline>
+<!-- WPM Data Dots -->
+<circle cx="50" cy="180" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="160" cy="150" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="270" cy="135" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="380" cy="110" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="490" cy="95" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="600" cy="75" fill="#faf6f0" r="4.5" stroke="#4a7c59" stroke-width="3"></circle>
+<circle cx="720" cy="50" fill="#4a7c59" r="6" stroke="#faf6f0" stroke-width="3"></circle>
+<!-- Accuracy Line (Tertiary Amber) -->
+<polyline fill="none" points="
+              50,90 
+              160,78 
+              270,65 
+              380,58 
+              490,52 
+              600,45 
+              720,38
+            " stroke="#705c30" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<circle cx="720" cy="38" fill="#705c30" r="4"></circle>
+</svg>
+<!-- Day Labels under Chart -->
+<div class="flex justify-between text-[11px] font-mono font-medium text-secondary pt-2">
+<span>Lun (52 WPM)</span>
+<span>Mar (58 WPM)</span>
+<span>Mié (62 WPM)</span>
+<span>Jue (67 WPM)</span>
+<span>Vie (70 WPM)</span>
+<span>Sáb (73 WPM)</span>
+<span class="text-primary font-bold">Dom (78 WPM)</span>
+</div>
+</div>
+</div>
+<!-- Recent Sessions Log Table -->
+<div class="mt-6 overflow-x-auto">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="text-secondary uppercase tracking-wider font-semibold border-b border-outline-variant/30">
+<th class="pb-2.5">Sesión</th>
+<th class="pb-2.5">Disposición</th>
+<th class="pb-2.5">Duración</th>
+<th class="pb-2.5">Velocidad</th>
+<th class="pb-2.5">Precisión</th>
+<th class="pb-2.5 text-right">Índice Ergonómico</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 text-on-surface">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Práctica Técnica Código (Rust)
+              </td>
+<td class="py-3 text-secondary font-mono">QWERTY + Sym Layer</td>
+<td class="py-3 font-mono">35m 12s</td>
+<td class="py-3 font-mono font-bold text-primary">78 WPM</td>
+<td class="py-3 font-mono">99.1%</td>
+<td class="py-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-semibold">96/100</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Prosa en Español (Artículos)
+              </td>
+<td class="py-3 text-secondary font-mono">QWERTY Base</td>
+<td class="py-3 font-mono">50m 00s</td>
+<td class="py-3 font-mono font-bold text-primary">76 WPM</td>
+<td class="py-3 font-mono">98.5%</td>
+<td class="py-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-semibold">94/100</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Drill de Adaptación Colemak-DH
+              </td>
+<td class="py-3 text-secondary font-mono">Colemak-DH Trial</td>
+<td class="py-3 font-mono">20m 18s</td>
+<td class="py-3 font-mono font-bold text-tertiary">48 WPM</td>
+<td class="py-3 font-mono">94.2%</td>
+<td class="py-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">88/100</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 5. Personalized Ergonomic Recommendations (Cards) -->
+<div class="rounded-xl bg-surface-container-low p-6 lg:p-8 shadow-sm">
+<div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Recomendaciones Biomecánicas del Motor ErgoSense</span>
+</div>
+<h2 class="text-xl lg:text-2xl font-headline font-bold text-on-surface mt-1">
+        Ajustes Personalizados para tu bCorne Split
+      </h2>
+<p class="text-xs text-on-surface-variant mt-1">
+        Recomendaciones calculadas según tus 14h 30m de tecleo, cadencia y fuerza de retorno.
+      </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+<!-- Rec 1: Micro-pausas -->
+<div class="rounded-xl bg-surface-container p-5 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-4">
+<span class="material-symbols-outlined">alarm</span>
+</div>
+<h3 class="text-base font-headline font-bold text-on-surface">Micro-Pausas 20/20</h3>
+<p class="text-xs text-secondary mt-2 leading-relaxed">
+              Detectamos sesiones continuas de 45 minutos sin levantar las manos del reposamuñecas. Activa la alerta de vibración o LED tímido cada 25 minutos para estiramiento de tendones flexores.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-[11px] font-semibold text-primary">Regla 20-20-20</span>
+<button class="text-xs font-bold text-primary hover:underline" type="button">Configurar Alerta</button>
+</div>
+</div>
+<!-- Rec 2: Ángulo Split & Tent -->
+<div class="rounded-xl bg-surface-container p-5 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-4">
+<span class="material-symbols-outlined">aspect_ratio</span>
+</div>
+<h3 class="text-base font-headline font-bold text-on-surface">Inclinación (Tenting) 12°</h3>
+<p class="text-xs text-secondary mt-2 leading-relaxed">
+              Tu menor uso en columnas exteriores sugiere pronación de antebrazo. Aumenta la inclinación vertical (tenting) de 5° a 12° en los soportes magnéticos para relajar el músculo braquiorradial.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-[11px] font-semibold text-tertiary">Alineación neutra</span>
+<button class="text-xs font-bold text-primary hover:underline" type="button">Ver Guía 3D</button>
+</div>
+</div>
+<!-- Rec 3: Remapeo Firmware -->
+<div class="rounded-xl bg-surface-container p-5 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-4">
+<span class="material-symbols-outlined">alt_route</span>
+</div>
+<h3 class="text-base font-headline font-bold text-on-surface">Remapeo de Llaves / Símbolos</h3>
+<p class="text-xs text-secondary mt-2 leading-relaxed">
+              Dada la confusión entre <code class="font-mono text-tertiary font-bold">{</code> y <code class="font-mono text-primary font-bold">[</code>, se aconseja asignar corchetes mediante tap-dance en el pulgar secundario o reubicar ambos en la misma capa bajo mod-tap.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-[11px] font-semibold text-secondary">QMK / ZMK Keymap</span>
+<button class="text-xs font-bold text-primary hover:underline" type="button">Aplicar al JSON</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Organic Quote / Ergonomics Manifesto Footer -->
+<div class="py-6 px-8 rounded-xl bg-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">eco</span>
+<div>
+<span class="text-xs font-bold text-on-surface block">Compromiso de Confort Prolongado</span>
+<span class="text-xs text-secondary">El teclado dividido no es velocidad pura: es la armonía entre tu anatomía y cada pulsación.</span>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-semibold hover:bg-on-primary-fixed-variant transition-colors shadow-sm shrink-0" type="button">
+        Exportar Reporte Médico / Ergo (.PDF)
+      </button>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-10 mt-16"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"><div class="flex items-center gap-3"><span class="font-headline font-semibold text-on-surface">CorneType Studio</span><span>—</span><span>Ergonomía columnar split &amp; diseño biofílico PBT</span></div><div class="flex items-center gap-6"><span class="font-mono text-[11px]">Diseñado para bCorne 3x6+3 con Encoders EC11</span><span class="text-secondary">Firmware QMK / ZMK Nativo</span></div></div></footer>
+
+</body></html>

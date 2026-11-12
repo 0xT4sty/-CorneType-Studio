@@ -1,0 +1,23 @@
+# MCU / platform
+BOARD = GENERIC_STM32_F401XC
+PLATFORM = chibios
+MCU = STM32F401
+
+# Bootloader / firmware output
+FIRMWARE_FORMAT = uf2
+UF2_FAMILY = 0xabcdf401
+MCU_LDSCRIPT = QF_STM32F401
+
+# USB
+KEYBOARD_SHARED_EP = yes
+
+# Split transport
+SERIAL_DRIVER = usart
+
+# EEPROM / Vial storage
+EEPROM_DRIVER = wear_leveling
+WEAR_LEVELING_DRIVER = legacy
+
+# Build options
+OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+OPT_DEFS += -DQMK_MCU_STM32F401

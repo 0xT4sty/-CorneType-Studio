@@ -1,0 +1,6 @@
+{
+    "modules": [
+        "srwi/keypeek_layer_notify",
+        "kolbenhans/key_colors"
+    ]
+}

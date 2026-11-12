@@ -1,0 +1,845 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#2a6038","on-secondary-fixed-variant":"#4a4538","on-primary":"#ffffff","tertiary-fixed":"#f8e0a8","secondary-container":"#f0e8db","on-tertiary-fixed-variant":"#554020","tertiary-container":"#c4a66a","outline-variant":"#c4c8bc","on-primary-container":"#d8f0de","surface-container-lowest":"#ffffff","surface-container-high":"#eae6de","surface-dim":"#dbd7cf","secondary-fixed":"#f0e8db","surface-container":"#f0ece4","primary-container":"#78a886","on-tertiary-container":"#554020","tertiary":"#705c30","surface-container-highest":"#e4e0d8","background":"#faf6f0","error-container":"#ffdad8","on-secondary-fixed":"#1e1a13","on-background":"#2e3230","secondary-fixed-dim":"#d4ccbf","on-tertiary-fixed":"#221a05","on-error":"#ffffff","on-primary-fixed":"#002110","outline":"#74796e","surface-container-low":"#f5f1ea","on-tertiary":"#ffffff","primary":"#4a7c59","tertiary-fixed-dim":"#dcc48e","on-surface-variant":"#4a4e4a","surface":"#faf6f0","surface-variant":"#e4e0d8","error":"#b83230","surface-bright":"#faf6f0","secondary":"#6b6358","on-secondary":"#ffffff","inverse-primary":"#8ecf9e","on-error-container":"#690005","on-secondary-container":"#5e5548","inverse-on-surface":"#f5f0e8","on-surface":"#2e3230","inverse-surface":"#2e3230","primary-fixed":"#c8e8d0","primary-fixed-dim":"#8ecf9e","surface-tint":"#4a7c59"},borderRadius:{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},spacing:{},fontFamily:{headline:["Literata"],display:["Literata"],body:["Nunito Sans"],label:["Nunito Sans"]},fontSize:{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_16px_rgba(46,50,48,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6 shrink-0"><div class="flex items-center gap-3"><img alt="CorneType Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDH-r5kOxkEubAlogpvq1U2UC0mC_zK2wBvRkrf0ZpF3IIxhSO2rymdmAge-JeFIUjPWIwIYkctIbqD0gXbBde0-QXzKqF9M-RMgDK1dzSV0T_nOee6n2C8BGc7wDxMePJNVkMDG3HOMgWqQP56Yn8qnSYQPC0ZBZc_broJwYQrVZFyG2IWEDaZ4_USR1bRBWywWbsBFacmM_LbXvgKUExjFNTazreT52XxX2IHhIeQvw"><div class="flex flex-col"><span class="text-lg font-headline font-bold text-on-surface leading-tight tracking-tight">CorneType</span><span class="text-[11px] font-medium text-secondary">bCorne 56-Key Split v3.2</span></div></div><div class="hidden xl:flex items-center gap-2 pl-4 py-1.5 px-3 rounded-full bg-surface-container-low text-xs text-on-surface-variant"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span><span class="font-medium">Conectado</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_left</span>Enc L: Vol</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_right</span>Enc R: Scroll</span></div></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="practica-de-escritura" href="#">Práctica de Escritura</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="minijuegos" href="#">Minijuegos</a><a aria-current="page" class="px-3.5 py-2 text-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="explorador-de-capas" href="#">Explorador de Capas</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="cargar-keymap" href="#">Cargar Keymap</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="metricas-ergo-stats" href="#">Métricas &amp; Ergo Stats</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Capa</span><select class="bg-transparent text-xs font-semibold text-primary focus:outline-none cursor-pointer pr-1"><option>Base (QWERTY)</option><option>Base (Colemak-DH)</option><option>Raise (Núm / Símb)</option><option>Lower (Nav / F-Keys)</option><option>Adjust / Ergo Media</option></select></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">upload_file</span><span class="hidden lg:inline">.JSON / Keymap</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient background elements -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 right-0 w-[500px] h-[500px] rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col gap-8 relative z-10">
+<!-- Breadcrumb, Section Badge & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-tertiary">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Matriz bCorne 56 • Dual EC11 Encoders</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant font-normal">ZMK / QMK Engine</span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-headline font-bold text-on-surface tracking-tight">
+            Explorador de Capas Ergonómicas
+          </h1>
+<p class="text-sm lg:text-base text-secondary max-w-2xl leading-relaxed">
+            Inspecciona la asignación de teclas por capa, los diales rotatorios y las pulsaciones duales (Home Row Mods &amp; Tap-Dance) sin salir del flujo de trabajo natural.
+          </p>
+</div>
+<!-- Quick actions -->
+<div class="flex items-center gap-2 self-start md:self-auto bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<button class="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" id="toggle-labels-btn">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>Tap &amp; Hold</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-primary text-on-primary hover:opacity-95 shadow-sm transition-all" id="export-keymap-btn">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Exportar .keymap</span>
+</button>
+</div>
+</div>
+<!-- 1. SELECTOR DE CAPAS (Wood/Tactile Paper chips) -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">layers</span>
+            Capas Activas (0 a 4)
+          </span>
+<span class="text-xs text-on-surface-variant font-mono">Presiona [1-5] para conmutar rápido</span>
+</div>
+<!-- Interactive layer chips bar -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="layer-selector">
+<!-- Layer 0 -->
+<button class="layer-tab group text-left p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-1.5 relative overflow-hidden ring-2 ring-primary" data-layer="0">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono font-bold text-primary px-2 py-0.5 rounded-full bg-primary-fixed">L0</span>
+<span class="material-symbols-outlined text-[16px] text-primary">keyboard</span>
+</div>
+<div class="font-headline font-bold text-sm text-on-surface">Base QWERTY</div>
+<div class="text-[11px] text-secondary line-clamp-1">Alfas + Home Row Mods</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary"></div>
+</button>
+<!-- Layer 1 -->
+<button class="layer-tab group text-left p-3.5 rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col gap-1.5 relative overflow-hidden" data-layer="1">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono font-bold text-secondary px-2 py-0.5 rounded-full bg-surface-container-high">L1</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">pin</span>
+</div>
+<div class="font-headline font-semibold text-sm text-on-surface">Lower</div>
+<div class="text-[11px] text-secondary line-clamp-1">Números &amp; Navegación Vim</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-transparent"></div>
+</button>
+<!-- Layer 2 -->
+<button class="layer-tab group text-left p-3.5 rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col gap-1.5 relative overflow-hidden" data-layer="2">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono font-bold text-secondary px-2 py-0.5 rounded-full bg-surface-container-high">L2</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">code</span>
+</div>
+<div class="font-headline font-semibold text-sm text-on-surface">Raise</div>
+<div class="text-[11px] text-secondary line-clamp-1">Símbolos Dev { } [ ] \</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-transparent"></div>
+</button>
+<!-- Layer 3 -->
+<button class="layer-tab group text-left p-3.5 rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col gap-1.5 relative overflow-hidden" data-layer="3">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono font-bold text-secondary px-2 py-0.5 rounded-full bg-surface-container-high">L3</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span>
+</div>
+<div class="font-headline font-semibold text-sm text-on-surface">Nav &amp; Media</div>
+<div class="text-[11px] text-secondary line-clamp-1">Mouse ergo &amp; Encoders</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-transparent"></div>
+</button>
+<!-- Layer 4 -->
+<button class="layer-tab group text-left p-3.5 rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col gap-1.5 relative overflow-hidden col-span-2 sm:col-span-1" data-layer="4">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-mono font-bold text-secondary px-2 py-0.5 rounded-full bg-surface-container-high">L4</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+</div>
+<div class="font-headline font-semibold text-sm text-on-surface">Adjust</div>
+<div class="text-[11px] text-secondary line-clamp-1">BLE Profile, RGB, OS Swap</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-transparent"></div>
+</button>
+</div>
+</div>
+<!-- MAIN WORKSPACE: Keyboard Map (Left) + Detail Inspector (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- KEYBOARD VISUAL MAP (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-6">
+<!-- Keyboard Chassis Canvas -->
+<div class="bg-surface-container-low p-6 lg:p-8 rounded-2xl shadow-sm relative">
+<!-- Map Header / Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-4">
+<div class="flex items-center gap-3">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-headline text-base font-semibold text-on-surface" id="active-layer-title">Capa 0: Base Primaria (QWERTY / Home Row Mods)</span>
+</div>
+<!-- Color Legend -->
+<div class="flex flex-wrap items-center gap-3 text-[11px] font-medium text-on-surface-variant">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-md bg-[#f7f2ea] shadow-inner"></span> Alfas
+                </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-md bg-[#c8e8d0]"></span> Home Row Mods
+                </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-md bg-[#f8e0a8]"></span> Capas (LT/MO)
+                </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-md bg-[#eae6de]"></span> Navegación/Media
+                </span>
+</div>
+</div>
+<!-- DUAL SPLIT CHASSIS (LEFT & RIGHT HALVES) -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-6 relative pt-2 overflow-x-auto pb-4"><div class="flex flex-col gap-4 bg-surface-container/60 p-5 rounded-2xl shadow-sm border border-outline-variant/30 w-full lg:w-auto"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30 gap-4"><div class="flex items-center gap-2"><span class="text-xs font-mono font-bold text-secondary uppercase tracking-wider">Mitad Izquierda</span><span class="text-[10px] text-tertiary bg-secondary-container px-2 py-0.5 rounded-full font-medium">Master BLE</span></div><div class="cursor-pointer group flex items-center gap-2.5 bg-surface-container-high px-3 py-1.5 rounded-xl hover:bg-surface-container-highest transition-colors shadow-sm" id="dial-left"><div class="relative w-8 h-8 rounded-full bg-gradient-to-tr from-secondary/30 to-surface-container-lowest flex items-center justify-center shadow-inner group-hover:rotate-45 transition-transform duration-300"><span class="material-symbols-outlined text-primary text-[18px]">rotate_left</span><div class="absolute w-1.5 h-1.5 rounded-full bg-primary top-1"></div></div><div class="flex flex-col"><span class="text-[11px] font-mono font-bold text-on-surface" id="dial-left-label">Volumen +/-</span><span class="text-[9px] text-secondary" id="dial-left-sub">Click: Mute</span></div></div></div><div class="flex flex-col gap-2 select-none"><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">TAB</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>Q</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>W</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>E</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>R</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>T</span></div></div><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">ESC</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>A</span><span class="text-[9px] font-mono font-semibold text-primary">LGUI</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>S</span><span class="text-[9px] font-mono font-semibold text-primary">LALT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed ring-2 ring-primary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>D</span><span class="text-[9px] font-mono font-semibold text-primary">LCTL</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>F</span><span class="text-[9px] font-mono font-semibold text-primary">LSFT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>G</span></div></div><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">LSFT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>Z</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>X</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>C</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>V</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>B</span></div></div><div class="flex items-center justify-end gap-2 pt-2 pr-1"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>LALT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>LOWER</span><span class="text-[9px] font-mono font-semibold text-tertiary">L1</span></div><div class="w-14 sm:w-16 h-11 sm:h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>SPACE</span><span class="text-[9px] font-mono font-semibold text-secondary">L0</span></div></div></div></div><div class="hidden lg:flex flex-col items-center justify-center gap-3 py-6 px-2"><div class="h-16 w-px bg-outline-variant/40 border-r border-dashed border-outline-variant/60"></div><div class="flex flex-col items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high/60 border border-outline-variant/30 text-center"><span class="material-symbols-outlined text-[16px] text-tertiary">settings_ethernet</span><span class="text-[10px] font-mono font-bold text-secondary uppercase tracking-wider whitespace-nowrap">Split 18-24 cm</span><span class="text-[9px] text-on-surface-variant font-medium">BLE Sync • Dual EC11</span></div><div class="h-16 w-px bg-outline-variant/40 border-r border-dashed border-outline-variant/60"></div></div><div class="flex flex-col gap-4 bg-surface-container/60 p-5 rounded-2xl shadow-sm border border-outline-variant/30 w-full lg:w-auto"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30 gap-4"><div class="flex items-center gap-2"><span class="text-xs font-mono font-bold text-secondary uppercase tracking-wider">Mitad Derecha</span><span class="text-[10px] text-secondary bg-surface-container-high px-2 py-0.5 rounded-full font-medium">Slave Peripheral</span></div><div class="cursor-pointer group flex items-center gap-2.5 bg-surface-container-high px-3 py-1.5 rounded-xl hover:bg-surface-container-highest transition-colors shadow-sm" id="dial-right"><div class="relative w-8 h-8 rounded-full bg-gradient-to-tr from-secondary/30 to-surface-container-lowest flex items-center justify-center shadow-inner group-hover:-rotate-45 transition-transform duration-300"><span class="material-symbols-outlined text-tertiary text-[18px]">rotate_right</span><div class="absolute w-1.5 h-1.5 rounded-full bg-tertiary top-1"></div></div><div class="flex flex-col"><span class="text-[11px] font-mono font-bold text-on-surface" id="dial-right-label">Scroll Vert</span><span class="text-[9px] text-secondary" id="dial-right-sub">Click: Botón Medio</span></div></div></div><div class="flex flex-col gap-2 select-none"><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>Y</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>U</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>I</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>O</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>P</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">BSPC</span></div></div><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>H</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>J</span><span class="text-[9px] font-mono font-semibold text-primary">RSFT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>K</span><span class="text-[9px] font-mono font-semibold text-primary">RCTL</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>L</span><span class="text-[9px] font-mono font-semibold text-primary">RALT</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>;</span><span class="text-[9px] font-mono font-semibold text-primary">RGUI</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">RET</span></div></div><div class="flex items-center gap-2"><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>N</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>M</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>,</span><span class="text-[9px] font-mono text-secondary">&lt;</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>.</span><span class="text-[9px] font-mono text-secondary">&gt;</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container-lowest text-on-surface flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-sm hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>/</span><span class="text-[9px] font-mono text-secondary">?</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs"><span class="text-xs">RSFT</span></div></div><div class="flex items-center justify-start gap-2 pt-2 pl-1"><div class="w-14 sm:w-16 h-11 sm:h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>RET</span><span class="text-[9px] font-mono font-semibold text-secondary">L3</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>RAISE</span><span class="text-[9px] font-mono font-semibold text-tertiary">L2</span></div><div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-surface-container text-secondary flex flex-col items-center justify-center p-1 shadow-sm font-headline font-bold text-xs hover:ring-2 hover:ring-primary cursor-pointer transition-all"><span>RALT</span><span class="text-[9px] font-mono font-semibold text-secondary">L4</span></div></div></div></div></div>
+<!-- Keyboard Footer Meta info -->
+<div class="mt-6 pt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-secondary">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">touch_app</span>
+                  Haz clic en cualquier tecla para inspeccionar su bind ZMK
+                </span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="hidden sm:inline">PBT Cherry Profile Biophilic</span>
+</div>
+<div class="font-mono text-[11px] text-on-surface-variant">
+                56/56 Switches Kailh Choc v2 / Gateron Low
+              </div>
+</div>
+</div>
+<!-- POSTURA Y REPOSAMUÑECAS RECOMENDADA (Organic Illustration Section) -->
+<div class="bg-surface-container p-6 lg:p-7 rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-5/12 shrink-0 rounded-xl overflow-hidden bg-surface-container-low p-4 flex flex-col items-center justify-center">
+<svg class="w-full max-w-[280px] text-primary" viewBox="0 0 320 200">
+<!-- Ergonomic Hands & Split Geometry Vector Diagram -->
+<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+<!-- Natural angle lines (15-20 deg split) -->
+<path d="M 40,160 L 110,60" opacity="0.5" stroke="#74796e" stroke-dasharray="4 4"></path>
+<path d="M 280,160 L 210,60" opacity="0.5" stroke="#74796e" stroke-dasharray="4 4"></path>
+<!-- Left Wrist Rest Pad -->
+<rect fill="#f0e8db" height="42" rx="10" stroke="#c4c8bc" stroke-width="1" width="70" x="50" y="130"></rect>
+<text fill="#6b6358" font-family="Nunito Sans" font-size="9" font-weight="600" text-anchor="middle" x="85" y="155">Palma Izq</text>
+<!-- Right Wrist Rest Pad -->
+<rect fill="#f0e8db" height="42" rx="10" stroke="#c4c8bc" stroke-width="1" width="70" x="200" y="130"></rect>
+<text fill="#6b6358" font-family="Nunito Sans" font-size="9" font-weight="600" text-anchor="middle" x="235" y="155">Palma Der</text>
+<!-- Left Key Cluster Angled Outline -->
+<path d="M 70,55 L 125,75 L 110,120 L 55,100 Z" fill="#78a886" fill-opacity="0.18" stroke="#4a7c59" stroke-width="1.5"></path>
+<!-- Right Key Cluster Angled Outline -->
+<path d="M 250,55 L 195,75 L 210,120 L 265,100 Z" fill="#78a886" fill-opacity="0.18" stroke="#4a7c59" stroke-width="1.5"></path>
+<!-- Forearm alignment lines (Straight neutral wrist, no ulnar deviation) -->
+<path d="M 85,175 L 85,195" stroke="#4a7c59" stroke-width="2"></path>
+<path d="M 235,175 L 235,195" stroke="#4a7c59" stroke-width="2"></path>
+<!-- Shoulder width indicator -->
+<path d="M 85,185 L 235,185" stroke="#c4a66a" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<circle cx="85" cy="185" fill="#705c30" r="2.5"></circle>
+<circle cx="235" cy="185" fill="#705c30" r="2.5"></circle>
+</g>
+<text fill="#705c30" font-family="Nunito Sans" font-size="9" font-weight="700" text-anchor="middle" x="160" y="175">Ancho Biomecánico de Hombros</text>
+</svg>
+<div class="mt-2 text-[11px] font-mono text-secondary text-center">Separación Split: 18 - 24 cm</div>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="inline-flex items-center gap-1.5 text-xs font-bold text-tertiary uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px]">accessibility_new</span>
+                Postura Neutral &amp; Tenting
+              </div>
+<h3 class="font-headline font-bold text-lg text-on-surface">
+                Alineación Ulnar Cero y Reposo Óptimo
+              </h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Coloca ambas mitades del bCorne con una inclinación angular hacia adentro de 15° a 20°, coincidiendo con la trayectoria natural de tus antebrazos. No apoyes el talón de la mano mientras mecanografías; utiliza el reposamuñecas solo para descansos pasivos.
+              </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="text-[11px] px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-medium">Tenting Recomendado: 5° a 8°</span>
+<span class="text-[11px] px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-medium">Muñeca recta (180°)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. INSPECCIÓN LATERAL DE TECLA & CONSEJOS (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-6">
+<!-- Key Inspector Card -->
+<div class="bg-surface-container-low p-6 rounded-2xl shadow-sm flex flex-col gap-5 sticky top-28" id="inspector-card">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono font-bold text-secondary uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">data_object</span>
+                Inspector de Tecla
+              </span>
+<span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed" id="inspect-hand-badge">Mano Izquierda</span>
+</div>
+<!-- Big Visual Key Preview -->
+<div class="flex items-center gap-4 bg-surface-container p-4 rounded-xl">
+<div class="w-16 h-16 rounded-xl bg-surface-container-lowest shadow-md flex flex-col items-center justify-center p-2 text-center" id="inspect-key-preview">
+<span class="font-headline font-bold text-2xl text-on-surface leading-none" id="inspect-primary-label">F</span>
+<span class="text-[10px] font-mono font-bold text-primary mt-1" id="inspect-secondary-label">LSFT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-base text-on-surface" id="inspect-title">F • LSFT</span>
+<span class="text-xs font-mono text-secondary" id="inspect-matrix">Fila 2, Columna 5 [Matriz bCorne]</span>
+<span class="text-[11px] text-tertiary font-semibold mt-0.5" id="inspect-type-tag">Home Row Mod (GACS Tap-Hold)</span>
+</div>
+</div>
+<!-- Details List -->
+<div class="flex flex-col gap-3 text-xs">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<span class="text-secondary font-medium">Función Tap (Pulsación)</span>
+<span class="font-mono font-bold text-on-surface bg-surface-container-lowest px-2 py-1 rounded" id="inspect-tap">F</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<span class="text-secondary font-medium">Función Hold (Retención)</span>
+<span class="font-mono font-bold text-primary bg-surface-container-lowest px-2 py-1 rounded" id="inspect-hold">&amp;hold LSFT</span>
+</div>
+<div class="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-high/60">
+<span class="text-secondary text-[11px] font-medium">Código ZMK / QMK compilable:</span>
+<code class="font-mono text-xs text-on-surface bg-surface-container-lowest p-2 rounded block overflow-x-auto text-primary" id="inspect-zmk">&amp;hm LSFT F</code>
+</div>
+<div class="flex items-center justify-between text-[11px] text-secondary px-1">
+<span>Tapping Term: <strong class="text-on-surface font-mono">185ms</strong></span>
+<span>Flavor: <strong class="text-on-surface font-mono">balanced</strong></span>
+</div>
+</div>
+<hr class="border-t border-outline-variant/30 my-0">
+<!-- Rotary Dial Inspection Quickview -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs font-bold text-secondary uppercase tracking-wider">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">tune</span>
+                  Encoders en Capa Activa
+                </span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="text-[10px] font-mono text-secondary">Dial Izq (L)</span>
+<span class="font-semibold text-on-surface font-headline text-xs" id="dial-info-l">Volumen +/-</span>
+<span class="text-[10px] text-tertiary font-mono">Click: Mute</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="text-[10px] font-mono text-secondary">Dial Der (R)</span>
+<span class="font-semibold text-on-surface font-headline text-xs" id="dial-info-r">Scroll Vert</span>
+<span class="text-[10px] text-tertiary font-mono">Click: Middle</span>
+</div>
+</div>
+</div>
+<!-- Ergonomic Pro-Tip for Thumb Cluster -->
+<div class="p-4 rounded-xl bg-secondary-container/60 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-xs font-bold text-tertiary">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+                Optimización de Pulgares bCorne
+              </div>
+<p class="text-xs text-on-secondary-container leading-relaxed">
+                El pulgar humano tiene mayor fuerza de abducción que de flexión lateral. Asigna la barra espaciadora en la tecla interna natural y reserva la tecla más externa para capas temporales con <code class="font-mono text-[11px] font-bold">&amp;mo</code> para prevenir la hiperflexión del pulgar.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Complete Layout Dataset for 56-Key bCorne with Dual Encoders across 5 Layers
+  const layerData = {
+    0: {
+      name: "Base QWERTY",
+      title: "Capa 0: Base Primaria (QWERTY / Home Row Mods)",
+      dialL: { label: "Volumen +/-", click: "Mute", desc: "Rotación: KC_VOLD / KC_VOLU • Push: KC_MUTE" },
+      dialR: { label: "Scroll Vert", click: "Botón Medio", desc: "Rotación: Wheel Up / Down • Push: MOUSE_3" },
+      leftCols: [
+        [ { tap: "TAB", hold: "", code: "&kp TAB", mod: false, type: "mod" },
+          { tap: "ESC", hold: "", code: "&kp ESC", mod: false, type: "mod" },
+          { tap: "LSFT", hold: "", code: "&kp LSFT", mod: false, type: "mod" },
+          { tap: "LCTL", hold: "", code: "&kp LCTL", mod: false, type: "mod" } ],
+        [ { tap: "Q", hold: "", code: "&kp Q", mod: false, type: "alpha" },
+          { tap: "A", hold: "LGUI", code: "&hm LGUI A", mod: true, type: "hrm" },
+          { tap: "Z", hold: "", code: "&kp Z", mod: false, type: "alpha" },
+          { tap: "`", hold: "~", code: "&kp GRAVE", mod: false, type: "sym" } ],
+        [ { tap: "W", hold: "", code: "&kp W", mod: false, type: "alpha" },
+          { tap: "S", hold: "LALT", code: "&hm LALT S", mod: true, type: "hrm" },
+          { tap: "X", hold: "", code: "&kp X", mod: false, type: "alpha" },
+          { tap: "HOME", hold: "", code: "&kp HOME", mod: false, type: "nav" } ],
+        [ { tap: "E", hold: "", code: "&kp E", mod: false, type: "alpha" },
+          { tap: "D", hold: "LCTL", code: "&hm LCTL D", mod: true, type: "hrm" },
+          { tap: "C", hold: "", code: "&kp C", mod: false, type: "alpha" },
+          { tap: "END", hold: "", code: "&kp END", mod: false, type: "nav" } ],
+        [ { tap: "R", hold: "", code: "&kp R", mod: false, type: "alpha" },
+          { tap: "F", hold: "LSFT", code: "&hm LSFT F", mod: true, type: "hrm" },
+          { tap: "V", hold: "", code: "&kp V", mod: false, type: "alpha" },
+          { tap: "DEL", hold: "", code: "&kp DEL", mod: false, type: "mod" } ],
+        [ { tap: "T", hold: "", code: "&kp T", mod: false, type: "alpha" },
+          { tap: "G", hold: "", code: "&kp G", mod: false, type: "alpha" },
+          { tap: "B", hold: "", code: "&kp B", mod: false, type: "alpha" },
+          { tap: "BSPC", hold: "", code: "&kp BSPC", mod: false, type: "mod" } ]
+      ],
+      leftThumbs: [
+        { tap: "LALT", hold: "L4", code: "&lt 4 LALT", mod: true, label: "L4", type: "layer" },
+        { tap: "LOWER", hold: "L1", code: "&mo 1", mod: false, label: "L1", type: "layer" },
+        { tap: "SPACE", hold: "L2", code: "&lt 2 SPACE", mod: true, label: "L2 / Spc", type: "thumb" }
+      ],
+      rightCols: [
+        [ { tap: "Y", hold: "", code: "&kp Y", mod: false, type: "alpha" },
+          { tap: "H", hold: "", code: "&kp H", mod: false, type: "alpha" },
+          { tap: "N", hold: "", code: "&kp N", mod: false, type: "alpha" },
+          { tap: "ENTER", hold: "", code: "&kp RET", mod: false, type: "mod" } ],
+        [ { tap: "U", hold: "", code: "&kp U", mod: false, type: "alpha" },
+          { tap: "J", hold: "RSFT", code: "&hm RSFT J", mod: true, type: "hrm" },
+          { tap: "M", hold: "", code: "&kp M", mod: false, type: "alpha" },
+          { tap: "INS", hold: "", code: "&kp INS", mod: false, type: "mod" } ],
+        [ { tap: "I", hold: "", code: "&kp I", mod: false, type: "alpha" },
+          { tap: "K", hold: "RCTL", code: "&hm RCTL K", mod: true, type: "hrm" },
+          { tap: ",", hold: "<", code: "&kp COMMA", mod: false, type: "alpha" },
+          { tap: "PGUP", hold: "", code: "&kp PG_UP", mod: false, type: "nav" } ],
+        [ { tap: "O", hold: "", code: "&kp O", mod: false, type: "alpha" },
+          { tap: "L", hold: "LALT", code: "&hm RALT L", mod: true, type: "hrm" },
+          { tap: ".", hold: ">", code: "&kp DOT", mod: false, type: "alpha" },
+          { tap: "PGDN", hold: "", code: "&kp PG_DN", mod: false, type: "nav" } ],
+        [ { tap: "P", hold: "", code: "&kp P", mod: false, type: "alpha" },
+          { tap: ";", hold: "RGUI", code: "&hm RGUI SEMI", mod: true, type: "hrm" },
+          { tap: "/", hold: "?", code: "&kp FSLH", mod: false, type: "sym" },
+          { tap: "'", hold: '"', code: "&kp SQT", mod: false, type: "sym" } ],
+        [ { tap: "[", hold: "{", code: "&kp LBKT", mod: false, type: "sym" },
+          { tap: "]", hold: "}", code: "&kp RBKT", mod: false, type: "sym" },
+          { tap: "\\", hold: "|", code: "&kp BSLH", mod: false, type: "sym" },
+          { tap: "RCTL", hold: "", code: "&kp RCTL", mod: false, type: "mod" } ]
+      ],
+      rightThumbs: [
+        { tap: "ENTER", hold: "L3", code: "&lt 3 RET", mod: true, label: "L3 / Ret", type: "thumb" },
+        { tap: "RAISE", hold: "L2", code: "&mo 2", mod: false, label: "L2", type: "layer" },
+        { tap: "RALT", hold: "L4", code: "&lt 4 RALT", mod: true, label: "L4", type: "layer" }
+      ]
+    },
+    1: {
+      name: "Lower (Núm/Vim)",
+      title: "Capa 1: Lower (Teclado Numérico, Operadores & Flechas Vim)",
+      dialL: { label: "Pistas Prev/Next", click: "Play/Pause", desc: "KC_MPRV / KC_MNXT" },
+      dialR: { label: "Zoom In/Out", click: "Reset Zoom", desc: "Ctrl + Wheel" },
+      leftCols: [
+        [ { tap: "~", hold: "", code: "&kp TILDE", mod: false, type: "sym" },
+          { tap: "CAPS", hold: "", code: "&kp CAPS", mod: false, type: "mod" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: "!", hold: "", code: "&kp EXCL", mod: false, type: "sym" },
+          { tap: "1", hold: "", code: "&kp N1", mod: false, type: "alpha" },
+          { tap: "6", hold: "", code: "&kp N6", mod: false, type: "alpha" },
+          { tap: "+", hold: "", code: "&kp PLUS", mod: false, type: "sym" } ],
+        [ { tap: "@", hold: "", code: "&kp AT", mod: false, type: "sym" },
+          { tap: "2", hold: "", code: "&kp N2", mod: false, type: "alpha" },
+          { tap: "7", hold: "", code: "&kp N7", mod: false, type: "alpha" },
+          { tap: "-", hold: "", code: "&kp MINUS", mod: false, type: "sym" } ],
+        [ { tap: "#", hold: "", code: "&kp HASH", mod: false, type: "sym" },
+          { tap: "3", hold: "", code: "&kp N3", mod: false, type: "alpha" },
+          { tap: "8", hold: "", code: "&kp N8", mod: false, type: "alpha" },
+          { tap: "*", hold: "", code: "&kp ASTRK", mod: false, type: "sym" } ],
+        [ { tap: "$", hold: "", code: "&kp DLLR", mod: false, type: "sym" },
+          { tap: "4", hold: "", code: "&kp N4", mod: false, type: "alpha" },
+          { tap: "9", hold: "", code: "&kp N9", mod: false, type: "alpha" },
+          { tap: "/", hold: "", code: "&kp SLASH", mod: false, type: "sym" } ],
+        [ { tap: "%", hold: "", code: "&kp PRCNT", mod: false, type: "sym" },
+          { tap: "5", hold: "", code: "&kp N5", mod: false, type: "alpha" },
+          { tap: "0", hold: "", code: "&kp N0", mod: false, type: "alpha" },
+          { tap: "=", hold: "", code: "&kp EQUAL", mod: false, type: "sym" } ]
+      ],
+      leftThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L1 (Act)", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "Spc", type: "thumb" }
+      ],
+      rightCols: [
+        [ { tap: "^", hold: "", code: "&kp CARET", mod: false, type: "sym" },
+          { tap: "LEFT", hold: "h", code: "&kp LEFT", mod: true, type: "nav" },
+          { tap: "HOME", hold: "", code: "&kp HOME", mod: false, type: "nav" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: "&", hold: "", code: "&kp AMPS", mod: false, type: "sym" },
+          { tap: "DOWN", hold: "j", code: "&kp DOWN", mod: true, type: "nav" },
+          { tap: "PGDN", hold: "", code: "&kp PG_DN", mod: false, type: "nav" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: "*", hold: "", code: "&kp ASTRK", mod: false, type: "sym" },
+          { tap: "UP", hold: "k", code: "&kp UP", mod: true, type: "nav" },
+          { tap: "PGUP", hold: "", code: "&kp PG_UP", mod: false, type: "nav" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: "(", hold: "", code: "&kp LPAR", mod: false, type: "sym" },
+          { tap: "RIGHT", hold: "l", code: "&kp RIGHT", mod: true, type: "nav" },
+          { tap: "END", hold: "", code: "&kp END", mod: false, type: "nav" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: ")", hold: "", code: "&kp RPAR", mod: false, type: "sym" },
+          { tap: ":", hold: "", code: "&kp COLON", mod: false, type: "sym" },
+          { tap: "DEL", hold: "", code: "&kp DEL", mod: false, type: "mod" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ],
+        [ { tap: "_", hold: "", code: "&kp UNDER", mod: false, type: "sym" },
+          { tap: "+", hold: "", code: "&kp PLUS", mod: false, type: "sym" },
+          { tap: "ENT", hold: "", code: "&kp RET", mod: false, type: "mod" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ]
+      ],
+      rightThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L3", type: "thumb" },
+        { tap: "ADJUST", hold: "", code: "&mo 4", mod: false, label: "L4", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" }
+      ]
+    },
+    2: {
+      name: "Raise (Símbolos)",
+      title: "Capa 2: Raise (Sintaxis Dev, Llaves y Corchetes Programación)",
+      dialL: { label: "Tab Prev/Next", click: "Close Tab", desc: "Ctrl+PgUp / Ctrl+PgDn" },
+      dialR: { label: "Historial Undo/Redo", click: "Save", desc: "Cmd+Z / Cmd+Shift+Z" },
+      leftCols: [
+        [ { tap: "F1", hold: "", code: "&kp F1", mod: false, type: "mod" },
+          { tap: "F2", hold: "", code: "&kp F2", mod: false, type: "mod" },
+          { tap: "F3", hold: "", code: "&kp F3", mod: false, type: "mod" },
+          { tap: "F4", hold: "", code: "&kp F4", mod: false, type: "mod" } ],
+        [ { tap: "<", hold: "", code: "&kp LT", mod: false, type: "sym" },
+          { tap: ">", hold: "", code: "&kp GT", mod: false, type: "sym" },
+          { tap: "!", hold: "", code: "&kp EXCL", mod: false, type: "sym" },
+          { tap: "F5", hold: "", code: "&kp F5", mod: false, type: "mod" } ],
+        [ { tap: "{", hold: "", code: "&kp LBRC", mod: false, type: "sym" },
+          { tap: "}", hold: "", code: "&kp RBRC", mod: false, type: "sym" },
+          { tap: "@", hold: "", code: "&kp AT", mod: false, type: "sym" },
+          { tap: "F6", hold: "", code: "&kp F6", mod: false, type: "mod" } ],
+        [ { tap: "[", hold: "", code: "&kp LBKT", mod: false, type: "sym" },
+          { tap: "]", hold: "", code: "&kp RBKT", mod: false, type: "sym" },
+          { tap: "#", hold: "", code: "&kp HASH", mod: false, type: "sym" },
+          { tap: "F7", hold: "", code: "&kp F7", mod: false, type: "mod" } ],
+        [ { tap: "(", hold: "", code: "&kp LPAR", mod: false, type: "sym" },
+          { tap: ")", hold: "", code: "&kp RPAR", mod: false, type: "sym" },
+          { tap: "$", hold: "", code: "&kp DLLR", mod: false, type: "sym" },
+          { tap: "F8", hold: "", code: "&kp F8", mod: false, type: "mod" } ],
+        [ { tap: "`", hold: "", code: "&kp GRAVE", mod: false, type: "sym" },
+          { tap: "~", hold: "", code: "&kp TILDE", mod: false, type: "sym" },
+          { tap: "%", hold: "", code: "&kp PRCNT", mod: false, type: "sym" },
+          { tap: "TRNS", hold: "", code: "&trans", mod: false, type: "mod" } ]
+      ],
+      leftThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" },
+        { tap: "ADJUST", hold: "", code: "&mo 4", mod: false, label: "L4", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L2 (Act)", type: "thumb" }
+      ],
+      rightCols: [
+        [ { tap: "&", hold: "", code: "&kp AMPS", mod: false, type: "sym" },
+          { tap: "|", hold: "", code: "&kp PIPE", mod: false, type: "sym" },
+          { tap: "^", hold: "", code: "&kp CARET", mod: false, type: "sym" },
+          { tap: "F9", hold: "", code: "&kp F9", mod: false, type: "mod" } ],
+        [ { tap: "=", hold: "", code: "&kp EQUAL", mod: false, type: "sym" },
+          { tap: "+", hold: "", code: "&kp PLUS", mod: false, type: "sym" },
+          { tap: "-", hold: "", code: "&kp MINUS", mod: false, type: "sym" },
+          { tap: "F10", hold: "", code: "&kp F10", mod: false, type: "mod" } ],
+        [ { tap: "\\", hold: "", code: "&kp BSLH", mod: false, type: "sym" },
+          { tap: "/", hold: "", code: "&kp FSLH", mod: false, type: "sym" },
+          { tap: "*", hold: "", code: "&kp ASTRK", mod: false, type: "sym" },
+          { tap: "F11", hold: "", code: "&kp F11", mod: false, type: "mod" } ],
+        [ { tap: ";", hold: "", code: "&kp SEMI", mod: false, type: "sym" },
+          { tap: ":", hold: "", code: "&kp COLON", mod: false, type: "sym" },
+          { tap: "_", hold: "", code: "&kp UNDER", mod: false, type: "sym" },
+          { tap: "F12", hold: "", code: "&kp F12", mod: false, type: "mod" } ],
+        [ { tap: "?", hold: "", code: "&kp QMARK", mod: false, type: "sym" },
+          { tap: "\"", hold: "", code: "&kp DQT", mod: false, type: "sym" },
+          { tap: "'", hold: "", code: "&kp SQT", mod: false, type: "sym" },
+          { tap: "PSCR", hold: "", code: "&kp PSCRN", mod: false, type: "mod" } ],
+        [ { tap: "!", hold: "", code: "&kp EXCL", mod: false, type: "sym" },
+          { tap: "$", hold: "", code: "&kp DLLR", mod: false, type: "sym" },
+          { tap: "#", hold: "", code: "&kp HASH", mod: false, type: "sym" },
+          { tap: "PAUS", hold: "", code: "&kp PAUSE_BREAK", mod: false, type: "mod" } ]
+      ],
+      rightThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L3", type: "thumb" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L2 (Act)", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" }
+      ]
+    },
+    3: {
+      name: "Nav & Media",
+      title: "Capa 3: Navegación Ergo, Mouse Emulation & Multimedia",
+      dialL: { label: "Brillo Pantalla", click: "Display Sleep", desc: "KC_BRID / KC_BRIU" },
+      dialR: { label: "H-Scroll Pan", click: "Middle Click", desc: "Wheel Left / Wheel Right" },
+      leftCols: [
+        [ { tap: "RESET", hold: "", code: "&sys_reset", mod: false, type: "mod" },
+          { tap: "PREV", hold: "", code: "&kp C_PREV", mod: false, type: "nav" },
+          { tap: "PLAY", hold: "", code: "&kp C_PP", mod: false, type: "nav" },
+          { tap: "NEXT", hold: "", code: "&kp C_NEXT", mod: false, type: "nav" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "M_LCLK", hold: "", code: "&mkp LCLK", mod: false, type: "nav" },
+          { tap: "M_RCLK", hold: "", code: "&mkp RCLK", mod: false, type: "nav" },
+          { tap: "M_MCLK", hold: "", code: "&mkp MCLK", mod: false, type: "nav" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "MS_LT", hold: "", code: "&mmv MOVE_LEFT", mod: false, type: "nav" },
+          { tap: "MS_DN", hold: "", code: "&mmv MOVE_DOWN", mod: false, type: "nav" },
+          { tap: "MS_UP", hold: "", code: "&mmv MOVE_UP", mod: false, type: "nav" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "MS_RT", hold: "", code: "&mmv MOVE_RIGHT", mod: false, type: "nav" },
+          { tap: "WH_DN", hold: "", code: "&mwh SCROLL_DOWN", mod: false, type: "nav" },
+          { tap: "WH_UP", hold: "", code: "&mwh SCROLL_UP", mod: false, type: "nav" } ],
+        [ { tap: "VOL-", hold: "", code: "&kp C_VOL_DN", mod: false, type: "nav" },
+          { tap: "VOL+", hold: "", code: "&kp C_VOL_UP", mod: false, type: "nav" },
+          { tap: "MUTE", hold: "", code: "&kp C_MUTE", mod: false, type: "nav" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "BRIDN", hold: "", code: "&kp C_BRI_DN", mod: false, type: "nav" },
+          { tap: "BRIUP", hold: "", code: "&kp C_BRI_UP", mod: false, type: "nav" },
+          { tap: "CALC", hold: "", code: "&kp C_AL_CALC", mod: false, type: "nav" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ]
+      ],
+      leftThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L1", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "Spc", type: "thumb" }
+      ],
+      rightCols: [
+        [ { tap: "PAGE_UP", hold: "", code: "&kp PG_UP", mod: false, type: "nav" },
+          { tap: "HOME", hold: "", code: "&kp HOME", mod: false, type: "nav" },
+          { tap: "UP", hold: "", code: "&kp UP", mod: false, type: "nav" },
+          { tap: "END", hold: "", code: "&kp END", mod: false, type: "nav" } ],
+        [ { tap: "PG_DN", hold: "", code: "&kp PG_DN", mod: false, type: "nav" },
+          { tap: "LEFT", hold: "", code: "&kp LEFT", mod: false, type: "nav" },
+          { tap: "DOWN", hold: "", code: "&kp DOWN", mod: false, type: "nav" },
+          { tap: "RIGHT", hold: "", code: "&kp RIGHT", mod: false, type: "nav" } ],
+        [ { tap: "CUT", hold: "", code: "&kp K_CUT", mod: false, type: "mod" },
+          { tap: "COPY", hold: "", code: "&kp K_COPY", mod: false, type: "mod" },
+          { tap: "PASTE", hold: "", code: "&kp K_PASTE", mod: false, type: "mod" },
+          { tap: "FIND", hold: "", code: "&kp K_FIND", mod: false, type: "mod" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "SEL_ALL", hold: "", code: "&kp LC(A)", mod: false, type: "mod" },
+          { tap: "UNDO", hold: "", code: "&kp LC(Z)", mod: false, type: "mod" },
+          { tap: "REDO", hold: "", code: "&kp LC(Y)", mod: false, type: "mod" } ],
+        [ { tap: "APP_SW", hold: "", code: "&kp LA(TAB)", mod: false, type: "mod" },
+          { tap: "DESK_L", hold: "", code: "&kp LC(LEFT)", mod: false, type: "nav" },
+          { tap: "DESK_R", hold: "", code: "&kp LC(RIGHT)", mod: false, type: "nav" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "BOOTLOAD", hold: "", code: "&bootloader", mod: false, type: "mod" } ]
+      ],
+      rightThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L3 (Act)", type: "thumb" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L2", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4", type: "layer" }
+      ]
+    },
+    4: {
+      name: "Adjust (Config)",
+      title: "Capa 4: Adjust (Bluetooth BLE, Perfiles, Backlight RGB & SO Swap)",
+      dialL: { label: "RGB Hue +/-", click: "RGB Toggle", desc: "RGB_HUD / RGB_HUI" },
+      dialR: { label: "RGB Brillo +/-", click: "Efecto Siguiente", desc: "RGB_SAD / RGB_SAI" },
+      leftCols: [
+        [ { tap: "BT_CLR", hold: "", code: "&bt BT_CLR", mod: false, type: "mod" },
+          { tap: "BT_SEL 0", hold: "", code: "&bt BT_SEL 0", mod: false, type: "mod" },
+          { tap: "BT_SEL 1", hold: "", code: "&bt BT_SEL 1", mod: false, type: "mod" },
+          { tap: "BT_SEL 2", hold: "", code: "&bt BT_SEL 2", mod: false, type: "mod" } ],
+        [ { tap: "RGB_TOG", hold: "", code: "&rgb_ug RGB_TOG", mod: false, type: "sym" },
+          { tap: "RGB_HUI", hold: "", code: "&rgb_ug RGB_HUI", mod: false, type: "sym" },
+          { tap: "RGB_HUD", hold: "", code: "&rgb_ug RGB_HUD", mod: false, type: "sym" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "RGB_SAI", hold: "", code: "&rgb_ug RGB_SAI", mod: false, type: "sym" },
+          { tap: "RGB_SAD", hold: "", code: "&rgb_ug RGB_SAD", mod: false, type: "sym" },
+          { tap: "RGB_BRI", hold: "", code: "&rgb_ug RGB_BRI", mod: false, type: "sym" },
+          { tap: "RGB_BRD", hold: "", code: "&rgb_ug RGB_BRD", mod: false, type: "sym" } ],
+        [ { tap: "RGB_EFF", hold: "", code: "&rgb_ug RGB_EFF", mod: false, type: "sym" },
+          { tap: "RGB_EFR", hold: "", code: "&rgb_ug RGB_EFR", mod: false, type: "sym" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "OS_MAC", hold: "", code: "&to_mac", mod: false, type: "mod" },
+          { tap: "OS_WIN", hold: "", code: "&to_win", mod: false, type: "mod" },
+          { tap: "OS_LNX", hold: "", code: "&to_linux", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "BOOTL", hold: "", code: "&bootloader", mod: false, type: "mod" },
+          { tap: "SYS_RST", hold: "", code: "&sys_reset", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ]
+      ],
+      leftThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4 (Act)", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L1", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "Spc", type: "thumb" }
+      ],
+      rightCols: [
+        [ { tap: "BAT_LVL", hold: "", code: "&batt_lvl", mod: false, type: "mod" },
+          { tap: "EP_ON", hold: "", code: "&ext_power EP_ON", mod: false, type: "mod" },
+          { tap: "EP_OFF", hold: "", code: "&ext_power EP_OFF", mod: false, type: "mod" },
+          { tap: "EP_TOG", hold: "", code: "&ext_power EP_TOG", mod: false, type: "mod" } ],
+        [ { tap: "OUT_USB", hold: "", code: "&out OUT_USB", mod: false, type: "mod" },
+          { tap: "OUT_BLE", hold: "", code: "&out OUT_BLE", mod: false, type: "mod" },
+          { tap: "OUT_TOG", hold: "", code: "&out OUT_TOG", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ],
+        [ { tap: "BOOTL", hold: "", code: "&bootloader", mod: false, type: "mod" },
+          { tap: "SYS_RST", hold: "", code: "&sys_reset", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" },
+          { tap: "NO", hold: "", code: "&none", mod: false, type: "mod" } ]
+      ],
+      rightThumbs: [
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L3", type: "thumb" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L2", type: "layer" },
+        { tap: "TRNS", hold: "", code: "&trans", mod: false, label: "L4 (Act)", type: "layer" }
+      ]
+    }
+  };
+
+  let currentLayer = 0;
+  let showTapHoldSecondary = true;
+
+  // Stagger offsets for ergonomic columnar layout (columns 0 to 5)
+  // bCorne typical stagger: pinky lower, ring high, middle highest, index lower, inner lowest
+  const colStaggerLeft = [16, 8, 0, 4, 12, 16]; // px offset upwards
+  const colStaggerRight = [16, 12, 4, 0, 8, 16]; // px offset upwards
+
+  function getKeyColorClasses(type) {
+    switch(type) {
+      case "hrm":
+        return "bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim";
+      case "layer":
+        return "bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim";
+      case "thumb":
+        return "bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim";
+      case "nav":
+        return "bg-surface-container-high text-on-surface hover:bg-surface-container-highest";
+      case "sym":
+        return "bg-[#f5ebd9] text-tertiary hover:bg-[#eedfc4]";
+      case "mod":
+        return "bg-surface-container text-secondary hover:bg-surface-container-high";
+      case "alpha":
+      default:
+        return "bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-sm";
+    }
+  }
+
+  function renderKeyboard(layerIndex) {
+    const data = layerData[layerIndex];
+    if (!data) return;
+
+    // Update Title and Dial Badges
+    document.getElementById("active-layer-title").textContent = data.title;
+    document.getElementById("dial-left-label").textContent = data.dialL.label;
+    document.getElementById("dial-left-sub").textContent = data.dialL.click;
+    document.getElementById("dial-right-label").textContent = data.dialR.label;
+    document.getElementById("dial-right-sub").textContent = data.dialR.click;
+
+    document.getElementById("dial-info-l").textContent = data.dialL.label;
+    document.getElementById("dial-info-r").textContent = data.dialR.label;
+
+    // Render Left Hand Columns
+    const leftGrid = document.getElementById("left-keys-grid");
+    leftGrid.innerHTML = "";
+    data.leftCols.forEach((col, colIdx) => {
+      const colDiv = document.createElement("div");
+      colDiv.className = "flex flex-col gap-1.5";
+      colDiv.style.transform = `translateY(-${colStaggerLeft[colIdx]}px)`;
+
+      col.forEach((key, rowIdx) => {
+        const btn = createKeyElement(key, "Izquierda", rowIdx, colIdx);
+        colDiv.appendChild(btn);
+      });
+      leftGrid.appendChild(colDiv);
+    });
+
+    // Render Left Thumbs
+    const leftThumbs = document.getElementById("left-thumb-cluster");
+    leftThumbs.innerHTML = "";
+    data.leftThumbs.forEach((key, tIdx) => {
+      const btn = createKeyElement(key, "Izquierda (Pulgar)", 4, tIdx, true);
+      leftThumbs.appendChild(btn);
+    });
+
+    // Render Right Hand Columns
+    const rightGrid = document.getElementById("right-keys-grid");
+    rightGrid.innerHTML = "";
+    data.rightCols.forEach((col, colIdx) => {
+      const colDiv = document.createElement("div");
+      colDiv.className = "flex flex-col gap-1.5";
+      colDiv.style.transform = `translateY(-${colStaggerRight[colIdx]}px)`;
+
+      col.forEach((key, rowIdx) => {
+        const btn = createKeyElement(key, "Derecha", rowIdx, colIdx);
+        rightGrid.appendChild(btn);
+      });
+      rightGrid.appendChild(colDiv);
+    });
+
+    // Render Right Thumbs
+    const rightThumbs = document.getElementById("right-thumb-cluster");
+    rightThumbs.innerHTML = "";
+    data.rightThumbs.forEach((key, tIdx) => {
+      const btn = createKeyElement(key, "Derecha (Pulgar)", 4, tIdx, true);
+      rightThumbs.appendChild(btn);
+    });
+  }
+
+  function createKeyElement(key, hand, row, col, isThumb = false) {
+    const btn = document.createElement("button");
+    const colorClasses = getKeyColorClasses(key.type);
+    
+    // Size adjustments: standard 1u is ~38-44px, thumbs slightly wider
+    const sizeClasses = isThumb 
+      ? "w-11 sm:w-12 h-11 sm:h-12" 
+      : "w-8 sm:w-10 h-8 sm:h-10";
+
+    btn.className = `key-cap relative rounded-lg flex flex-col items-center justify-center transition-all duration-150 active:scale-95 shadow-sm p-0.5 ${sizeClasses} ${colorClasses}`;
+
+    const mainTap = document.createElement("span");
+    mainTap.className = "font-headline font-bold text-xs sm:text-sm leading-none truncate max-w-[34px]";
+    mainTap.textContent = key.tap;
+    btn.appendChild(mainTap);
+
+    if (showTapHoldSecondary && (key.hold || key.label)) {
+      const subHold = document.createElement("span");
+      subHold.className = "text-[8px] sm:text-[9px] font-mono leading-none opacity-80 mt-0.5 truncate max-w-[34px]";
+      subHold.textContent = key.hold || key.label;
+      btn.appendChild(subHold);
+    }
+
+    btn.addEventListener("click", () => {
+      // Highlight selected key visually
+      document.querySelectorAll(".key-cap").forEach(k => k.classList.remove("ring-2", "ring-primary", "scale-105"));
+      btn.classList.add("ring-2", "ring-primary", "scale-105");
+
+      // Update Inspector Panel
+      inspectKey(key, hand, row, col);
+    });
+
+    return btn;
+  }
+
+  function inspectKey(key, hand, row, col) {
+    document.getElementById("inspect-hand-badge").textContent = `Mano ${hand}`;
+    document.getElementById("inspect-primary-label").textContent = key.tap;
+    document.getElementById("inspect-secondary-label").textContent = key.hold || key.label || "";
+    document.getElementById("inspect-title").textContent = `${key.tap} ${key.hold ? "• " + key.hold : ""}`;
+    document.getElementById("inspect-matrix").textContent = `Fila ${row + 1}, Columna ${col + 1} [Matriz bCorne]`;
+    document.getElementById("inspect-tap").textContent = key.code.split(" ").pop() || key.tap;
+    document.getElementById("inspect-hold").textContent = key.hold ? `&hold ${key.hold}` : "Ninguno (Tap Puro)";
+    document.getElementById("inspect-zmk").textContent = key.code;
+
+    // Update type description
+    let typeName = "Tecla Estándar Directa";
+    if (key.type === "hrm") typeName = "Home Row Mod (GACS Tap-Hold)";
+    else if (key.type === "layer") typeName = "Layer Switch Momentáneo / Toggle";
+    else if (key.type === "thumb") typeName = "Thumb Key Especial Tap-Layer";
+    else if (key.type === "nav") typeName = "Navegación / Scroll Cursor";
+    else if (key.type === "sym") typeName = "Símbolo Programación";
+
+    document.getElementById("inspect-type-tag").textContent = typeName;
+  }
+
+  // Layer Tab Clicks
+  document.querySelectorAll(".layer-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const layerIdx = parseInt(tab.dataset.layer, 10);
+      currentLayer = layerIdx;
+
+      // Update Tab Styles
+      document.querySelectorAll(".layer-tab").forEach(t => {
+        t.classList.remove("bg-surface-container-lowest", "ring-2", "ring-primary");
+        t.classList.add("bg-surface-container-low");
+        const bar = t.querySelector("div:last-child");
+        if (bar) bar.className = "absolute bottom-0 left-0 right-0 h-1 bg-transparent";
+      });
+
+      tab.classList.remove("bg-surface-container-low");
+      tab.classList.add("bg-surface-container-lowest", "ring-2", "ring-primary");
+      const activeBar = tab.querySelector("div:last-child");
+      if (activeBar) activeBar.className = "absolute bottom-0 left-0 right-0 h-1 bg-primary";
+
+      renderKeyboard(currentLayer);
+    });
+  });
+
+  // Toggle Tap / Hold sub-legends button
+  document.getElementById("toggle-labels-btn").addEventListener("click", () => {
+    showTapHoldSecondary = !showTapHoldSecondary;
+    renderKeyboard(currentLayer);
+  });
+
+  // Rotary Encoder Dial Click Inspections
+  document.getElementById("dial-left").addEventListener("click", () => {
+    const cur = layerData[currentLayer].dialL;
+    document.getElementById("inspect-hand-badge").textContent = "Encoder Izquierdo (EC11)";
+    document.getElementById("inspect-primary-label").textContent = "EC-L";
+    document.getElementById("inspect-secondary-label").textContent = "ROTARY";
+    document.getElementById("inspect-title").textContent = `Dial Izquierdo • ${cur.label}`;
+    document.getElementById("inspect-matrix").textContent = "Hardware Pin D1/D2 + Switch Pulso";
+    document.getElementById("inspect-tap").textContent = `Push: ${cur.click}`;
+    document.getElementById("inspect-hold").textContent = "Giro Horario / Antihorario";
+    document.getElementById("inspect-zmk").textContent = cur.desc;
+    document.getElementById("inspect-type-tag").textContent = "Controlador Rotatorio Mecánico";
+  });
+
+  document.getElementById("dial-right").addEventListener("click", () => {
+    const cur = layerData[currentLayer].dialR;
+    document.getElementById("inspect-hand-badge").textContent = "Encoder Derecho (EC11)";
+    document.getElementById("inspect-primary-label").textContent = "EC-R";
+    document.getElementById("inspect-secondary-label").textContent = "ROTARY";
+    document.getElementById("inspect-title").textContent = `Dial Derecho • ${cur.label}`;
+    document.getElementById("inspect-matrix").textContent = "Hardware Pin D3/D4 + Switch Pulso";
+    document.getElementById("inspect-tap").textContent = `Push: ${cur.click}`;
+    document.getElementById("inspect-hold").textContent = "Giro Horario / Antihorario";
+    document.getElementById("inspect-zmk").textContent = cur.desc;
+    document.getElementById("inspect-type-tag").textContent = "Controlador Rotatorio Mecánico";
+  });
+
+  // Export Keymap feedback
+  document.getElementById("export-keymap-btn").addEventListener("click", function() {
+    const originalText = this.innerHTML;
+    this.innerHTML = `<span class="material-symbols-outlined text-[16px]">done</span><span>¡bCorne_v3.keymap Generado!</span>`;
+    setTimeout(() => {
+      this.innerHTML = originalText;
+    }, 2200);
+  });
+
+  // Keyboard shortcut listener for layer switching [1-5]
+  window.addEventListener("keydown", (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (["1", "2", "3", "4", "5"].includes(e.key)) {
+      const idx = parseInt(e.key, 10) - 1;
+      const targetTab = document.querySelector(`.layer-tab[data-layer="${idx}"]`);
+      if (targetTab) targetTab.click();
+    }
+  });
+
+  // Initial Boot Render
+  renderKeyboard(0);
+</script></main><footer class="w-full bg-surface-container-low py-10 mt-16"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"><div class="flex items-center gap-3"><span class="font-headline font-semibold text-on-surface">CorneType Studio</span><span>—</span><span>Ergonomía columnar split &amp; diseño biofílico PBT</span></div><div class="flex items-center gap-6"><span class="font-mono text-[11px]">Diseñado para bCorne 3x6+3 con Encoders EC11</span><span class="text-secondary">Firmware QMK / ZMK Nativo</span></div></div></footer>
+
+</body></html>

@@ -1,0 +1,918 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-fixed-dim":"#8ecf9e","on-secondary-fixed":"#1e1a13","on-tertiary":"#ffffff","on-surface-variant":"#4a4e4a","error":"#b83230","secondary-container":"#f0e8db","on-error-container":"#690005","on-tertiary-container":"#554020","surface-bright":"#faf6f0","secondary":"#6b6358","inverse-surface":"#2e3230","on-primary-container":"#d8f0de","on-background":"#2e3230","background":"#faf6f0","tertiary":"#705c30","primary-container":"#78a886","surface-dim":"#dbd7cf","inverse-on-surface":"#f5f0e8","inverse-primary":"#8ecf9e","outline-variant":"#c4c8bc","on-secondary":"#ffffff","outline":"#74796e","on-primary-fixed":"#002110","on-secondary-fixed-variant":"#4a4538","on-error":"#ffffff","on-tertiary-fixed-variant":"#554020","on-secondary-container":"#5e5548","surface-container-lowest":"#ffffff","on-surface":"#2e3230","surface-container-high":"#eae6de","on-primary":"#ffffff","error-container":"#ffdad8","surface-variant":"#e4e0d8","surface":"#faf6f0","on-primary-fixed-variant":"#2a6038","primary":"#4a7c59","on-tertiary-fixed":"#221a05","tertiary-container":"#c4a66a","tertiary-fixed-dim":"#dcc48e","surface-container":"#f0ece4","surface-tint":"#4a7c59","secondary-fixed-dim":"#d4ccbf","surface-container-low":"#f5f1ea","secondary-fixed":"#f0e8db","surface-container-highest":"#e4e0d8","tertiary-fixed":"#f8e0a8","primary-fixed":"#c8e8d0"},"borderRadius":{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Literata"],"display":["Literata"],"body":["Nunito Sans"],"label":["Nunito Sans"]},"fontSize":{}}}}</script></head><body class="bg-surface font-body text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,50,48,0.05)]"><div class="h-20 w-full max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_2px_8px_rgba(74,124,89,0.15)]"><span class="material-symbols-outlined text-[22px]">keyboard</span></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline font-bold text-lg tracking-tight text-on-surface">CorneType</span><span class="text-[11px] font-medium text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">bCorne 56-Key v3.2</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="text-[11px] font-semibold text-primary">Conectado • WebHID / ZMK BLE</span></div></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="practica-de-escritura" href="#">Práctica de Escritura</a><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="minijuegos" href="#">Minijuegos</a><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explorador-de-capas" href="#">Explorador de Capas</a><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="configurador-de-teclas" href="#">Configurador de Teclas</a><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cargar-keymap" href="#">Cargar Keymap</a><a class="text-xs px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="metricas-ergo-stats" href="#">Métricas &amp; Ergo Stats</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden md:flex items-center bg-surface-container-low p-1 rounded-xl gap-0.5"><button class="px-2 py-1 text-[11px] font-bold rounded-lg bg-surface text-on-surface shadow-[0_1px_4px_rgba(46,50,48,0.06)]" type="button">L0</button><button class="px-2 py-1 text-[11px] font-medium rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">L1</button><button class="px-2 py-1 text-[11px] font-medium rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">L2</button><button class="px-2 py-1 text-[11px] font-medium rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">L3</button><button class="px-2 py-1 text-[11px] font-medium rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">L4</button></div><button class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary text-xs font-semibold hover:bg-primary/90 transition-all shadow-[0_2px_10px_rgba(74,124,89,0.2)]" type="button"><span class="material-symbols-outlined text-[16px]">system_update_alt</span><span>Firmware Flash</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_6px_rgba(74,124,89,0.15)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col gap-8">
+<!-- Header Diagnostic Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-2">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-semibold tracking-wide shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            DIAGNÓSTICO WEBHID / ZMK RAW
+          </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">bolt</span>
+            Enlace Activo (1,000 Hz Polling Rate)
+          </span>
+<span class="text-xs text-on-surface-variant/80">Buffer: 64B HID Reports</span>
+</div>
+<h1 class="font-headline text-3xl lg:text-4xl font-bold tracking-tight text-on-surface">
+          Matrix Debugger &amp; Probador en Vivo
+        </h1>
+<p class="text-sm text-on-surface-variant max-w-3xl leading-relaxed">
+          Verificación en tiempo real de switch debounce, matriz de diodos, latencia de contacto y pulsos de encoders rotativos EC11 para la arquitectura bCorne 56 (3x6+4 columnar split).
+        </p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<button class="group flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-semibold transition-all shadow-sm" id="btn-reset-matrix" type="button">
+<span class="material-symbols-outlined text-[17px] text-secondary group-hover:rotate-180 transition-transform duration-500">restart_alt</span>
+<span>Reiniciar Historial</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface text-xs font-semibold hover:bg-surface-container-high transition-all shadow-sm" data-active="true" id="toggle-synth-audio" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary" id="synth-icon">volume_up</span>
+<span id="synth-label">Audio Thock: ON</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-semibold transition-all shadow-sm" id="btn-chatter-test" type="button">
+<span class="material-symbols-outlined text-[17px] text-tertiary">speed</span>
+<span>Simulador Rebote</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold hover:bg-primary/90 transition-all shadow-md" id="btn-export-log" type="button">
+<span class="material-symbols-outlined text-[17px]">download</span>
+<span>Reporte (.json)</span>
+</button>
+</div>
+</div>
+<!-- Live Telemetry KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-bold tracking-wider uppercase text-on-surface-variant">Teclas Verificadas</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline text-3xl font-bold text-on-surface" id="metric-keys-count">54 / 56</span>
+<span class="text-xs font-bold text-primary">96.4%</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 96.4%"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant">Pendientes: L-Thumb 4, R-Col5 R3</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-bold tracking-wider uppercase text-on-surface-variant">Latencia Media Switch</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline text-3xl font-bold text-on-surface">1.8 <span class="text-lg font-normal text-on-surface-variant">ms</span></span>
+<span class="text-xs font-bold text-primary">Jitter ±0.2ms</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Eager PR Debounce</span>
+<span class="font-mono text-on-surface font-semibold">Min: 1.1ms</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-3"><div class="flex items-start justify-between"><div class="flex flex-col"><span class="text-xs font-bold tracking-wider uppercase text-on-surface-variant">Encoders EC11 Dual</span><div class="flex items-baseline gap-2 mt-1"><span class="font-headline text-2xl font-bold text-on-surface">80 Detents</span><span class="text-xs font-bold text-error bg-error-container/60 px-2 py-0.5 rounded-md">14 Skip / Chatter!</span></div></div><div class="w-9 h-9 rounded-xl bg-error-container flex items-center justify-center text-error"><span class="material-symbols-outlined text-[20px]">warning</span></div></div><div class="flex items-center justify-between text-[11px] text-on-surface-variant"><span>Izq: 48 (CW/CCW OK)</span><span class="text-error font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>Der: Dial R Jitter &amp; Missed Steps</span></div></div>
+<!-- KPI 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-bold tracking-wider uppercase text-on-surface-variant">Rollover &amp; Bus Sync</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline text-3xl font-bold text-on-surface">NKRO</span>
+<span class="text-xs font-bold text-primary">0% Drop</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>TRRS Half-Duplex 115200bps</span>
+<span class="text-primary font-semibold">12 Teclas Simultáneas OK</span>
+</div>
+</div>
+</div>
+<!-- Central Interactive Visual Matrix for bCorne 56 -->
+<div class="w-full p-6 lg:p-8 rounded-3xl bg-surface-container-low shadow-sm flex flex-col gap-6 relative overflow-hidden">
+<!-- Top controls & Matrix Legend -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline font-bold text-lg text-on-surface">Matriz Física Columnar bCorne 56-Key (3×6+4)</h2>
+<span class="text-xs text-on-surface-variant hidden sm:inline">• Haz clic o pulsa en tu teclado físico</span>
+</div>
+<!-- Legend Pills -->
+<div class="flex flex-wrap items-center gap-3 text-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-md bg-surface-container shadow-sm"></span>
+<span class="text-on-surface-variant">Sin probar</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-md bg-primary shadow-sm"></span>
+<span class="text-on-surface font-semibold">Pulsada ahora</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-md bg-primary-fixed text-on-primary-fixed flex items-center justify-center text-[10px] font-bold">✓</span>
+<span class="text-on-surface-variant">Comprobada OK</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-md bg-error-container text-error flex items-center justify-center text-[10px] font-bold">!</span>
+<span class="text-on-surface-variant">Chatter / Alerta</span>
+</div>
+</div>
+</div>
+<!-- Split Layout Stage -->
+<div class="w-full py-4 flex flex-col xl:flex-row items-center justify-center gap-10 lg:gap-14 overflow-x-auto select-none">
+<!-- LEFT HALF (MASTER) -->
+<div class="flex flex-col items-center gap-4 p-5 rounded-2xl bg-surface/70 shadow-sm shrink-0">
+<div class="w-full flex items-center justify-between px-2 pb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface text-[10px] font-bold tracking-wider">LEFT HALF (MASTER)</span>
+<span class="text-[11px] text-on-surface-variant font-mono">Row 0..3 / Col 0..5</span>
+</div>
+<span class="text-[11px] font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              MCU Pro Micro Type-C
+            </span>
+</div>
+<!-- Rotary Encoder Left Top Placement -->
+<div class="w-full flex items-center justify-start pl-3 pb-1">
+<div class="flex items-center gap-3 p-2 px-3 rounded-xl bg-surface-container transition-all cursor-pointer hover:bg-surface-container-high" id="dial-left">
+<div class="relative w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shadow-inner group">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-sm">
+<div class="w-1 h-3 bg-primary rounded-full transform -translate-y-2 transition-transform duration-200" id="dial-indicator-left"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Encoder L (EC11)</span>
+<span class="text-xs font-semibold text-on-surface" id="dial-state-left">Volumen (+12 CW)</span>
+<span class="text-[10px] text-primary">Push Button: Inactivo</span>
+</div>
+</div>
+</div>
+<!-- Left Matrix Grid with True Columnar Staggering (Columns: Pinky Outer, Pinky, Ring, Middle, Index, Inner) -->
+<div class="flex items-end gap-2.5 pt-2">
+<!-- Col 0: Outer Pinky (Low offset) -->
+<div class="flex flex-col gap-2.5 pt-7">
+<div class="key-cap verified" data-key="TAB" data-matrix="L-0-0" data-presses="14">
+<span class="key-label">Tab</span>
+<span class="key-sub">KC_TAB</span>
+<span class="key-badge">14</span>
+</div>
+<div class="key-cap verified" data-key="LSHIFT" data-matrix="L-1-0" data-presses="9">
+<span class="key-label">Shift</span>
+<span class="key-sub">KC_LSFT</span>
+<span class="key-badge">9</span>
+</div>
+<div class="key-cap verified" data-key="LCTRL" data-matrix="L-2-0" data-presses="5">
+<span class="key-label">Ctrl</span>
+<span class="key-sub">KC_LCTL</span>
+<span class="key-badge">5</span>
+</div>
+</div>
+<!-- Col 1: Pinky (Moderate offset) -->
+<div class="flex flex-col gap-2.5 pt-4">
+<div class="key-cap verified" data-key="Q" data-matrix="L-0-1" data-presses="23">
+<span class="key-label">Q</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">23</span>
+</div>
+<div class="key-cap verified" data-key="A" data-matrix="L-1-1" data-presses="41">
+<span class="key-label">A</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">41</span>
+</div>
+<div class="key-cap verified" data-key="Z" data-matrix="L-2-1" data-presses="12">
+<span class="key-label">Z</span>
+<span class="key-sub">1.6ms</span>
+<span class="key-badge">12</span>
+</div>
+</div>
+<!-- Col 2: Ring (Offset higher) -->
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="key-cap verified" data-key="W" data-matrix="L-0-2" data-presses="32">
+<span class="key-label">W</span>
+<span class="key-sub">1.9ms</span>
+<span class="key-badge">32</span>
+</div>
+<div class="key-cap verified" data-key="S" data-matrix="L-1-2" data-presses="58">
+<span class="key-label">S</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">58</span>
+</div>
+<div class="key-cap verified" data-key="X" data-matrix="L-2-2" data-presses="16">
+<span class="key-label">X</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">16</span>
+</div>
+</div>
+<!-- Col 3: Middle (Highest Peak Stagger) -->
+<div class="flex flex-col gap-2.5 pt-0">
+<div class="key-cap verified" data-key="E" data-matrix="L-0-3" data-presses="78">
+<span class="key-label">E</span>
+<span class="key-sub">1.6ms</span>
+<span class="key-badge">78</span>
+</div>
+<div class="key-cap active-press" data-key="D" data-matrix="L-1-3" data-presses="64">
+<span class="key-label">D</span>
+<span class="key-sub">NOW</span>
+<span class="key-badge">64</span>
+</div>
+<div class="key-cap verified" data-key="C" data-matrix="L-2-3" data-presses="21">
+<span class="key-label">C</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">21</span>
+</div>
+</div>
+<!-- Col 4: Index -->
+<div class="flex flex-col gap-2.5 pt-3">
+<div class="key-cap verified" data-key="R" data-matrix="L-0-4" data-presses="61">
+<span class="key-label">R</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">61</span>
+</div>
+<div class="key-cap verified" data-key="F" data-matrix="L-1-4" data-presses="83">
+<span class="key-label">F</span>
+<span class="key-sub">Home</span>
+<span class="key-badge">83</span>
+</div>
+<div class="key-cap verified" data-key="V" data-matrix="L-2-4" data-presses="19">
+<span class="key-label">V</span>
+<span class="key-sub">1.9ms</span>
+<span class="key-badge">19</span>
+</div>
+</div>
+<!-- Col 5: Inner Index -->
+<div class="flex flex-col gap-2.5 pt-4">
+<div class="key-cap verified" data-key="T" data-matrix="L-0-5" data-presses="34">
+<span class="key-label">T</span>
+<span class="key-sub">2.0ms</span>
+<span class="key-badge">34</span>
+</div>
+<div class="key-cap verified" data-key="G" data-matrix="L-1-5" data-presses="27">
+<span class="key-label">G</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">27</span>
+</div>
+<div class="key-cap verified" data-key="B" data-matrix="L-2-5" data-presses="15">
+<span class="key-label">B</span>
+<span class="key-sub">1.9ms</span>
+<span class="key-badge">15</span>
+</div>
+</div>
+</div>
+<!-- Left Hand Ergonomic Thumb Arc (4 Thumb Keys for 56-key bCorne) -->
+<div class="w-full flex items-center justify-end pr-2 pt-3">
+<div class="flex items-center gap-2 transform rotate-6 origin-right">
+<div class="key-cap verified" data-key="L_ALT" data-matrix="L-3-0" data-presses="11">
+<span class="key-label">Alt</span>
+<span class="key-sub">Thumb 1</span>
+<span class="key-badge">11</span>
+</div>
+<div class="key-cap verified" data-key="L_GUI" data-matrix="L-3-1" data-presses="18">
+<span class="key-label">Cmd</span>
+<span class="key-sub">Thumb 2</span>
+<span class="key-badge">18</span>
+</div>
+<div class="key-cap chatter-warning" data-key="L_LOWER" data-matrix="L-3-2" data-presses="45" title="Micro-rebote en apertura detectado: 3.2ms (&lt; umbral 5ms)"><span class="key-label">Lower</span><span class="key-sub">Chatter 3.2ms</span><span class="key-badge">!</span></div>
+<div class="key-cap unverified" data-key="L_SPACE" data-matrix="L-3-3" data-presses="0">
+<span class="key-label">Space</span>
+<span class="key-sub">Pendiente</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Central Connection Bridge Visual (TRRS Audio Cable / BLE Link) -->
+<div class="hidden xl:flex flex-col items-center justify-center gap-3 px-2 text-on-surface-variant">
+<div class="w-0.5 h-16 bg-gradient-to-b from-transparent via-primary-container to-transparent"></div>
+<div class="p-2.5 rounded-full bg-surface-container flex flex-col items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary animate-pulse">settings_ethernet</span>
+<span class="text-[9px] font-mono font-bold tracking-widest text-on-surface-variant">TRRS</span>
+</div>
+<div class="text-[10px] font-mono text-center leading-tight">
+            3.3V<br>Half-Duplex
+          </div>
+<div class="w-0.5 h-16 bg-gradient-to-b from-transparent via-primary-container to-transparent"></div>
+</div>
+<!-- RIGHT HALF (SLAVE) -->
+<div class="flex flex-col items-center gap-4 p-5 rounded-2xl bg-surface/70 shadow-sm shrink-0">
+<div class="w-full flex items-center justify-between px-2 pb-2">
+<span class="text-[11px] font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              TRRS Sync OK (Lat: 0.4ms)
+            </span>
+<div class="flex items-center gap-2">
+<span class="text-[11px] text-on-surface-variant font-mono">Row 0..3 / Col 6..11</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface text-[10px] font-bold tracking-wider">RIGHT HALF (SLAVE)</span>
+</div>
+</div>
+<!-- Rotary Encoder Right Top Placement -->
+<div class="w-full flex items-center justify-end pr-3 pb-1">
+<div class="flex items-center gap-3 p-2 px-3 rounded-xl bg-error-container/40 border-0 transition-all cursor-pointer hover:bg-error-container/60" id="dial-right"><div class="flex flex-col text-right"><div class="flex items-center justify-end gap-1.5"><span class="material-symbols-outlined text-[14px] text-error">warning</span><span class="text-[10px] font-bold text-error uppercase tracking-wider">Encoder R (EC11) • CHATTER</span></div><span class="text-xs font-bold text-error" id="dial-state-right">Pérdida de cuadratura / Contact bounce 3.8ms</span><span class="text-[10px] font-semibold text-error">Push: Jitter 4 rebotes / Step Skip</span></div><div class="relative w-10 h-10 rounded-full bg-error-container flex items-center justify-center shadow-inner group"><div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-sm"><div class="w-1.5 h-3.5 bg-error rounded-full transform rotate-45 -translate-y-2 transition-transform duration-200" id="dial-indicator-right"></div></div></div></div>
+</div>
+<!-- Right Matrix Grid with True Columnar Staggering (Columns: Inner Index, Index, Middle, Ring, Pinky, Outer Pinky) -->
+<div class="flex items-end gap-2.5 pt-2">
+<!-- Col 6: Inner Index -->
+<div class="flex flex-col gap-2.5 pt-4">
+<div class="key-cap verified" data-key="Y" data-matrix="R-0-0" data-presses="29">
+<span class="key-label">Y</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">29</span>
+</div>
+<div class="key-cap verified" data-key="H" data-matrix="R-1-0" data-presses="37">
+<span class="key-label">H</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">37</span>
+</div>
+<div class="key-cap verified" data-key="N" data-matrix="R-2-0" data-presses="48">
+<span class="key-label">N</span>
+<span class="key-sub">1.9ms</span>
+<span class="key-badge">48</span>
+</div>
+</div>
+<!-- Col 7: Index -->
+<div class="flex flex-col gap-2.5 pt-3">
+<div class="key-cap verified" data-key="U" data-matrix="R-0-1" data-presses="53">
+<span class="key-label">U</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">53</span>
+</div>
+<div class="key-cap verified" data-key="J" data-matrix="R-1-1" data-presses="81">
+<span class="key-label">J</span>
+<span class="key-sub">Home</span>
+<span class="key-badge">81</span>
+</div>
+<div class="key-cap verified" data-key="M" data-matrix="R-2-1" data-presses="39">
+<span class="key-label">M</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">39</span>
+</div>
+</div>
+<!-- Col 8: Middle (Highest Peak Stagger) -->
+<div class="flex flex-col gap-2.5 pt-0">
+<div class="key-cap verified" data-key="I" data-matrix="R-0-2" data-presses="72">
+<span class="key-label">I</span>
+<span class="key-sub">1.6ms</span>
+<span class="key-badge">72</span>
+</div>
+<div class="key-cap verified" data-key="K" data-matrix="R-1-2" data-presses="67">
+<span class="key-label">K</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">67</span>
+</div>
+<div class="key-cap verified" data-key="COMMA" data-matrix="R-2-2" data-presses="22">
+<span class="key-label">,</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">22</span>
+</div>
+</div>
+<!-- Col 9: Ring -->
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="key-cap verified" data-key="O" data-matrix="R-0-3" data-presses="65">
+<span class="key-label">O</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">65</span>
+</div>
+<div class="key-cap verified" data-key="L" data-matrix="R-1-3" data-presses="59">
+<span class="key-label">L</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">59</span>
+</div>
+<div class="key-cap verified" data-key="DOT" data-matrix="R-2-3" data-presses="31">
+<span class="key-label">.</span>
+<span class="key-sub">1.9ms</span>
+<span class="key-badge">31</span>
+</div>
+</div>
+<!-- Col 10: Pinky -->
+<div class="flex flex-col gap-2.5 pt-4">
+<div class="key-cap verified" data-key="P" data-matrix="R-0-4" data-presses="38">
+<span class="key-label">P</span>
+<span class="key-sub">1.7ms</span>
+<span class="key-badge">38</span>
+</div>
+<!-- Simulated key with chatter warning detected -->
+<div class="key-cap chatter-warning" data-key="NTILDE" data-matrix="R-1-4" data-presses="8" title="Micro-rebote detectado: 4.2ms (&lt; umbral 5ms)">
+<span class="key-label">Ñ</span>
+<span class="key-sub">Chatter</span>
+<span class="key-badge">!</span>
+</div>
+<div class="key-cap verified" data-key="SLASH" data-matrix="R-2-4" data-presses="17">
+<span class="key-label">/</span>
+<span class="key-sub">1.8ms</span>
+<span class="key-badge">17</span>
+</div>
+</div>
+<!-- Col 11: Outer Pinky -->
+<div class="flex flex-col gap-2.5 pt-7">
+<div class="key-cap verified" data-key="BSPC" data-matrix="R-0-5" data-presses="43">
+<span class="key-label">Bspc</span>
+<span class="key-sub">KC_BSPC</span>
+<span class="key-badge">43</span>
+</div>
+<div class="key-cap verified" data-key="ENTER" data-matrix="R-1-5" data-presses="36">
+<span class="key-label">Enter</span>
+<span class="key-sub">KC_ENT</span>
+<span class="key-badge">36</span>
+</div>
+<!-- Unverified keycap -->
+<div class="key-cap unverified" data-key="RSHIFT" data-matrix="R-2-5" data-presses="0">
+<span class="key-label">Shift</span>
+<span class="key-sub">Pendiente</span>
+</div>
+</div>
+</div>
+<!-- Right Hand Ergonomic Thumb Arc (4 Thumb Keys for 56-key bCorne) -->
+<div class="w-full flex items-center justify-start pl-2 pt-3">
+<div class="flex items-center gap-2 transform -rotate-6 origin-left">
+<div class="key-cap verified" data-key="R_RAISE" data-matrix="R-3-0" data-presses="51">
+<span class="key-label">Raise</span>
+<span class="key-sub">MO(2)</span>
+<span class="key-badge">51</span>
+</div>
+<div class="key-cap verified" data-key="R_ENTER" data-matrix="R-3-1" data-presses="29">
+<span class="key-label">Enter</span>
+<span class="key-sub">Thumb 2</span>
+<span class="key-badge">29</span>
+</div>
+<div class="key-cap chatter-warning" data-key="R_ALTGR" data-matrix="R-3-2" data-presses="13" title="Rebote anómalo detectado: 4.1ms (&lt; umbral 5ms)"><span class="key-label">AltGr</span><span class="key-sub">Chatter 4.1ms</span><span class="key-badge">!</span></div>
+<div class="key-cap verified" data-key="R_DEL" data-matrix="R-3-3" data-presses="16">
+<span class="key-label">Del</span>
+<span class="key-sub">Thumb 4</span>
+<span class="key-badge">16</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Feedback Ribbon -->
+<div class="w-full p-3 rounded-xl bg-surface-container flex flex-wrap items-center justify-between gap-4 text-xs"><div class="flex flex-wrap items-center gap-2"><span class="px-2 py-0.5 rounded bg-error-container text-error font-bold text-[11px] uppercase tracking-wider flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">error</span>Última anomalía</span><span class="font-mono font-bold text-error px-2 py-0.5 rounded bg-surface-container-high">Dial_R (Fase A/B desincronizada) | L_Thumb 3 (Rebote apertura: 3.2ms)</span><span class="text-error font-semibold">3 Alertas de Chatter Detectadas • Umbral Eager &lt; 5.0ms</span></div><div class="flex items-center gap-3 text-on-surface-variant"><span>Switches: Choc Red Pro (Fatiga de muelle)</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="text-error font-semibold">Chatter en 3 nodos</span></div></div>
+</div>
+<!-- Bottom Split: Live Event Stream Terminal (Left 60%) & Biomechanics Diagnostic (Right 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Event Logger Stream Terminal (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-4 p-6 rounded-3xl bg-surface-container-low shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-3 h-3 rounded-full bg-primary/20 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></div>
+</div>
+<h3 class="font-headline font-bold text-base text-on-surface">Event Logger HID en Tiempo Real</h3>
+<span class="text-xs font-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">RAW Stream</span>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl text-xs overflow-x-auto">
+<button class="filter-btn active px-2.5 py-1 rounded-lg font-semibold bg-surface text-on-surface shadow-xs" data-filter="all">Todos</button>
+<button class="filter-btn px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface" data-filter="dials">Diales EC11</button>
+<button class="filter-btn px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface" data-filter="thumbs">Pulgares</button>
+<button class="filter-btn px-2.5 py-1 rounded-lg text-error hover:bg-error-container/50" data-filter="warnings">Anomalías</button>
+</div>
+</div>
+<!-- Terminal Table Header -->
+<div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-surface-container text-[11px] font-mono font-bold uppercase tracking-wider text-on-surface-variant">
+<div class="col-span-2">Offset</div>
+<div class="col-span-2">Origen</div>
+<div class="col-span-2">Matriz (R,C)</div>
+<div class="col-span-3">Keycode / Acción</div>
+<div class="col-span-3 text-right">Hold / Debounce</div>
+</div>
+<!-- Terminal Log Entries Container -->
+<div class="flex flex-col gap-1.5 font-mono text-xs max-h-72 overflow-y-auto pr-1" id="terminal-events-list"><div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-error-container/40 border-0 hover:bg-error-container/60 transition-colors items-center text-on-surface"><div class="col-span-2 text-error font-bold">+0001ms</div><div class="col-span-2 font-semibold text-error">Dial_R</div><div class="col-span-2 text-error font-bold">EC11_R</div><div class="col-span-3 flex items-center gap-1.5 font-bold text-error"><span class="material-symbols-outlined text-[14px]">sync_problem</span>[Rotary Bounce: Phase Glitch]</div><div class="col-span-3 text-right text-error font-bold font-mono">Skip 14 Detents • 3.8ms</div></div><div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-error-container/40 border-0 hover:bg-error-container/60 transition-colors items-center text-on-surface"><div class="col-span-2 text-error font-bold">+0018ms</div><div class="col-span-2 font-semibold text-error">Master (L)</div><div class="col-span-2 text-error font-bold">[3, 2]</div><div class="col-span-3 flex items-center gap-1.5 font-bold text-error"><span class="material-symbols-outlined text-[14px]">warning</span>L_LOWER (Double Tap Chatter)</div><div class="col-span-3 text-right text-error font-bold font-mono">3.2ms &lt; 5.0ms</div></div><div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-error-container/40 border-0 hover:bg-error-container/60 transition-colors items-center text-on-surface"><div class="col-span-2 text-error font-bold">+0042ms</div><div class="col-span-2 font-semibold text-error">Slave (R)</div><div class="col-span-2 text-error font-bold">[3, 2]</div><div class="col-span-3 flex items-center gap-1.5 font-bold text-error"><span class="material-symbols-outlined text-[14px]">warning</span>R_ALTGR (Chatter / Rebote)</div><div class="col-span-3 text-right text-error font-bold font-mono">4.1ms &lt; 5.0ms</div></div><div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-error-container/40 border-0 hover:bg-error-container/60 transition-colors items-center text-on-surface"><div class="col-span-2 text-error font-bold">+0114ms</div><div class="col-span-2 font-semibold text-error">Slave (R)</div><div class="col-span-2 text-error font-bold">[1, 4]</div><div class="col-span-3 flex items-center gap-1.5 font-bold text-error"><span class="material-symbols-outlined text-[14px]">warning</span>KC_NTILDE (Chatter)</div><div class="col-span-3 text-right text-error font-bold font-mono">4.2ms &lt; 5.0ms</div></div><div class="grid grid-cols-12 gap-2 px-3 py-2 rounded-lg bg-surface/80 hover:bg-surface transition-colors items-center text-on-surface"><div class="col-span-2 text-on-surface-variant">+0182ms</div><div class="col-span-2 font-semibold text-primary">Master (L)</div><div class="col-span-2 text-on-surface-variant">[1, 3]</div><div class="col-span-3 flex items-center gap-1.5 font-bold"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>KC_D (Pressed)</div><div class="col-span-3 text-right text-on-surface-variant font-medium">Hold 112ms • 1.8ms</div></div></div>
+<!-- Terminal Footer Controls -->
+<div class="flex items-center justify-between pt-2 text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Escuchando descriptor HID /dev/hidraw1 (bCorne Rev3)
+          </span>
+<div class="flex items-center gap-3">
+<button class="hover:text-on-surface underline" id="btn-clear-terminal">Limpiar vista</button>
+<span class="font-mono">Tasa: 1,000 evt/s</span>
+</div>
+</div>
+</div>
+<!-- Biomechanics & Hardware Health Diagnostic (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-5">
+<!-- Chattering Detection & Diode Health Card -->
+<div class="p-6 rounded-3xl bg-surface-container-low shadow-sm flex flex-col gap-4"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-xl bg-error-container flex items-center justify-center text-error"><span class="material-symbols-outlined text-[18px]">error</span></div><h3 class="font-headline font-bold text-base text-on-surface">3 Alertas Críticas (Chatter en Dial R &amp; Pulgares)</h3></div><span class="px-2.5 py-0.5 rounded-full bg-error-container text-error text-[11px] font-bold animate-pulse">Rebote No Deseado</span></div><p class="text-xs text-on-surface-variant leading-relaxed">Algoritmo Eager PR activo. Detectado ruido de apertura mecánico en switches de pulgar y desincronización de pulsos en cuadratura del encoder EC11 derecho.</p><div class="flex flex-col gap-2.5"><div class="p-3 rounded-xl bg-surface-container flex items-center justify-between text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-error">grain</span><span class="font-medium text-on-surface">Doble pulsación no deseada:</span></div><span class="font-bold text-error">7 Reincidentes (3 en Dial R, 4 en Pulgares)</span></div><div class="p-3 rounded-xl bg-surface-container flex items-center justify-between text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">tune</span><span class="font-medium text-on-surface">Umbral Debounce Sugerido:</span></div><div class="flex items-center gap-1.5"><button class="debounce-pill px-2 py-0.5 rounded-md bg-surface-container-high text-[11px] font-bold text-on-surface-variant hover:text-on-surface">3ms</button><button class="debounce-pill px-2 py-0.5 rounded-md bg-surface-container-high text-[11px] font-bold text-on-surface-variant hover:text-on-surface">5ms</button><button class="debounce-pill active px-2 py-0.5 rounded-md bg-error text-on-error text-[11px] font-bold shadow-xs">8ms (Recomendado)</button></div></div><div class="p-3 rounded-xl bg-surface-container flex flex-col gap-1.5"><div class="flex items-center justify-between text-[11px]"><span class="text-error font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">show_chart</span>Curva Osciloscopio con Glitches:</span><span class="font-mono text-error font-bold">Degradada (81.4%)</span></div><svg class="w-full h-12 text-error" fill="none" viewBox="0 0 320 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 40 L40 40 L42 12 L44 38 L46 15 L48 35 L52 10 L120 10 L122 36 L124 14 L126 40 L180 40 L182 12 L184 34 L186 12 L240 12 L242 40 L320 40" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M40 40 L42 12 L44 38 L46 15 L48 35 L52 10" stroke="#b83230" stroke-dasharray="1 2" stroke-width="3"></path><path d="M180 40 L182 12 L184 34 L186 12" stroke="#705c30" stroke-dasharray="2 2" stroke-width="2"></path></svg><div class="flex justify-between text-[10px] font-mono"><span class="text-error font-semibold">Rebote Pulgar Izq: 3.2ms</span><span class="text-tertiary font-semibold">Glitches cuadratura Dial R</span><span class="text-error font-semibold">AltGr: 4.1ms</span></div></div></div></div>
+<!-- Thumb Cluster Coordination & Ergonomic Balance -->
+<div class="p-6 rounded-3xl bg-surface-container-low shadow-sm flex flex-col gap-4"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed"><span class="material-symbols-outlined text-[18px]">front_hand</span></div><h3 class="font-headline font-bold text-base text-on-surface">Coordinación Pulgares (Thumbs)</h3></div><span class="text-xs font-bold text-error bg-error-container/60 px-2 py-0.5 rounded-full">Alerta Fatiga &amp; Rebote</span></div><p class="text-xs text-on-surface-variant leading-relaxed">Análisis de desgaste por retención simultánea en capas L1/L2: Los muelles de los switches de pulgar muestran pérdida de histéresis elástica y rebote prematuro al soltarse.</p><div class="flex flex-col gap-3 pt-1"><div class="flex flex-col gap-1"><div class="flex justify-between text-xs font-medium"><span class="text-on-surface">Mano Izquierda (Lower: Chatter 3.2ms)</span><span class="text-error font-bold">74 pulsaciones (4 fallos)</span></div><div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-error rounded-full" style="width: 52%"></div></div></div><div class="flex flex-col gap-1"><div class="flex justify-between text-xs font-medium"><span class="text-on-surface">Mano Derecha (AltGr: Chatter 4.1ms)</span><span class="text-error font-bold">109 pulsaciones (3 fallos)</span></div><div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 48%"></div></div></div></div><div class="pt-2 flex items-center justify-between text-xs"><span class="text-on-surface-variant">Perfil Switch recomendado:</span><select class="bg-surface-container text-on-surface font-semibold px-2.5 py-1.5 rounded-xl outline-none border-0 text-xs shadow-xs cursor-pointer"><option>Ajustar Debounce a 8ms Eager</option><option>Kailh Choc v1 (Reemplazo con muelle 45g)</option><option>Gateron Oil King (Linear 55g)</option></select></div></div>
+</div>
+</div>
+<!-- Diagnostic Details Drawer / Bottom Helper -->
+<div class="p-6 rounded-3xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline font-bold text-sm text-on-surface">Matriz ZMK/QMK: Paginación Directa por Filas &amp; Columnas</h4>
+<p class="text-xs text-on-surface-variant mt-0.5">
+            Diodos Schottky 1N4148 orientados Col2Row. No se detectan fantasmas por inversión de polaridad ni capacitancia parásita en cable TRRS.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-4 py-2 rounded-xl bg-surface-container-highest hover:bg-surface-container-high text-on-surface text-xs font-semibold transition-all" href="#">
+          Ver Esquema Eléctrico
+        </a>
+<a class="px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold hover:bg-primary/90 transition-all shadow-sm" href="#">
+          Guardar Calibración
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Keycap visual interaction simulation & Audio Synthesis
+    const keycaps = document.querySelectorAll('.key-cap');
+    const metricCount = document.getElementById('metric-keys-count');
+    const terminalList = document.getElementById('terminal-events-list');
+    const toggleSynth = document.getElementById('toggle-synth-audio');
+    const synthLabel = document.getElementById('synth-label');
+    const synthIcon = document.getElementById('synth-icon');
+    const resetBtn = document.getElementById('btn-reset-matrix');
+    const clearTerminalBtn = document.getElementById('btn-clear-terminal');
+    const chatterBtn = document.getElementById('btn-chatter-test');
+    const exportBtn = document.getElementById('btn-export-log');
+
+    const dialLeft = document.getElementById('dial-left');
+    const dialRight = document.getElementById('dial-right');
+    const dialIndLeft = document.getElementById('dial-indicator-left');
+    const dialIndRight = document.getElementById('dial-indicator-right');
+
+    let audioContext = null;
+    let audioEnabled = true;
+    let leftRotation = 0;
+    let rightRotation = 45;
+
+    // Web Audio Synthesizer for tactile Thock / Clack clicks
+    function playKeyThock(pitch = 320, isEncoder = false) {
+      if (!audioEnabled) return;
+      try {
+        if (!audioContext) {
+          audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioContext.state === 'suspended') {
+          audioContext.resume();
+        }
+
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+
+        const baseFreq = isEncoder ? pitch : (pitch + (Math.random() * 40 - 20));
+        osc.type = isEncoder ? 'sine' : 'triangle';
+        osc.frequency.setValueAtTime(baseFreq, audioContext.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(baseFreq * 0.3, audioContext.currentTime + 0.04);
+
+        gain.gain.setValueAtTime(isEncoder ? 0.08 : 0.15, audioContext.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + (isEncoder ? 0.03 : 0.06));
+
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+
+        osc.start();
+        osc.stop(audioContext.currentTime + (isEncoder ? 0.035 : 0.065));
+      } catch (e) {
+        // Audio policy ignore
+      }
+    }
+
+    // Toggle Audio Thock
+    if (toggleSynth) {
+      toggleSynth.addEventListener('click', () => {
+        audioEnabled = !audioEnabled;
+        if (audioEnabled) {
+          synthLabel.textContent = 'Audio Thock: ON';
+          synthIcon.textContent = 'volume_up';
+          toggleSynth.dataset.active = 'true';
+        } else {
+          synthLabel.textContent = 'Audio Thock: MUTE';
+          synthIcon.textContent = 'volume_off';
+          toggleSynth.dataset.active = 'false';
+        }
+      });
+    }
+
+    // Add event log helper
+    function appendLog(offset, source, matrix, action, detail, isWarn = false) {
+      if (!terminalList) return;
+      const row = document.createElement('div');
+      row.className = `grid grid-cols-12 gap-2 px-3 py-2 rounded-lg transition-colors items-center font-mono text-xs ${
+        isWarn ? 'bg-error-container/40 text-on-surface' : 'bg-surface/80 hover:bg-surface text-on-surface'
+      }`;
+      row.innerHTML = `
+        <div class="col-span-2 ${isWarn ? 'text-error font-bold' : 'text-on-surface-variant'}">${offset}</div>
+        <div class="col-span-2 font-semibold ${isWarn ? 'text-error' : 'text-primary'}">${source}</div>
+        <div class="col-span-2 text-on-surface-variant">[${matrix}]</div>
+        <div class="col-span-3 flex items-center gap-1.5 font-bold ${isWarn ? 'text-error' : 'text-on-surface'}">
+          <span class="w-1.5 h-1.5 rounded-full ${isWarn ? 'bg-error' : 'bg-primary'}"></span>
+          ${action}
+        </div>
+        <div class="col-span-3 text-right ${isWarn ? 'text-error font-bold' : 'text-on-surface-variant'}">${detail}</div>
+      `;
+      terminalList.prepend(row);
+      // Keep only latest 18 events
+      if (terminalList.children.length > 20) {
+        terminalList.removeChild(terminalList.lastChild);
+      }
+    }
+
+    // Keycaps Click & Active Test
+    keycaps.forEach(cap => {
+      cap.addEventListener('mousedown', () => {
+        playKeyThock(280);
+        cap.classList.add('active-press');
+        const keyName = cap.getAttribute('data-key') || 'KEY';
+        const matrixPos = cap.getAttribute('data-matrix') || '0,0';
+        let count = parseInt(cap.getAttribute('data-presses') || '0', 10);
+        count += 1;
+        cap.setAttribute('data-presses', count);
+
+        // Update badge
+        let badge = cap.querySelector('.key-badge');
+        if (!badge) {
+          badge = document.createElement('span');
+          badge.className = 'key-badge';
+          cap.appendChild(badge);
+        }
+        badge.textContent = count;
+
+        appendLog(
+          '+' + Math.floor(Math.random() * 90 + 10) + 'ms',
+          matrixPos.startsWith('L') ? 'Master (L)' : 'Slave (R)',
+          matrixPos,
+          `KC_${keyName} (Pressed)`,
+          `Hold 0ms • 1.${Math.floor(Math.random()*4 + 6)}ms`
+        );
+      });
+
+      cap.addEventListener('mouseup', () => {
+        cap.classList.remove('active-press');
+        if (!cap.classList.contains('chatter-warning')) {
+          cap.classList.add('verified');
+          cap.classList.remove('unverified');
+          const sub = cap.querySelector('.key-sub');
+          if (sub && sub.textContent === 'Pendiente') {
+            sub.textContent = '1.8ms';
+          }
+        }
+        recalcVerifiedCount();
+      });
+    });
+
+    // Encoders interactions
+    if (dialLeft) {
+      dialLeft.addEventListener('click', () => {
+        leftRotation = (leftRotation + 30) % 360;
+        if (dialIndLeft) {
+          dialIndLeft.style.transform = `rotate(${leftRotation}deg) translateY(-8px)`;
+        }
+        playKeyThock(520, true);
+        appendLog(
+          '+' + Math.floor(Math.random() * 80 + 10) + 'ms',
+          'Dial_L',
+          'EC11_L',
+          'CW (Step +1)',
+          `Volumen (${leftRotation / 30})`
+        );
+      });
+    }
+
+    if (dialRight) {
+      dialRight.addEventListener('click', () => {
+        rightRotation = (rightRotation + 30) % 360;
+        if (dialIndRight) {
+          dialIndRight.style.transform = `rotate(${rightRotation}deg) translateY(-8px)`;
+        }
+        playKeyThock(480, true);
+        appendLog(
+          '+' + Math.floor(Math.random() * 80 + 10) + 'ms',
+          'Dial_R',
+          'EC11_R',
+          'CW (Step +1)',
+          `Scroll (${rightRotation / 30})`
+        );
+      });
+    }
+
+    // Reset All Matrix States
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        keycaps.forEach(cap => {
+          cap.classList.remove('active-press', 'verified', 'chatter-warning');
+          cap.classList.add('unverified');
+          cap.setAttribute('data-presses', '0');
+          const badge = cap.querySelector('.key-badge');
+          if (badge) badge.remove();
+          const sub = cap.querySelector('.key-sub');
+          if (sub) sub.textContent = 'Pendiente';
+        });
+        if (metricCount) metricCount.textContent = '0 / 56';
+        appendLog('+0000ms', 'SYS', 'ALL', 'Matrix History Cleared', 'Reset buffer OK');
+      });
+    }
+
+    // Chatter Test Trigger
+    if (chatterBtn) {
+      chatterBtn.addEventListener('click', () => {
+        playKeyThock(650);
+        appendLog(
+          '+0003ms',
+          'TEST_HARNESS',
+          'R-1-4',
+          'INDUCED_CHATTER_ALERT',
+          'Simulación: 3.1ms jitter < 5ms',
+          true
+        );
+      });
+    }
+
+    // Clear Terminal Log
+    if (clearTerminalBtn) {
+      clearTerminalBtn.addEventListener('click', () => {
+        if (terminalList) terminalList.innerHTML = '';
+      });
+    }
+
+    // Export Log
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const payload = {
+          device: "bCorne 56-Key v3.2",
+          firmware: "ZMK-BLE-0.3.0-pr-eager",
+          pollingRateHz: 1000,
+          matrixHealth: "Optimal",
+          testedKeys: "54/56",
+          debounceLatencyAvgMs: 1.8,
+          timestamp: new Date().toISOString()
+        };
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `bcorne-diagnostic-${Date.now()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    // Debounce Pills switcher
+    const debouncePills = document.querySelectorAll('.debounce-pill');
+    debouncePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        debouncePills.forEach(p => {
+          p.classList.remove('active', 'bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        pill.classList.add('active', 'bg-primary', 'text-on-primary');
+        appendLog('+0012ms', 'CONFIG', 'ZMK', `Debounce -> ${pill.textContent}`, 'Algoritmo Eager PR actual');
+      });
+    });
+
+    function recalcVerifiedCount() {
+      const verified = document.querySelectorAll('.key-cap.verified').length;
+      if (metricCount) {
+        metricCount.textContent = `${verified} / 56`;
+      }
+    }
+
+    // Keyboard physical listener support (for common alphanumeric keys)
+    window.addEventListener('keydown', (e) => {
+      const char = e.key.toUpperCase();
+      const cap = document.querySelector(`.key-cap[data-key="${char}"]`);
+      if (cap) {
+        cap.classList.add('active-press');
+        playKeyThock(300);
+      }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      const char = e.key.toUpperCase();
+      const cap = document.querySelector(`.key-cap[data-key="${char}"]`);
+      if (cap) {
+        cap.classList.remove('active-press');
+        cap.classList.add('verified');
+        recalcVerifiedCount();
+      }
+    });
+  })();
+</script>
+<style>
+  /* Bespoke Keycap Styles matching PBT Organic Aesthetic */
+  .key-cap {
+    position: relative;
+    width: 46px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #faf6f0;
+    box-shadow: 0 4px 10px rgba(46, 50, 48, 0.07), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.12s cubic-bezier(0.2, 0.8, 0.2, 1);
+    user-select: none;
+  }
+
+  .key-cap:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(46, 50, 48, 0.11);
+  }
+
+  .key-cap:active,
+  .key-cap.active-press {
+    transform: translateY(3px) scale(0.96);
+    background-color: #4a7c59 !important;
+    box-shadow: 0 1px 3px rgba(46, 50, 48, 0.2), inset 0 2px 5px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .key-cap.active-press .key-label,
+  .key-cap.active-press .key-sub {
+    color: #ffffff !important;
+  }
+
+  /* Verified Keycap State (Sage green soft tint) */
+  .key-cap.verified {
+    background-color: #e5f1e8;
+    box-shadow: 0 3px 8px rgba(74, 124, 89, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  }
+  .key-cap.verified .key-label {
+    color: #2a6038;
+  }
+  .key-cap.verified .key-sub {
+    color: #4a7c59;
+  }
+
+  /* Chatter Warning State */
+  .key-cap.chatter-warning {
+    background-color: #ffdad8;
+    box-shadow: 0 3px 10px rgba(184, 50, 48, 0.15);
+  }
+  .key-cap.chatter-warning .key-label {
+    color: #b83230;
+  }
+  .key-cap.chatter-warning .key-sub {
+    color: #690005;
+  }
+
+  /* Unverified Keycap */
+  .key-cap.unverified {
+    background-color: #eae6de;
+    opacity: 0.85;
+  }
+
+  .key-label {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #2e3230;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .key-sub {
+    font-size: 8px;
+    font-weight: 600;
+    color: #6b6358;
+    line-height: 1;
+    margin-top: 3px;
+    font-family: monospace;
+  }
+
+  .key-badge {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    font-size: 7px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1px 3px;
+    border-radius: 4px;
+    background-color: #4a7c59;
+    color: #ffffff;
+  }
+
+  .key-cap.chatter-warning .key-badge {
+    background-color: #b83230;
+  }
+</style></main><footer class="w-full bg-surface-container-low py-10 mt-auto shadow-[0_-1px_6px_rgba(46,50,48,0.02)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><div class="flex items-center gap-2"><span class="font-headline font-semibold text-sm text-on-surface">CorneType Studio</span><span class="text-xs text-on-surface-variant">• Biomecánica &amp; Ergonomía Columnar</span></div><p class="text-xs text-on-surface-variant max-w-md text-center md:text-left">Optimizado para la distribución natural en abanico bCorne 56 con 2 encoders rotativos EC11 para descanso de muñeca y mínima fatiga ulnar.</p></div><div class="flex flex-wrap items-center justify-center gap-2"><span class="text-xs text-on-surface-variant font-medium mr-1">Compatibilidad:</span><span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface text-[11px] font-semibold tracking-wide">QMK</span><span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface text-[11px] font-semibold tracking-wide">ZMK</span><span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface text-[11px] font-semibold tracking-wide">VIA / VIAL</span></div></div></footer>
+
+</body></html>

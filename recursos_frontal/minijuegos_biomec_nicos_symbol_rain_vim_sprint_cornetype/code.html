@@ -1,0 +1,681 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#2a6038","on-secondary-fixed-variant":"#4a4538","on-primary":"#ffffff","tertiary-fixed":"#f8e0a8","secondary-container":"#f0e8db","on-tertiary-fixed-variant":"#554020","tertiary-container":"#c4a66a","outline-variant":"#c4c8bc","on-primary-container":"#d8f0de","surface-container-lowest":"#ffffff","surface-container-high":"#eae6de","surface-dim":"#dbd7cf","secondary-fixed":"#f0e8db","surface-container":"#f0ece4","primary-container":"#78a886","on-tertiary-container":"#554020","tertiary":"#705c30","surface-container-highest":"#e4e0d8","background":"#faf6f0","error-container":"#ffdad8","on-secondary-fixed":"#1e1a13","on-background":"#2e3230","secondary-fixed-dim":"#d4ccbf","on-tertiary-fixed":"#221a05","on-error":"#ffffff","on-primary-fixed":"#002110","outline":"#74796e","surface-container-low":"#f5f1ea","on-tertiary":"#ffffff","primary":"#4a7c59","tertiary-fixed-dim":"#dcc48e","on-surface-variant":"#4a4e4a","surface":"#faf6f0","surface-variant":"#e4e0d8","error":"#b83230","surface-bright":"#faf6f0","secondary":"#6b6358","on-secondary":"#ffffff","inverse-primary":"#8ecf9e","on-error-container":"#690005","on-secondary-container":"#5e5548","inverse-on-surface":"#f5f0e8","on-surface":"#2e3230","inverse-surface":"#2e3230","primary-fixed":"#c8e8d0","primary-fixed-dim":"#8ecf9e","surface-tint":"#4a7c59"},borderRadius:{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},spacing:{},fontFamily:{headline:["Literata"],display:["Literata"],body:["Nunito Sans"],label:["Nunito Sans"]},fontSize:{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_16px_rgba(46,50,48,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6 shrink-0"><div class="flex items-center gap-3"><img alt="CorneType Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDH-r5kOxkEubAlogpvq1U2UC0mC_zK2wBvRkrf0ZpF3IIxhSO2rymdmAge-JeFIUjPWIwIYkctIbqD0gXbBde0-QXzKqF9M-RMgDK1dzSV0T_nOee6n2C8BGc7wDxMePJNVkMDG3HOMgWqQP56Yn8qnSYQPC0ZBZc_broJwYQrVZFyG2IWEDaZ4_USR1bRBWywWbsBFacmM_LbXvgKUExjFNTazreT52XxX2IHhIeQvw"><div class="flex flex-col"><span class="text-lg font-headline font-bold text-on-surface leading-tight tracking-tight">CorneType</span><span class="text-[11px] font-medium text-secondary">bCorne 56-Key Split v3.2</span></div></div><div class="hidden xl:flex items-center gap-2 pl-4 py-1.5 px-3 rounded-full bg-surface-container-low text-xs text-on-surface-variant"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span><span class="font-medium">Conectado</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_left</span>Enc L: Vol</span><span class="text-outline-variant">|</span><span class="flex items-center gap-1 font-mono text-[11px]"><span class="material-symbols-outlined text-[14px]">rotate_right</span>Enc R: Scroll</span></div></div><nav class="hidden md:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="practica-de-escritura" href="#">Práctica de Escritura</a><a class="px-3.5 py-2 text-xs bg-surface-container-lowest text-primary font-semibold rounded-lg shadow-xs transition-colors" data-path="minijuegos" href="#">Minijuegos</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="explorador-de-capas" href="#">Explorador de Capas</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="cargar-keymap" href="#">Cargar Keymap</a><a class="px-3.5 py-2 text-xs text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="metricas-ergo-stats" href="#">Métricas &amp; Ergo Stats</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg"><span class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Capa</span><select class="bg-transparent text-xs font-semibold text-primary focus:outline-none cursor-pointer pr-1"><option>Base (QWERTY)</option><option>Base (Colemak-DH)</option><option>Raise (Núm / Símb)</option><option>Lower (Nav / F-Keys)</option><option>Adjust / Ergo Media</option></select></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">upload_file</span><span class="hidden lg:inline">.JSON / Keymap</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 flex flex-col gap-10">
+<!-- Header & Mission Statement -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-semibold tracking-wide self-start shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">sports_esports</span>
+<span>Dojo Biomecánico • Hardware bCorne v3.2</span>
+</div>
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight leading-tight">
+          Arena de Minijuegos Biomecánicos
+        </h1>
+<p class="text-secondary text-sm sm:text-base leading-relaxed">
+          Entrena la memoria cinestésica en columnas staggered, sincronización de pulgares con capas <code class="font-mono text-xs px-1.5 py-0.5 rounded bg-surface-container text-on-surface">MO(1)/MO(2)</code> y agilidad con encoders rotativos EC11.
+        </p>
+</div>
+<!-- Quick Session Indicator -->
+<div class="flex items-center gap-3 shrink-0 self-start lg:self-auto bg-surface-container-low px-4 py-2.5 rounded-xl shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-on-surface">Buffer de Telemetría Activo</span>
+<span class="text-[11px] text-secondary font-mono">1,000Hz Polling • ZMK BLE / USB-C</span>
+</div>
+</div>
+</div>
+<!-- Top Game-Switcher & Universal HUD Bar -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-4 p-3 bg-surface-container rounded-2xl shadow-sm">
+<!-- Tabs -->
+<div class="flex items-center gap-2 p-1 bg-surface-container-low rounded-xl">
+<button class="flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-semibold text-xs sm:text-sm shadow-sm transition-all" id="tab-symbol-rain" onclick="switchGameTab('rain')">
+<span class="material-symbols-outlined text-primary text-[18px]">grain</span>
+<span>Symbol Rain <span class="hidden sm:inline font-normal text-secondary">(Matriz de Capas)</span></span>
+<span class="ml-1 w-2 h-2 rounded-full bg-primary"></span>
+</button>
+<button class="flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-secondary hover:text-on-surface font-semibold text-xs sm:text-sm transition-all" id="tab-vim-sprint" onclick="switchGameTab('vim')">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+<span>Vim Columnar Sprint <span class="hidden sm:inline font-normal text-secondary">(HJKL + Dial)</span></span>
+</button>
+</div>
+<!-- Global Game HUD Metrics -->
+<div class="flex flex-wrap items-center gap-3 sm:gap-6 px-3 py-1">
+<!-- Level Picker -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary">Nivel</span>
+<select class="bg-transparent text-xs font-semibold text-on-surface focus:outline-none cursor-pointer">
+<option>Principiante (Row 2 Home)</option>
+<option selected="">Intermedio (Rust &amp; Regex Capas)</option>
+<option>Ninja Firmware (Dual Dials + Tap-Dance)</option>
+</select>
+</div>
+<!-- Modifiers -->
+<div class="hidden sm:flex items-center gap-1.5">
+<span class="px-2 py-1 rounded-md bg-secondary-container text-on-secondary-container text-[11px] font-mono font-medium">L1 Lower</span>
+<span class="px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-mono font-medium">L2 Raise</span>
+<span class="px-2 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-mono font-medium">EC11 Activo</span>
+</div>
+<!-- Combo Multiplier -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-tertiary/10">
+<span class="text-[11px] font-bold text-tertiary uppercase">Combo</span>
+<span class="font-headline font-bold text-tertiary text-sm sm:text-base">x4.2</span>
+</div>
+<!-- Latency / Term -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs font-bold text-on-surface">82 ms</span>
+<span class="text-[9px] uppercase tracking-wider text-secondary">Latencia Capa</span>
+</div>
+</div>
+<!-- Shields / HP -->
+<div class="flex items-center gap-1 pl-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- SECTION 1: SYMBOL RAIN ARENA (VIEWPORT + SPLIT HARDWARE VISUALIZER)        -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-6" id="section-symbol-rain">
+<!-- Main Arcade Game Grid + Side Telemetry Queue -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Gameplay Matrix Viewport (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm">
+<!-- Viewport Header Strip -->
+<div class="flex items-center justify-between px-5 py-3 bg-surface-container-high">
+<div class="flex items-center gap-2 text-xs font-mono text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>STAGE_04 :: RUST_REGEX_SYM_MATRIX</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="text-secondary font-mono">TAPPING_TERM: <strong class="text-on-surface">165ms</strong></span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-mono font-bold text-[11px]">PERFECT! +150</span>
+</div>
+</div>
+<!-- The Falling Matrix Simulation Area -->
+<div class="relative w-full h-[360px] sm:h-[400px] bg-surface-container-lowest overflow-hidden flex flex-col justify-between p-6 select-none">
+<!-- Matrix Columns Background Guides -->
+<div class="absolute inset-0 grid grid-cols-6 pointer-events-none opacity-40">
+<div class="border-r border-dashed border-outline-variant/30"></div>
+<div class="border-r border-dashed border-outline-variant/30"></div>
+<div class="border-r border-dashed border-outline-variant/30"></div>
+<div class="border-r border-dashed border-outline-variant/30"></div>
+<div class="border-r border-dashed border-outline-variant/30"></div>
+<div></div>
+</div>
+<!-- Descending Symbols at varying y-positions -->
+<div class="relative w-full h-full">
+<!-- Falling Symbol 1: Column 1 (Left Pinky) -->
+<div class="absolute left-[6%] top-[18%] flex flex-col items-center gap-1 transition-all">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-mono font-bold text-sm shadow-sm">::</span>
+<span class="text-[9px] font-mono text-secondary">Col 0 (L)</span>
+</div>
+<!-- Falling Symbol 2: Column 2 (Left Middle) -->
+<div class="absolute left-[22%] top-[45%] flex flex-col items-center gap-1 transition-all">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-mono font-bold text-sm shadow-sm">=&gt;</span>
+<span class="text-[9px] font-mono text-secondary">Col 2 (E)</span>
+</div>
+<!-- Target Active Symbol: Column 4 (Right Anular/Ring) - CLOSE TO CRITICAL LINE -->
+<div class="absolute left-[72%] top-[68%] flex flex-col items-center gap-1 animate-bounce">
+<div class="px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-mono font-bold text-lg shadow-md ring-4 ring-primary-fixed/40">
+                  { }
+                </div>
+<div class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold tracking-tight">
+                  L2 + P KEY
+                </div>
+</div>
+<!-- Falling Symbol 4: Column 5 (Right Pinky) -->
+<div class="absolute left-[88%] top-[24%] flex flex-col items-center gap-1 opacity-70">
+<span class="px-2 py-1 rounded-lg bg-surface-container text-on-surface font-mono font-bold text-sm shadow-sm">!=</span>
+<span class="text-[9px] font-mono text-secondary">Col 5 (;)</span>
+</div>
+<!-- Falling Symbol 5: Column 3 (Left Index) -->
+<div class="absolute left-[40%] top-[10%] flex flex-col items-center gap-1 opacity-60">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-mono font-bold text-sm shadow-sm">-&gt;</span>
+<span class="text-[9px] font-mono text-secondary">Col 3 (R)</span>
+</div>
+</div>
+<!-- Línea de Impacto Crítico (Tapping Target Zone) -->
+<div class="relative z-10 w-full pt-3 pb-2 border-t-2 border-primary/60 bg-gradient-to-t from-primary/10 via-transparent to-transparent flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-headline font-bold text-xs uppercase tracking-wider text-primary">Zona Crítica de Tapping</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-xs">
+<span class="text-secondary">Margen de Acierto:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-bold">±22ms</span>
+</div>
+</div>
+</div>
+<!-- Arena Footnote Shortcut hints -->
+<div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 bg-surface-container-low text-xs text-on-surface-variant font-mono">
+<div class="flex items-center gap-4">
+<span><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface shadow-xs">Espacio</kbd> Pausar</span>
+<span><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface shadow-xs">Esc</kbd> Reset Racha</span>
+<span><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface shadow-xs">Tab</kbd> Modo Vim</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Matriz 3x6+3 Columnar Calibrada</span>
+</div>
+</div>
+</div>
+<!-- Live HUD & Upcoming Queue Column (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-4">
+<!-- Upcoming Queue Card -->
+<div class="p-5 bg-surface-container rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-sm text-on-surface">Cola de Símbolos Inminentes</h3>
+<span class="text-xs font-mono text-secondary">FIFO (Next 4)</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest text-center">
+<span class="font-mono text-base font-bold text-primary">{ }</span>
+<span class="text-[10px] text-secondary mt-1 font-mono">L2+P</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-center">
+<span class="font-mono text-base font-semibold text-on-surface">::</span>
+<span class="text-[10px] text-secondary mt-1 font-mono">L1+Q</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-center">
+<span class="font-mono text-base font-semibold text-on-surface">&amp;&amp;</span>
+<span class="text-[10px] text-secondary mt-1 font-mono">L2+7</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-center opacity-60">
+<span class="font-mono text-base font-semibold text-on-surface">~</span>
+<span class="text-[10px] text-secondary mt-1 font-mono">L1+N</span>
+</div>
+</div>
+</div>
+<!-- Layer Activation Latency Sparkline Gauge -->
+<div class="p-5 bg-surface-container rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold text-secondary uppercase tracking-wider">Latencia al Activar MO(2)</span>
+<span class="font-mono text-sm font-bold text-primary">74 ms (Avg 82ms)</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<div class="w-full h-16 flex items-end">
+<svg class="w-full h-full text-primary" fill="none" viewBox="0 0 240 60">
+<path d="M0 45 L30 42 L60 48 L90 35 L120 38 L150 28 L180 32 L210 20 L240 22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M0 45 L30 42 L60 48 L90 35 L120 38 L150 28 L180 32 L210 20 L240 22 L240 60 L0 60 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle class="animate-pulse" cx="210" cy="20" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-[11px] font-mono text-secondary">
+<span>-15s atrás</span>
+<span class="text-primary font-bold">Estabilidad: 98.4%</span>
+<span>Ahora</span>
+</div>
+</div>
+<!-- Biomechanical Telemetry Mini-Stat Bento -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-4 bg-surface-container rounded-xl flex flex-col gap-1">
+<span class="text-[11px] font-medium text-secondary">WPM Símbolos</span>
+<span class="font-headline font-bold text-2xl text-on-surface">54.8</span>
+<span class="text-[10px] text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> +6.4% vs sesión anterior
+              </span>
+</div>
+<div class="p-4 bg-surface-container rounded-xl flex flex-col gap-1">
+<span class="text-[11px] font-medium text-secondary">Desplazamiento Pulgar</span>
+<span class="font-headline font-bold text-2xl text-tertiary">3.2 mm</span>
+<span class="text-[10px] text-secondary font-mono">Arco ergonómico</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- BIOMECHANICAL VISUALIZER: bCorne Split Physical Representation (56 Keys)  -->
+<!-- ========================================================================= -->
+<div class="p-6 sm:p-8 bg-surface-container rounded-3xl shadow-sm flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">keyboard</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline font-bold text-lg text-on-surface">Monitor Físico bCorne 3x6+3 • Sincronización en Vivo</h2>
+<span class="text-xs text-secondary">Muestra en tiempo real la combinación motora activa para el símbolo objetivo</span>
+</div>
+</div>
+<!-- Real-time key combination badge -->
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-primary-container/30 text-on-surface text-xs font-mono font-medium shadow-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Acción: <strong class="text-primary font-bold">Pulgar Izquierdo [Raise L2]</strong> + <strong class="text-tertiary font-bold">Anular Derecho [P]</strong> → <span class="font-bold">{ }</span></span>
+</div>
+</div>
+<!-- Split Keyboard Graphic Layout Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 pt-4 pb-2">
+<!-- LEFT HALF (28 Keys + 1 EC11 Encoder Dial) -->
+<div class="flex flex-col gap-4 p-5 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-xs text-secondary pb-2">
+<span class="font-mono font-bold text-on-surface">Mitad Izquierda (LH Master)</span>
+<!-- Encoder EC11 Dial Left -->
+<div class="flex items-center gap-2 bg-surface-container px-2.5 py-1 rounded-lg">
+<span class="w-4 h-4 rounded-full bg-secondary-fixed border-2 border-secondary flex items-center justify-center text-[8px] font-mono">L</span>
+<span class="text-[11px] font-mono text-on-surface">Dial: Vol / Zoom</span>
+</div>
+</div>
+<!-- Left Key Matrix: 3 Rows x 6 Columns Staggered -->
+<div class="flex flex-col gap-2">
+<!-- Row 1: Q, W, E, R, T, [B5] -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Tab</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Q</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">W</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">E</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">R</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">T</div>
+</div>
+<!-- Row 2: Home Row (A, S, D, F, G, [B5]) with subtle tactile homing bar on F -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Esc</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">A</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">S</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">D</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex flex-col items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs relative">
+<span>F</span>
+<span class="w-2.5 h-0.5 bg-secondary rounded-full mt-0.5"></span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">G</div>
+</div>
+<!-- Row 3: Bottom Row -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Shift</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Z</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">X</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">C</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">V</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">B</div>
+</div>
+</div>
+<!-- Left Ergonomic Thumb Cluster (3 Keys, Angled inward) -->
+<div class="flex justify-end items-center gap-2 pt-2 pr-1">
+<span class="text-[10px] text-secondary font-mono mr-2">Cluster Pulgar L</span>
+<!-- Key 1: Lower L1 -->
+<div class="h-10 px-3 rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-[11px] font-mono font-bold text-on-surface shadow-xs">
+<span>MO(1)</span>
+<span class="text-[8px] text-secondary font-normal">Lower</span>
+</div>
+<!-- Key 2: Raise L2 (ACTIVE / GLOWING FOREST GREEN) -->
+<div class="h-10 px-4 rounded-xl bg-primary text-on-primary flex flex-col items-center justify-center text-[11px] font-mono font-bold shadow-md ring-4 ring-primary-container animate-pulse">
+<span>MO(2)</span>
+<span class="text-[8px] text-on-primary-container font-medium">Raise</span>
+</div>
+<!-- Key 3: Space/Nav -->
+<div class="h-10 px-3.5 rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-[11px] font-mono font-bold text-on-surface shadow-xs">
+<span>Space</span>
+<span class="text-[8px] text-secondary font-normal">Th2</span>
+</div>
+</div>
+</div>
+<!-- RIGHT HALF (28 Keys + 1 EC11 Encoder Dial) -->
+<div class="flex flex-col gap-4 p-5 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-xs text-secondary pb-2">
+<!-- Encoder EC11 Dial Right -->
+<div class="flex items-center gap-2 bg-surface-container px-2.5 py-1 rounded-lg">
+<span class="w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-tertiary flex items-center justify-center text-[8px] font-mono">R</span>
+<span class="text-[11px] font-mono text-on-surface">Dial: Nav Vim / Scroll</span>
+</div>
+<span class="font-mono font-bold text-on-surface">Mitad Derecha (RH Slave)</span>
+</div>
+<!-- Right Key Matrix: 3 Rows x 6 Columns Staggered -->
+<div class="flex flex-col gap-2">
+<!-- Row 1: Y, U, I, O, P (TARGET), [Del] -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Y</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">U</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">I</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">O</div>
+<!-- P Key / Bracket '{' Illuminated -->
+<div class="aspect-square rounded-lg bg-tertiary text-on-tertiary flex flex-col items-center justify-center text-xs font-mono font-bold shadow-md ring-4 ring-tertiary-fixed">
+<span>P</span>
+<span class="text-[9px] text-tertiary-fixed">{ }</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Bksp</div>
+</div>
+<!-- Row 2: Home Row (H, J, K, L, Ñ, Enter) with tactile homing bar on J -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">H</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex flex-col items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs relative">
+<span>J</span>
+<span class="w-2.5 h-0.5 bg-secondary rounded-full mt-0.5"></span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">K</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">L</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">;</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">'</div>
+</div>
+<!-- Row 3: Bottom Row (N, M, <, >, ?, Shift) -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">N</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">M</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">,</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">.</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">/</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest flex items-center justify-center text-xs font-mono font-bold text-on-surface shadow-xs">Enter</div>
+</div>
+</div>
+<!-- Right Ergonomic Thumb Cluster (3 Keys, Angled inward) -->
+<div class="flex justify-start items-center gap-2 pt-2 pl-1">
+<!-- Key 1: Enter / Alt -->
+<div class="h-10 px-3.5 rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-[11px] font-mono font-bold text-on-surface shadow-xs">
+<span>Enter</span>
+<span class="text-[8px] text-secondary font-normal">Th1</span>
+</div>
+<!-- Key 2: Space / Nav -->
+<div class="h-10 px-4 rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-[11px] font-mono font-bold text-on-surface shadow-xs">
+<span>Space</span>
+<span class="text-[8px] text-secondary font-normal">Th2</span>
+</div>
+<!-- Key 3: Alt / Adjust -->
+<div class="h-10 px-3 rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-[11px] font-mono font-bold text-on-surface shadow-xs">
+<span>AltGr</span>
+<span class="text-[8px] text-secondary font-normal">Adj</span>
+</div>
+<span class="text-[10px] text-secondary font-mono ml-2">Cluster Pulgar R</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- SECTION 2: VIM COLUMNAR SPRINT PLAYGROUND (HJKL + EC11 DIAL SPRINT)      -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-6" id="section-vim-sprint">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div>
+<h2 class="font-headline font-bold text-2xl text-on-surface">Vim Columnar Sprint Playground</h2>
+<p class="text-xs text-secondary">Navegación pura con <kbd class="font-mono text-on-surface">h</kbd>, <kbd class="font-mono text-on-surface">j</kbd>, <kbd class="font-mono text-on-surface">k</kbd>, <kbd class="font-mono text-on-surface">l</kbd> asistida por dial rotativo de hardware EC11.</p>
+</div>
+</div>
+<!-- Mission Goal Pill -->
+<div class="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-secondary-container text-on-secondary-container text-xs font-mono font-medium shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">flag</span>
+<span>Objetivo: <strong class="text-on-surface">Salta a L42 con Dial R → 'ci{' → escribe "bCorne"</strong></span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Live Code Buffer Pane (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-sm">
+<!-- Terminal Titlebar -->
+<div class="flex items-center justify-between px-5 py-3 bg-surface-container-high text-xs font-mono text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary/70"></span>
+<span class="w-3 h-3 rounded-full bg-primary/70"></span>
+<span class="ml-2 font-bold text-on-surface">src/biomechanics/firmware_eval.rs</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-secondary">NORMAL</span>
+<span class="text-on-surface font-semibold">LN 42, COL 18</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-[11px]">UTF-8</span>
+</div>
+</div>
+<!-- Code Viewport with Warm Natural Syntax Highlighting -->
+<div class="p-6 bg-surface-container-lowest font-mono text-xs sm:text-sm leading-relaxed overflow-x-auto select-none">
+<div class="flex flex-col gap-1">
+<!-- Line 39 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">39</span>
+<span><span class="text-primary font-bold">pub fn</span> <span class="text-tertiary">calculate_ergonomic_strain</span>(keys: &amp;[KeyAction]) -&gt; StrainScore {</span>
+</div>
+<!-- Line 40 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">40</span>
+<span class="pl-4"><span class="text-secondary font-semibold">let</span> thumb_travel_mm = keys.iter().map(|k| k.travel_distance()).sum();</span>
+</div>
+<!-- Line 41 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">41</span>
+<span class="pl-4"><span class="text-primary font-bold">if</span> thumb_travel_mm &gt; <span class="text-tertiary font-bold">4.5</span> {</span>
+</div>
+<!-- Line 42 (ACTIVE MISSION LINE WITH GLOWING CURSOR) -->
+<div class="flex items-center gap-4 bg-tertiary/10 -mx-6 px-6 py-1 rounded">
+<span class="w-8 text-right select-none font-mono text-xs text-tertiary font-bold">42</span>
+<span class="pl-4 text-on-surface font-medium">
+                  target_device.set_layout_name(
+                  <span class="relative inline-block px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold shadow-xs">
+                    { "placeholder_profile" }
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-primary text-on-primary text-[10px] font-mono font-bold whitespace-nowrap shadow-sm">
+                      ci{ • 'bCorne'
+                    </span>
+</span>
+                  );
+                </span>
+</div>
+<!-- Line 43 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">43</span>
+<span class="pl-4">}</span>
+</div>
+<!-- Line 44 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">44</span>
+<span class="pl-4"><span class="text-primary font-bold">Ok</span>(StrainScore::Optimal)</span>
+</div>
+<!-- Line 45 -->
+<div class="flex items-center gap-4 text-secondary/60">
+<span class="w-8 text-right select-none font-mono text-xs text-secondary/40">45</span>
+<span>}</span>
+</div>
+</div>
+</div>
+<!-- Bottom Statusbar -->
+<div class="flex items-center justify-between px-5 py-2.5 bg-surface-container-low text-xs font-mono text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-bold text-[11px]">VIM NORMAL</span>
+<span class="text-secondary font-mono">Movimientos de Cursor: 48</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>Home Row Adherence: 99.2%</span>
+</div>
+</div>
+</div>
+<!-- Hardware EC11 Dial & HJKL Heatmap Side Panel (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<!-- Rotary Encoder Real-Time Gauge -->
+<div class="p-5 bg-surface-container rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-sm text-on-surface">Hardware EC11 Dials HUD</h3>
+<span class="text-[11px] font-mono text-primary font-semibold">24 Detents / Rev</span>
+</div>
+<!-- Dial Left & Right Dials Graphic -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Dial Left -->
+<div class="p-3.5 bg-surface-container-low rounded-xl flex flex-col items-center text-center gap-2">
+<span class="text-[11px] font-mono font-bold text-secondary">Dial L (Salto x5)</span>
+<!-- Circular Knob SVG Indicator -->
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-45" viewBox="0 0 36 36">
+<circle class="text-outline-variant/30" cx="18" cy="18" fill="none" r="15" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary" cx="18" cy="18" fill="none" r="15" stroke="currentColor" stroke-dasharray="70, 100" stroke-width="3"></circle>
+</svg>
+<div class="absolute w-7 h-7 rounded-full bg-surface-container flex items-center justify-center shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<span class="text-xs font-mono font-bold text-on-surface">+10 Líneas</span>
+</div>
+<!-- Dial Right -->
+<div class="p-3.5 bg-surface-container-low rounded-xl flex flex-col items-center text-center gap-2">
+<span class="text-[11px] font-mono font-bold text-tertiary">Dial R (Smooth)</span>
+<!-- Circular Knob SVG Indicator -->
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-full h-full transform rotate-90" viewBox="0 0 36 36">
+<circle class="text-outline-variant/30" cx="18" cy="18" fill="none" r="15" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-tertiary" cx="18" cy="18" fill="none" r="15" stroke="currentColor" stroke-dasharray="85, 100" stroke-width="3"></circle>
+</svg>
+<div class="absolute w-7 h-7 rounded-full bg-surface-container flex items-center justify-center shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<span class="text-xs font-mono font-bold text-on-surface">4 Ticks (0 Over)</span>
+</div>
+</div>
+<p class="text-[11px] text-secondary leading-snug">
+              Los encoders físicos con lubricación Krytox reducen la necesidad de salir del Home Row para recorrer bloques extensos de código.
+            </p>
+</div>
+<!-- HJKL Physical Cluster Activity Heatmap -->
+<div class="p-5 bg-surface-container rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold text-secondary uppercase tracking-wider">Actividad HJKL Home Row</span>
+<span class="text-xs font-mono text-primary font-bold">Cero fatiga ulnar</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center">
+<div class="p-2.5 rounded-xl bg-primary/10 flex flex-col gap-1">
+<span class="font-mono text-base font-bold text-primary">H</span>
+<span class="text-[9px] font-mono text-secondary">Left (14%)</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed flex flex-col gap-1">
+<span class="font-mono text-base font-bold text-on-primary-fixed-variant">J</span>
+<span class="text-[9px] font-mono text-on-primary-fixed-variant">Down (42%)</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary/20 flex flex-col gap-1">
+<span class="font-mono text-base font-bold text-primary">K</span>
+<span class="text-[9px] font-mono text-secondary">Up (28%)</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary/10 flex flex-col gap-1">
+<span class="font-mono text-base font-bold text-primary">L</span>
+<span class="text-[9px] font-mono text-secondary">Right (16%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- SECTION 3: PANEL DE TELEMETRÍA BIOMECÁNICA & CALIBRADOR QMK/ZMK           -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-6 pt-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="font-headline font-bold text-2xl text-on-surface">Telemetría Biomecánica &amp; Calibrador QMK / ZMK</h2>
+<p class="text-secondary text-xs sm:text-sm">Datos consolidados del sensor de latencia de matriz y carga articular.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-semibold shadow-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Aplicar Tapping-Term a Keymap ZMK</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Latency & Adaptive Tapping Term -->
+<div class="p-6 bg-surface-container rounded-2xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Tapping-Term Adaptativo</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant text-[11px] font-mono font-bold">Óptimo</span>
+</div>
+<div class="flex items-baseline gap-2 pt-1">
+<span class="font-headline font-bold text-4xl text-on-surface">175</span>
+<span class="font-mono text-sm text-secondary">ms recomendados</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed">
+              Basado en tus 124 transiciones de <code class="font-mono text-xs">MO(2)</code> en Symbol Rain. Reduce dobles toques accidentales un 94%.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/30 text-xs font-mono text-secondary">
+<span>Actual: 165ms</span>
+<span class="text-primary font-semibold">+10ms ajuste sugerido</span>
+</div>
+</div>
+<!-- Card 2: Thumb Ergonomics Comparison -->
+<div class="p-6 bg-surface-container rounded-2xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Tensión en Pulgares</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container text-[11px] font-mono font-bold">-58% Carga</span>
+</div>
+<div class="flex items-baseline gap-2 pt-1">
+<span class="font-headline font-bold text-4xl text-primary">-58%</span>
+<span class="font-mono text-sm text-secondary">vs Teclado Tradicional</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed">
+              El cluster de 3 teclas curvas en bCorne distribuye el esfuerzo entre el músculo oponente y flexor corto, evitando microtraumas repetitivos.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/30 text-xs font-mono text-secondary">
+<span>Ángulo de muñeca: 14° neutral</span>
+<span class="text-tertiary font-semibold">Tenting recomendado 5°</span>
+</div>
+</div>
+<!-- Card 3: Actionable Exercises for Weak Symbols -->
+<div class="p-6 bg-surface-container rounded-2xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Refuerzo Biomecánico</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container text-[11px] font-mono font-bold">3 Débiles</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-surface pt-1">Símbolos con Mayor Vacilación</h3>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest font-mono font-bold text-sm text-on-surface shadow-xs">{ }</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest font-mono font-bold text-sm text-on-surface shadow-xs">~</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-lowest font-mono font-bold text-sm text-on-surface shadow-xs">=&gt;</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed">
+              Latencia media de 118ms en estos glifos. Ejercita repeticiones específicas con Raise L2.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<button class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+<span>Entrenar Símbolos Débiles</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+<span class="text-[11px] font-mono text-secondary">Sesión 3 min</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Toolbar Footer -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-container-low rounded-2xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="text-xs text-on-surface-variant font-medium">Exporta tu configuración optimizada directamente a formato ZMK <code class="font-mono text-xs px-1 py-0.5 rounded bg-surface-container text-on-surface">.keymap</code> o QMK <code class="font-mono text-xs px-1 py-0.5 rounded bg-surface-container text-on-surface">rules.mk</code></span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs font-medium text-on-surface transition-colors">
+            Ver Repetición Biomecánica
+          </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-medium shadow-xs hover:opacity-95 transition-opacity">
+            Descargar Archivo ZMK
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchGameTab(mode) {
+    const tabRain = document.getElementById('tab-symbol-rain');
+    const tabVim = document.getElementById('tab-vim-sprint');
+    const secRain = document.getElementById('section-symbol-rain');
+    const secVim = document.getElementById('section-vim-sprint');
+
+    if (mode === 'rain') {
+      tabRain.className = "flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-semibold text-xs sm:text-sm shadow-sm transition-all";
+      tabVim.className = "flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-secondary hover:text-on-surface font-semibold text-xs sm:text-sm transition-all";
+      secRain.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      tabVim.className = "flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-semibold text-xs sm:text-sm shadow-sm transition-all";
+      tabRain.className = "flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-secondary hover:text-on-surface font-semibold text-xs sm:text-sm transition-all";
+      secVim.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low py-10 mt-16"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"><div class="flex items-center gap-3"><span class="font-headline font-semibold text-on-surface">CorneType Studio</span><span>—</span><span>Ergonomía columnar split &amp; diseño biofílico PBT</span></div><div class="flex items-center gap-6"><span class="font-mono text-[11px]">Diseñado para bCorne 3x6+3 con Encoders EC11</span><span class="text-secondary">Firmware QMK / ZMK Nativo</span></div></div></footer>
+
+
+</body></html>

@@ -1,0 +1,21 @@
+# Local build environments and upstream checkout
+/toolchain/
+/vial-qmk/
+
+# Keep BCORNE sources, without the upstream repository metadata
+**/.git/
+
+# JavaScript dependencies and generated output
+node_modules/
+dist/
+*.tsbuildinfo
+.playwright-cli/
+
+# Local credentials and editor/system files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

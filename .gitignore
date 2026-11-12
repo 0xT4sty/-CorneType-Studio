@@ -1,0 +1,25 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+.playwright-cli/
+playwright-report/
+test-results/
+*.log
+
+.env
+.env.*
+!.env.example
+.npmrc
+*.local
+*.pem
+*.key
+
+.DS_Store
+Thumbs.db
+
+# Historial anterior, binarios compilados y exportación duplicada de las plantillas.
+/BCORNE/trainer/
+/BCORNE/firmware/*.uf2
+/stitch_bcorne_typing_tutor.zip
